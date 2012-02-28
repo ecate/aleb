@@ -1,0 +1,4 @@
+errors:
+  messages:
+    carrierwave_processing_error: "Ne peux retailler l'image."
+    carrierwave_integrity_error: "Ce n'est pas une image"
