@@ -1,10 +1,12 @@
 class CreateSyllabuses < ActiveRecord::Migration
   def change
     create_table :syllabuses do |t|
+      t.references :organisateur
       t.string :titre
       t.text :description
       t.string :logo
       t.references :categorie
+      t.references :label
       t.float :prixbase
       t.float :reduction
       t.time :duree
@@ -24,5 +26,7 @@ class CreateSyllabuses < ActiveRecord::Migration
       t.timestamps
     end
     add_index :syllabuses, :categorie_id
+    add_index :syllabuses, :organisateur_id
+    add_index :syllabuses, :label_id
   end
 end

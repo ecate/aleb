@@ -33,9 +33,11 @@ gem 'carrierwave'
 #pagination
 gem 'kaminari'
 
-#form
+#formulaires simplifies
 gem 'formtastic'
 
+#import de fichiers excel
+gem 'roo'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -45,6 +47,7 @@ end
 
 group :development do
   gem 'annotate', '2.4.1.beta1'
+  gem 'foreigner'
 end
 
 
