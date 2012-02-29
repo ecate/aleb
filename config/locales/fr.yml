@@ -1,4 +1,263 @@
-errors:
-  messages:
-    carrierwave_processing_error: "Ne peux retailler l'image."
-    carrierwave_integrity_error: "Ce n'est pas une image"
+fr:
+  date:
+    abbr_day_names:
+    - dim
+    - lun
+    - mar
+    - mer
+    - jeu
+    - ven
+    - sam
+    abbr_month_names:
+    - 
+    - jan.
+    - fév.
+    - mar.
+    - avr.
+    - mai
+    - juin
+    - juil.
+    - août
+    - sept.
+    - oct.
+    - nov.
+    - déc.
+    day_names:
+    - dimanche
+    - lundi
+    - mardi
+    - mercredi
+    - jeudi
+    - vendredi
+    - samedi
+    formats:
+      default: ! '%d/%m/%Y'
+      long: ! '%e %B %Y'
+      short: ! '%e %b'
+    month_names:
+    - 
+    - janvier
+    - février
+    - mars
+    - avril
+    - mai
+    - juin
+    - juillet
+    - août
+    - septembre
+    - octobre
+    - novembre
+    - décembre
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: environ %{count} heure
+        other: environ %{count} heures
+      about_x_months:
+        one: environ %{count} mois
+        other: environ %{count} mois
+      about_x_years:
+        one: environ %{count} an
+        other: environ %{count} ans
+      almost_x_years:
+        one: presque %{count} an
+        other: presque %{count} ans
+      half_a_minute: une demi-minute
+      less_than_x_minutes:
+        one: moins de %{count} minute
+        other: moins de %{count} minutes
+        zero: moins d'une minute
+      less_than_x_seconds:
+        one: moins de %{count} seconde
+        other: moins de %{count} secondes
+        zero: moins d'une seconde
+      over_x_years:
+        one: plus de %{count} an
+        other: plus de %{count} ans
+      x_days:
+        one: ! '%{count} jour'
+        other: ! '%{count} jours'
+      x_minutes:
+        one: ! '%{count} minute'
+        other: ! '%{count} minutes'
+      x_months:
+        one: ! '%{count} mois'
+        other: ! '%{count} mois'
+      x_seconds:
+        one: ! '%{count} seconde'
+        other: ! '%{count} secondes'
+    prompts:
+      day: Jour
+      hour: Heure
+      minute: Minute
+      month: Mois
+      second: Seconde
+      year: Année
+  errors:
+    format: Le %{attribute} %{message}
+    messages:
+      accepted: doit être accepté(e)
+      blank: doit être rempli(e)
+      confirmation: ne concorde pas avec la confirmation
+      empty: doit être rempli(e)
+      equal_to: doit être égal à %{count}
+      even: doit être pair
+      exclusion: n'est pas disponible
+      greater_than: doit être supérieur à %{count}
+      greater_than_or_equal_to: doit être supérieur ou égal à %{count}
+      inclusion: n'est pas inclus(e) dans la liste
+      invalid: n'est pas valide
+      less_than: doit être inférieur à %{count}
+      less_than_or_equal_to: doit être inférieur ou égal à %{count}
+      not_a_number: n'est pas un nombre
+      not_an_integer: doit être un nombre entier
+      odd: doit être impair
+      record_invalid: ! 'La validation a échoué : %{errors}'
+      taken: n'est pas disponible
+      too_long:
+        one: est trop long (pas plus de %{count} caractère)
+        other: est trop long (pas plus de %{count} caractères)
+      too_short:
+        one: est trop court (au moins %{count} caractère)
+        other: est trop court (au moins %{count} caractères)
+      wrong_length:
+        one: ne fait pas la bonne longueur (doit comporter %{count} caractère)
+        other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
+    template:
+      body: ! 'Veuillez vérifier les champs suivants : '
+      header:
+        one: ! 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreur'
+        other: ! 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
+  helpers:
+    select:
+      prompt: Veuillez sélectionner
+    submit:
+      create: Créer un(e) %{model}
+      submit: Enregistrer ce(tte) %{model}
+      update: Modifier ce(tte) %{model}
+  number:
+    currency:
+      format:
+        delimiter: ! ' '
+        format: ! '%n %u'
+        precision: 2
+        separator: ! ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: €
+    format:
+      delimiter: ! ' '
+      precision: 3
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: milliard
+          million: million
+          quadrillion: million de milliards
+          thousand: millier
+          trillion: billion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 2
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: octet
+            other: octets
+          gb: Go
+          kb: ko
+          mb: Mo
+          tb: To
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ' et '
+      two_words_connector: ! ' et '
+      words_connector: ! ', '
+  time:
+    am: am
+    formats:
+      default: ! '%d %B %Y %H:%M:%S'
+      long: ! '%A %d %B %Y %H:%M'
+      short: ! '%d %b %H:%M'
+    pm: pm
+
+  active_admin:
+      dashboard: "Tableau de Bord"
+      dashboard_welcome:
+        welcome: "Bienvenue dans Active Admin. Ceci est la page par défaut."
+        call_to_action: "Pour ajouter des sections au tableau de bord, consultez 'app/admin/dashboards.rb'"
+      view: "Voir"
+      edit: "Modifier"
+      delete: "Supprimer"
+      delete_confirmation: "Êtes-vous certain de vouloir supprimer ceci ?"
+      new_model: "Nouveau %{model}"
+      create_model: "Nouveau %{model}"
+      edit_model: "Modifier %{model}"
+      update_model: "Modifier %{model}"
+      delete_model: "Supprimer %{model}"
+      details: "Détails de %{model}"
+      cancel: "Annuler"
+      empty: "Vide"
+      previous: "Précédent"
+      next: "Suivant"
+      download: "Télécharger:"
+      has_many_new: "Ajouter un nouveau %{model}"
+      has_many_delete: "Supprimer"
+      filter: "Filtrer"
+      clear_filters: "Supprimer les filtres"
+      search_field: "Rechercher %{field}"
+      equal_to: "Egal à"
+      greater_than: "Plus grand que"
+      less_than: "Plus petit que"
+      main_content: "Veuillez implémenter %{model}#main_content pour afficher le contenu."
+      logout: "Déconnexion"
+      sidebars:
+        filters: "Filtres"
+      pagination:
+        empty: "Aucun %{model} trouvé"
+        one: "Affichage de <b>1</b> %{model}"
+        one_page: "Affichage de <b>tous les %{n}</b> %{model}"
+        multiple: "Affichage de %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> sur un total de <b>%{total}</b>"
+        entry:
+          one: "entrée"
+          other: "entrées"
+      any: "N'importe lequel"
+      blank_slate:
+        content: "Il n'y a pas encore de %{resource_name}."
+        link: "Créez en un"
+      comments:
+        body: "Corps"
+        author: "Auteur"
+        title: "Commentaire"
+        add: "Ajouter un commentaire"
+        resource: "Ressource"
+        no_comments_yet: "Aucun commentaire actuellement"
+        title_content: "Commentaires (%{count})"
+        errors:
+          empty_text: "Le commentaire n'a pas été enregistré puisque le texte était vide."
+  errors:
+    messages:
+      carrierwave_processing_error: "Erreur de traitement de l'image"
+      carrierwave_integrity_error: "n'est pas un format de fichier autorisé"
+      extension_white_list_error: "Vous n'êtes pas autorisé à télédécharger le format %{extension}, formats autorisés: %{allowed_types}"
+      rmagick_processing_error: "Echec du traitement de rmagick, est-ce bien un fichier image ? Erreur remontée: %{e}"
+      mime_types_processing_error: "Echec du traitement du fichier avec MIME::Types, peut être un contenu non valide ? Erreur remontée: %{e}"
+      mini_magick_processing_error: "Echec du traitement de MiniMagick, est-ce bien un fichier image ? Erreur remontée: %{e}"

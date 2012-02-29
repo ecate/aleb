@@ -20,10 +20,14 @@ gem 'devise'
 # système d'authorisation avec roles'
 gem 'cancan'
 
+#interfaces d'administration
+gem 'activeadmin'
+
 #syntaxe simplifiee pour les vues html
 gem 'haml'
 
 #upload / gestion des fichiers
+gem "rmagick"
 gem 'carrierwave'
 
 #pagination
