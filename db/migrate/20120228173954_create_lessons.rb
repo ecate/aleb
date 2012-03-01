@@ -2,8 +2,7 @@ class CreateLessons < ActiveRecord::Migration
   def change
     create_table :lessons do |t|
       t.references :syllabus
-      t.date :date
-      t.time :debut
+      t.datetime :horaire
       t.boolean :flag_recurrent
       t.timestamps
     end

@@ -46,24 +46,6 @@ ActiveRecord::Schema.define(:version => 20120229150933) do
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
-  create_table "admins", :force => true do |t|
-    t.string   "email",                  :default => "", :null => false
-    t.string   "encrypted_password",     :default => "", :null => false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          :default => 0
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.datetime "created_at",                             :null => false
-    t.datetime "updated_at",                             :null => false
-  end
-
-  add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
-  add_index "admins", ["reset_password_token"], :name => "index_admins_on_reset_password_token", :unique => true
-
   create_table "categories", :force => true do |t|
     t.string   "nom"
     t.datetime "created_at", :null => false
@@ -88,16 +70,6 @@ ActiveRecord::Schema.define(:version => 20120229150933) do
   add_index "inscriptions", ["lesson_id"], :name => "index_inscriptions_on_lesson_id"
   add_index "inscriptions", ["user_id"], :name => "index_inscriptions_on_user_id"
 
-  create_table "label_syllabuses", :force => true do |t|
-    t.integer  "syllabus_id"
-    t.integer  "label_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
-  add_index "label_syllabuses", ["label_id"], :name => "index_label_syllabuses_on_label_id"
-  add_index "label_syllabuses", ["syllabus_id"], :name => "index_label_syllabuses_on_syllabus_id"
-
   create_table "labels", :force => true do |t|
     t.string   "nom"
     t.string   "avatar"
@@ -107,8 +79,7 @@ ActiveRecord::Schema.define(:version => 20120229150933) do
 
   create_table "lessons", :force => true do |t|
     t.integer  "syllabus_id"
-    t.date     "date"
-    t.time     "debut"
+    t.datetime "horaire"
     t.boolean  "flag_recurrent"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
@@ -128,10 +99,12 @@ ActiveRecord::Schema.define(:version => 20120229150933) do
     t.string   "titre"
     t.text     "description"
     t.string   "logo"
+    t.integer  "organisateur_id"
+    t.integer  "label_id"
     t.integer  "categorie_id"
     t.float    "prixbase"
     t.float    "reduction"
-    t.time     "duree"
+    t.integer  "duree"
     t.boolean  "flag_actif"
     t.boolean  "flag_pas_date"
     t.boolean  "flag_interne"
@@ -143,6 +116,7 @@ ActiveRecord::Schema.define(:version => 20120229150933) do
     t.string   "adresse_num_voie"
     t.string   "adresse_complement"
     t.integer  "adresse_codepostal"
+    t.string   "adresse_ville"
     t.boolean  "flag_lieu_defini"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
