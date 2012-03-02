@@ -2,11 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 
-# Base de données
-gem 'mysql2'
 
 
-# interface
+#interface
 gem 'jquery-rails'
 gem 'execjs'
 gem 'therubyracer'
@@ -51,7 +49,13 @@ end
 group :development do
   gem 'annotate', '2.4.1.beta1'
   gem 'foreigner'
+  # Base de données
+  gem 'mysql2'
 end
 
+group :production do
+  gem 'pg'
+  gem 'sqlite3-ruby'
+end
 
 

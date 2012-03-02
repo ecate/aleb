@@ -29,8 +29,8 @@
 class Syllabus < ActiveRecord::Base
   belongs_to :organisateur
   has_many :lessons
-  has_one :categorie
-  has_one :labels
+  belongs_to :categorie
+  belongs_to :label
   mount_uploader :logo, ImageUploader
 
 

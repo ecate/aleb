@@ -14,7 +14,8 @@ ActiveAdmin.register Organisateur do
  filter :created_at, :label => "cree le"
 
 
- show do |org|
+ show :title => :nom do |org|
+
        attributes_table do
          row :nom
          row :description
