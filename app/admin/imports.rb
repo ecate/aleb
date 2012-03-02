@@ -29,20 +29,20 @@ ActiveAdmin.register Import do
             :label_id => Label.find_by_nom(f.cell(line,'D')).id,
             :description => f.cell(line,'E'),
             :prixbase => f.cell(line,'E'),
-           :reduction =>
-               :duree =>
-          :flag_actif =>
-       :flag_pas_date =>
-        :flag_interne =>
-   :nb_min_apprenants =>
-   :nb_max_apprenants =>
-                :lien =>
- :contact_reservation =>
- :adresse_etablissement =>
-    :adresse_num_voie =>
-  :adresse_complement =>
-  :adresse_codepostal =>
-    :flag_lieu_defini =>
+           :reduction => true ,
+               :duree =>  true ,
+          :flag_actif =>   true ,
+       :flag_pas_date =>    true ,
+        :flag_interne =>     true ,
+   :nb_min_apprenants =>      true ,
+   :nb_max_apprenants =>       true ,
+                :lien =>        true ,
+ :contact_reservation =>         true ,
+ :adresse_etablissement =>        true ,
+    :adresse_num_voie =>           true ,
+  :adresse_complement =>            true ,
+  :adresse_codepostal =>             true ,
+    :flag_lieu_defini =>              true ,
       )
 
     end
