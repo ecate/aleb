@@ -38,5 +38,5 @@ production:
   database: aleb_production
   pool: 5
   username: root
-  password:
+  password: Shaw_quof4
   socket: /var/run/mysqld/mysqld.sock

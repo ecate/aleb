@@ -168,8 +168,8 @@ ActiveAdmin.register Import do
           end
           cours.save!
 
-
-
+         #TODO remove la condition : on laisse les dates pour afficher les cours crées
+          if 1 > 10
           #dates définies
           if return_flag_pas_date(f.cell(line, 'S'))
             cours.flag_pas_date= true
@@ -200,6 +200,7 @@ ActiveAdmin.register Import do
               Lesson.create!(:syllabus_id => cours.id, :horaire => return_time(f.cell(line, 'Z'), f.cell(line, 'AA')), :flag_recurrent => true) unless (f.cell(line, 'Z').to_s.empty? || f.cell(line, 'AA').to_s.empty?)
               Lesson.create!(:syllabus_id => cours.id, :horaire => return_time(f.cell(line, 'AB'), f.cell(line, 'AC')), :flag_recurrent => true) unless (f.cell(line, 'AB').to_s.empty? || f.cell(line, 'AC').to_s.empty?)
             end
+          end
           end
 
           cours.save!
