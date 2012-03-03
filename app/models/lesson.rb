@@ -12,7 +12,7 @@
 #
 
 class Lesson < ActiveRecord::Base
-  belongs_to :syllabus
+  belongs_to :syllabus, :dependent => :destroy
 
 
 end

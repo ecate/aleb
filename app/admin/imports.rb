@@ -1,5 +1,6 @@
 ActiveAdmin.register Import do
 
+ config.clear_sidebar_sections!
 
   form do |f|
 
@@ -33,7 +34,15 @@ ActiveAdmin.register Import do
           div
             span truncate(cours.description, :length => 80)
           div
-            span "Label : "+ Label.find_by_id(cours.label_id).nom + " / Categorie :" + Categorie.find_by_id(cours.categorie.id).nom + " / Prix base: " + number_to_currency(cours.prixbase, :locale => :fr) + " / duree " + humanize(cours.duree.to_i)
+            span b Label.find_by_id(cours.label_id).nom + " - " + Categorie.find_by_id(cours.categorie.id).nom + " - " + number_to_currency(cours.prixbase, :locale => :fr) + " - "
+            span cours.reduction.to_s + "% - " unless cours.reduction.nil?
+            span humanize(cours.duree.to_i)
+
+            Lesson.find_all_by_syllabus_id(cours.id).each do |lesson|
+              li I18n.localize(lesson.horaire, :format => :long,:locale => :fr)
+            end
+
+
           hr
       end
     end
@@ -134,7 +143,7 @@ ActiveAdmin.register Import do
     f.default_sheet = f.sheets.first
     newcours = Array.new
 
-    3.upto(f.last_row) do |line|
+    4.upto(f.last_row) do |line|
 
       #MAPPING avec template excel
       _titre= f.cell(line, 'B').to_s
@@ -259,9 +268,10 @@ ActiveAdmin.register Import do
 
     end
 
-    import.destroy
+
     #affichage
     session[:cours_created]=newcours
+    import.destroy
 
   end
 
