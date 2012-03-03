@@ -2,114 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffe6712e-9b5d-4a57-b851-3fdc3a2f347f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/0f86f8df9555eb11236426a1c715564d.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/1bd823771ba35acd2000b2c60a4a7134.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/44c8dcb44dc74e9cdc85e3bf6819961b.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/4b941c58cb530c506b5cd075dd7834c5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/5b287d7faca03d6558c04a2f2912e715.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/66b0887205a73fd0e5151bd3ce793a14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/68a079d1c828d68a21dba4890c7c9a2a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/7c76723d40997dfc1921f89311e78b50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/847b4f9f150cb1598679cf011d3e4857.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/a25e874c61771d52952dfb6e5af253f3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/ba08adcdade8c87a8810e6a63c688fa3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/cd6c4abb5ac9729423386cceac232675.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/e1aac8548b181dec712ec2bbde6b192d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/ef060c0c7b7aa20f33ee49644c5cee7c.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/f4c58a0b11b4076e6f818a4f20abd269.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/fb8b324aab18e9f45a7e78d1a202e568.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_0f86f8df9555eb11236426a1c715564d.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_1bd823771ba35acd2000b2c60a4a7134.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_44c8dcb44dc74e9cdc85e3bf6819961b.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_4b941c58cb530c506b5cd075dd7834c5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_5b287d7faca03d6558c04a2f2912e715.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_66b0887205a73fd0e5151bd3ce793a14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_68a079d1c828d68a21dba4890c7c9a2a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_7c76723d40997dfc1921f89311e78b50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_847b4f9f150cb1598679cf011d3e4857.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_a25e874c61771d52952dfb6e5af253f3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_ba08adcdade8c87a8810e6a63c688fa3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_cd6c4abb5ac9729423386cceac232675.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_e1aac8548b181dec712ec2bbde6b192d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_ef060c0c7b7aa20f33ee49644c5cee7c.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_f4c58a0b11b4076e6f818a4f20abd269.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/organisateur/avatar/thumb_fb8b324aab18e9f45a7e78d1a202e568.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spreadsheets/20120229-1850-22811-5992/test_import.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/1cd765103f44793d73ad547f726dc130.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/1d02664e8e4adb09d84cd723538d4bc9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/2237a362df829c8d891cb34b6b7eb05e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/2f66c1a3701b7487cf332b902eca6339.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/3421a4918b62c373d33d5d4ee11d2a81.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/38288a567538cd8fb2cbacd5045ba92e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/521f767772aecaa0227aa64c8d769228.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/534f4a875c8cc0e6ca8a2acca4b0f1fe.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/5e5c6675d3b6176e767846d07a2b4a52.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/5f3010903dc8b9a556ab890c572720ad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/60cde7b62e8be08542ed54ccc1cdb8e2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/6dd9bb4d59c6488a2b3c6858eca610cb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/713ea658b1f25edd45c6a400a71c9ed3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/7bcf9fef432570390e6700e183eaced4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/838e90c1aae5671701690a533c0e0d33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/858fc18d78f161b98f3bfebfd3b60c7c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/8b4efaa38c95f57ff171f343f2582fcc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/8ceed6f1424a077c2bb3130505eb18ae.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/9d8ada9ae1e8c3f8e874ade010f955d2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/a0321ac77e0c54a166557a38d3b9baa6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/bedf88a3da87f2cc2cb004d6c7d4cec0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/c3437fa2ccd685cbbc2102b5fd5a57b9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/ce7036c6cc1e7f6041b411c2e91c56fc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/d36ebaa4c7fdbeca4ddf6bb70334cdad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/d74db098e501f18f2043a0cb4237e96b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/dd1ad3baaf68fabf9aaf54a985cf6047.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/e2995f4d2f526ae04b1a233096911974.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/ed0dd8bc5ec6c56c04d1f834244b845d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/f874abd60d361bb9f7c54a09a3b17c7f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_1cd765103f44793d73ad547f726dc130.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_1d02664e8e4adb09d84cd723538d4bc9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_2237a362df829c8d891cb34b6b7eb05e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_2f66c1a3701b7487cf332b902eca6339.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_3421a4918b62c373d33d5d4ee11d2a81.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_38288a567538cd8fb2cbacd5045ba92e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_521f767772aecaa0227aa64c8d769228.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_534f4a875c8cc0e6ca8a2acca4b0f1fe.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_5e5c6675d3b6176e767846d07a2b4a52.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_5f3010903dc8b9a556ab890c572720ad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_60cde7b62e8be08542ed54ccc1cdb8e2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_6dd9bb4d59c6488a2b3c6858eca610cb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_713ea658b1f25edd45c6a400a71c9ed3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_7bcf9fef432570390e6700e183eaced4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_838e90c1aae5671701690a533c0e0d33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_858fc18d78f161b98f3bfebfd3b60c7c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_8b4efaa38c95f57ff171f343f2582fcc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_8ceed6f1424a077c2bb3130505eb18ae.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_9d8ada9ae1e8c3f8e874ade010f955d2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_a0321ac77e0c54a166557a38d3b9baa6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_bedf88a3da87f2cc2cb004d6c7d4cec0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_c3437fa2ccd685cbbc2102b5fd5a57b9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_ce7036c6cc1e7f6041b411c2e91c56fc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_d36ebaa4c7fdbeca4ddf6bb70334cdad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_d74db098e501f18f2043a0cb4237e96b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_dd1ad3baaf68fabf9aaf54a985cf6047.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_e2995f4d2f526ae04b1a233096911974.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_ed0dd8bc5ec6c56c04d1f834244b845d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/syllabus/logo/thumb_f874abd60d361bb9f7c54a09a3b17c7f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20120301-1612-6629-8172/macarons_001.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20120301-1612-6629-8172/thumb_macarons_001.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20120301-1636-6629-5916/macarons_001.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20120301-1636-6629-5916/thumb_macarons_001.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/aleb.iml" afterPath="$PROJECT_DIR$/.idea/aleb.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/spreadsheets/import.xls" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/imports.rb" afterPath="$PROJECT_DIR$/app/admin/imports.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/organisateurs.rb" afterPath="$PROJECT_DIR$/app/admin/organisateurs.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/syllabuses.rb" afterPath="$PROJECT_DIR$/app/admin/syllabuses.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/import.rb" afterPath="$PROJECT_DIR$/app/models/import.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/syllabus.rb" afterPath="$PROJECT_DIR$/app/models/syllabus.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/uploaders/excel_uploader.rb" afterPath="$PROJECT_DIR$/app/uploaders/excel_uploader.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" afterPath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="aleb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -152,7 +53,7 @@
       <file leaf-file-name="imports.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/admin/imports.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="54" selection-start="1632" selection-end="1632" vertical-scroll-proportion="1.114413">
+            <state line="231" column="14" selection-start="6768" selection-end="6768" vertical-scroll-proportion="3.2585227">
               <folding />
             </state>
           </provider>
@@ -677,21 +578,21 @@
     <frame x="68" y="24" width="1620" height="893" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1025974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19125" sideWeight="0.8974026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19125" sideWeight="0.67142856" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987013" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1025974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -752,112 +653,82 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5390173">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5390173" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="17" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="55" column="17" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="64" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="22" column="64" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/import.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="74" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0650289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="20" selection-start="616" selection-end="630" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploaders/excel_uploader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="63" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/syllabus.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="20" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/label.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/categorie.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="74" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0650289" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/organisateur.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="116" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="14" selection-start="5807" selection-end="5807" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="116" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/organisateurs.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="365" selection-end="384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="20" selection-start="365" selection-end="384" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="14" selection-start="5807" selection-end="5807" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/excel_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="63" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="20" selection-start="616" selection-end="630" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/syllabuses.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/categorie.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="22" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/syllabus.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="20" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/label.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/imports.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="54" selection-start="1632" selection-end="1632" vertical-scroll-proportion="1.114413">
+        <state line="231" column="14" selection-start="6768" selection-end="6768" vertical-scroll-proportion="3.2585227">
           <folding />
         </state>
       </provider>

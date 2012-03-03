@@ -13,17 +13,17 @@ ActiveAdmin.register Import do
 
 
   index do
-    def humanize secs
-      [[60, :seconds], [60, :minutes], [24, :heure], [1000, :jours]].map{ |count, name|
-        if secs > 0
-          secs, n = secs.divmod(count)
-          "#{n.to_i} #{name}"
-        end
-      }.compact.reverse.join(' ')
+
+    #affichage des secondes sous format humain xhxx
+    def humanize(s)
+      h = s / 3600
+      s -= h * 3600
+      m = s / 60
+      [h, m].join("h")
     end
 
     if session[:cours_created]
-      h1 "Liste des cours du fichier: "
+      h1 "Liste des cours du fichier d'import: "
       for id in session[:cours_created]
         cours=Syllabus.find_by_id(id)
         div
@@ -34,12 +34,8 @@ ActiveAdmin.register Import do
             span truncate(cours.description, :length => 80)
           div
             span "Label : "+ Label.find_by_id(cours.label_id).nom + " / Categorie :" + Categorie.find_by_id(cours.categorie.id).nom + " / Prix base: " + number_to_currency(cours.prixbase, :locale => :fr) + " / duree " + humanize(cours.duree.to_i)
-
-
-
-        hr
+          hr
       end
-      session[:cours_created]= nil
     end
   end
 
@@ -131,7 +127,8 @@ ActiveAdmin.register Import do
       end
     end
 
-
+    # param de session contient la liste des cours crees pour affichage de controle
+    session[:cours_created]= nil
 
     f = Excel.new("#{Rails.root}/public"+"#{import.spread}")
     f.default_sheet = f.sheets.first
@@ -139,7 +136,7 @@ ActiveAdmin.register Import do
 
     3.upto(f.last_row) do |line|
 
-      #MAPPING
+      #MAPPING avec template excel
       _titre= f.cell(line, 'B').to_s
       _categorie= f.cell(line, 'D').to_s
       _organisateur= f.cell(line, 'A').to_s
@@ -178,6 +175,7 @@ ActiveAdmin.register Import do
       _hr2= f.cell(line, 'AJ').to_s
 
 
+      #on va crée le cours et les lessons de manière incrémentale selon les infos présentes dans le fichier excel
       cours= Syllabus.create!(:titre => _titre,
                               :categorie_id => r_categorie(_categorie),
                               :organisateur_id => r_organisateur(_organisateur),
@@ -190,8 +188,7 @@ ActiveAdmin.register Import do
       cours.remote_logo_url= _logourl unless _logourl.empty?
       cours.save!
 
-      #remplissage difference selon criteres
-
+      #remplissage et sauvegarde de l'object au fur et à mesure
 
         if !cours.nil?
 
@@ -231,27 +228,26 @@ ActiveAdmin.register Import do
             cours.flag_pas_date= false
             #dates récurrentes
             if r_recurrent(_rec)
+
               #par defaut, recurrence sur 4 semaines
               (_sem != 0) ? n=_sem : n= 4
 
               cdate= Date.today
-              #TODO remove n=1
-              n=1
+
               n.times do
 
                 Lesson.create!(:syllabus_id => cours.id, :horaire => r_time_formate(cdate.next_week.next_day(r_dayn(_jr1)), _hr1), :flag_recurrent => true) unless (_jr1.empty? || _hr1.empty?)
-                Lesson.create!(:syllabus_id => cours.id, :horaire => r_time("22/06/2012", "14:38"), :flag_recurrent => true) unless (_jr1.empty? || _hr1.empty?)
-                #Lesson.create!(:syllabus_id => cours.id, :horaire => return_time_formate(cdate.next_week.next_day(return_day(_jr2)), _hr2), :flag_recurrent => true) unless (_jr2.empty? || _hr2.empty?)
+                Lesson.create!(:syllabus_id => cours.id, :horaire => r_time_formate(cdate.next_week.next_day(r_dayn(_jr2)), _hr2), :flag_recurrent => true) unless (_jr2.empty? || _hr2.empty?)
                 cdate= cdate + 1.week
               end
             else
 
               #dates fixes
-              Lesson.create!(:syllabus_id => cours.id, :horaire => r_time(_jd1,_hd1), :flag_recurrent => true) unless (_jd1.empty? || _hd1.empty?)
-              Lesson.create!(:syllabus_id => cours.id, :horaire => r_time(_jd2,_hd2), :flag_recurrent => true) unless (_jd2.empty? || _hd2.empty?)
-              Lesson.create!(:syllabus_id => cours.id, :horaire => r_time(_jd3,_hd3), :flag_recurrent => true) unless (_jd3.empty? || _hd3.empty?)
-              Lesson.create!(:syllabus_id => cours.id, :horaire => r_time(_jd4,_hd4), :flag_recurrent => true) unless (_jd4.empty? || _hd4.empty?)
-              Lesson.create!(:syllabus_id => cours.id, :horaire => r_time(_jd5,_hd5), :flag_recurrent => true) unless (_jd5.empty? || _hd5.empty?)
+              Lesson.create!(:syllabus_id => cours.id, :horaire => r_time(_jd1,_hd1), :flag_recurrent => false) unless (_jd1.empty? || _hd1.empty?)
+              Lesson.create!(:syllabus_id => cours.id, :horaire => r_time(_jd2,_hd2), :flag_recurrent => false) unless (_jd2.empty? || _hd2.empty?)
+              Lesson.create!(:syllabus_id => cours.id, :horaire => r_time(_jd3,_hd3), :flag_recurrent => false) unless (_jd3.empty? || _hd3.empty?)
+              Lesson.create!(:syllabus_id => cours.id, :horaire => r_time(_jd4,_hd4), :flag_recurrent => false) unless (_jd4.empty? || _hd4.empty?)
+              Lesson.create!(:syllabus_id => cours.id, :horaire => r_time(_jd5,_hd5), :flag_recurrent => false) unless (_jd5.empty? || _hd5.empty?)
             end
 
           end
