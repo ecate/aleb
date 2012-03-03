@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubyforge_project = "kaminari"
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "A pagination engine plugin for Rails 3 or other modern frameworks"
 
   if s.respond_to? :specification_version then

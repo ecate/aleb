@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://jashkenas.github.com/coffee-script/"
   s.require_paths = ["lib"]
   s.rubyforge_project = "coffee-script-source"
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "The CoffeeScript Compiler"
 
   if s.respond_to? :specification_version then

@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
   s.rubyforge_project = "spreadsheet"
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "The Spreadsheet Library is designed to read and write Spreadsheet Documents"
 
   if s.respond_to? :specification_version then

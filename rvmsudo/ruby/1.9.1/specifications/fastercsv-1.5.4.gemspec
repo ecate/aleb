@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--title", "FasterCSV Documentation", "--main", "README"]
   s.require_paths = ["lib"]
   s.rubyforge_project = "fastercsv"
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "FasterCSV is CSV, but faster, smaller, and cleaner."
 
   if s.respond_to? :specification_version then

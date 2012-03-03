@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email = "chris@ozmm.org"
   s.homepage = "http://choice.rubyforge.org/"
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "Choice is a command line option parser."
 
   if s.respond_to? :specification_version then

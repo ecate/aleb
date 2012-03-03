@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
   s.rubyforge_project = "sqlite3-ruby"
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "This module allows Ruby programs to interface with the SQLite3 database engine (http://www.sqlite.org)"
 
   if s.respond_to? :specification_version then

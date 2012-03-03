@@ -20,7 +20,7 @@ checking for HDRI disabled version of ImageMagick... -------------------- yes
 
 have_header: checking for stdint.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -28,7 +28,7 @@ checked program was:
 3: int main() {return 0;}
 /* end */
 
-"gcc -E -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp  conftest.c -o conftest.i"
+"gcc -E -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -40,7 +40,7 @@ checked program was:
 
 have_header: checking for sys/types.h... -------------------- yes
 
-"gcc -E -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp  conftest.c -o conftest.i"
+"gcc -E -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -52,7 +52,7 @@ checked program was:
 
 have_header: checking for wand/MagickWand.h... -------------------- yes
 
-"gcc -E -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp  conftest.c -o conftest.i"
+"gcc -E -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -64,7 +64,7 @@ checked program was:
 
 have_library: checking for InitializeMagick() in -lMagickCore... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:15:1: warning: ‘InitializeMagick’ is deprecated (declared at /usr/include/ImageMagick/magick/deprecate.h:309) [-Wdeprecated-declarations]
 checked program was:
@@ -90,7 +90,7 @@ checked program was:
 
 have_func: checking for snprintf() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -114,7 +114,7 @@ checked program was:
 
 have_func: checking for AcquireImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -138,7 +138,7 @@ checked program was:
 
 have_func: checking for AffinityImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:15:1: warning: ‘AffinityImage’ is deprecated (declared at /usr/include/ImageMagick/magick/deprecate.h:158) [-Wdeprecated-declarations]
 checked program was:
@@ -164,7 +164,7 @@ checked program was:
 
 have_func: checking for AffinityImages() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:15:1: warning: ‘AffinityImages’ is deprecated (declared at /usr/include/ImageMagick/magick/deprecate.h:160) [-Wdeprecated-declarations]
 checked program was:
@@ -190,7 +190,7 @@ checked program was:
 
 have_func: checking for AutoGammaImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -214,7 +214,7 @@ checked program was:
 
 have_func: checking for AutoLevelImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -238,7 +238,7 @@ checked program was:
 
 have_func: checking for BlueShiftImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -262,7 +262,7 @@ checked program was:
 
 have_func: checking for ConstituteComponentTerminus() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -286,7 +286,7 @@ checked program was:
 
 have_func: checking for DeskewImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -310,7 +310,7 @@ checked program was:
 
 have_func: checking for EncipherImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -334,7 +334,7 @@ checked program was:
 
 have_func: checking for EqualizeImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -358,7 +358,7 @@ checked program was:
 
 have_func: checking for FloodfillPaintImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -382,7 +382,7 @@ checked program was:
 
 have_func: checking for FunctionImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -406,7 +406,7 @@ checked program was:
 
 have_func: checking for GetAuthenticIndexQueue() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -430,7 +430,7 @@ checked program was:
 
 have_func: checking for GetAuthenticPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -454,7 +454,7 @@ checked program was:
 
 have_func: checking for GetImageAlphaChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -478,7 +478,7 @@ checked program was:
 
 have_func: checking for GetVirtualPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -502,7 +502,7 @@ checked program was:
 
 have_func: checking for LevelImageColors() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:15:1: warning: ‘LevelImageColors’ is deprecated (declared at /usr/include/ImageMagick/magick/deprecate.h:181) [-Wdeprecated-declarations]
 checked program was:
@@ -528,7 +528,7 @@ checked program was:
 
 have_func: checking for LevelColorsImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -552,7 +552,7 @@ checked program was:
 
 have_func: checking for LevelizeImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -576,7 +576,7 @@ checked program was:
 
 have_func: checking for LiquidRescaleImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -600,7 +600,7 @@ checked program was:
 
 have_func: checking for MagickLibAddendum() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -624,7 +624,7 @@ checked program was:
 
 have_func: checking for OpaquePaintImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -648,7 +648,7 @@ checked program was:
 
 have_func: checking for QueueAuthenticPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -672,7 +672,7 @@ checked program was:
 
 have_func: checking for RemapImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -696,7 +696,7 @@ checked program was:
 
 have_func: checking for RemoveImageArtifact() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -720,7 +720,7 @@ checked program was:
 
 have_func: checking for SelectiveBlurImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -744,7 +744,7 @@ checked program was:
 
 have_func: checking for SetImageAlphaChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -768,7 +768,7 @@ checked program was:
 
 have_func: checking for SetImageArtifact() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -792,7 +792,7 @@ checked program was:
 
 have_func: checking for SetMagickMemoryMethods() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -816,7 +816,7 @@ checked program was:
 
 have_func: checking for SparseColorImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -840,7 +840,7 @@ checked program was:
 
 have_func: checking for SyncAuthenticPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -864,7 +864,7 @@ checked program was:
 
 have_func: checking for TransparentPaintImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -888,7 +888,7 @@ checked program was:
 
 have_func: checking for TransparentPaintImageChroma() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -912,7 +912,7 @@ checked program was:
 
 checking for QueryMagickColorname() new signature... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -945,7 +945,7 @@ checked program was:
 
 have_struct_member: checking for Image.type in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -969,7 +969,7 @@ checked program was:
 
 have_struct_member: checking for DrawInfo.kerning in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -993,7 +993,7 @@ checked program was:
 
 have_struct_member: checking for DrawInfo.interline_spacing in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1017,7 +1017,7 @@ checked program was:
 
 have_struct_member: checking for DrawInfo.interword_spacing in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1041,7 +1041,7 @@ checked program was:
 
 have_type: checking for DitherMethod in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1065,7 +1065,7 @@ checked program was:
 
 have_type: checking for MagickFunction in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1089,7 +1089,7 @@ checked program was:
 
 have_type: checking for ImageLayerMethod in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1113,7 +1113,7 @@ checked program was:
 
 have_type: checking for long double in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1137,7 +1137,7 @@ checked program was:
 
 have_enum_value: checking for AlphaChannelType.CopyAlphaChannel... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1162,7 +1162,7 @@ checked program was:
 
 have_enum_value: checking for AlphaChannelType.BackgroundAlphaChannel... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1187,7 +1187,7 @@ checked program was:
 
 have_enum_value: checking for CompositeOperator.BlurCompositeOp... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1212,7 +1212,7 @@ checked program was:
 
 have_enum_value: checking for CompositeOperator.DistortCompositeOp... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1237,7 +1237,7 @@ checked program was:
 
 have_enum_value: checking for CompositeOperator.LinearBurnCompositeOp... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1262,7 +1262,7 @@ checked program was:
 
 have_enum_value: checking for CompositeOperator.LinearDodgeCompositeOp... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1287,7 +1287,7 @@ checked program was:
 
 have_enum_value: checking for CompositeOperator.MathematicsCompositeOp... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1312,7 +1312,7 @@ checked program was:
 
 have_enum_value: checking for CompositeOperator.PegtopLightCompositeOp... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1337,7 +1337,7 @@ checked program was:
 
 have_enum_value: checking for CompositeOperator.PinLightCompositeOp... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1362,7 +1362,7 @@ checked program was:
 
 have_enum_value: checking for CompositeOperator.VividLightCompositeOp... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1387,7 +1387,7 @@ checked program was:
 
 have_enum_value: checking for CompressionType.DXT1Compression... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1412,7 +1412,7 @@ checked program was:
 
 have_enum_value: checking for CompressionType.DXT3Compression... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1437,7 +1437,7 @@ checked program was:
 
 have_enum_value: checking for CompressionType.DXT5Compression... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1462,7 +1462,7 @@ checked program was:
 
 have_enum_value: checking for CompressionType.ZipSCompression... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1487,7 +1487,7 @@ checked program was:
 
 have_enum_value: checking for CompressionType.PizCompression... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1512,7 +1512,7 @@ checked program was:
 
 have_enum_value: checking for CompressionType.Pxr24Compression... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1537,7 +1537,7 @@ checked program was:
 
 have_enum_value: checking for CompressionType.B44Compression... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1562,7 +1562,7 @@ checked program was:
 
 have_enum_value: checking for CompressionType.B44ACompression... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1587,7 +1587,7 @@ checked program was:
 
 have_enum_value: checking for DistortImageMethod.BarrelDistortion... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1612,7 +1612,7 @@ checked program was:
 
 have_enum_value: checking for DistortImageMethod.BarrelInverseDistortion... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1637,7 +1637,7 @@ checked program was:
 
 have_enum_value: checking for DistortImageMethod.BilinearForwardDistortion... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1662,7 +1662,7 @@ checked program was:
 
 have_enum_value: checking for DistortImageMethod.BilinearReverseDistortion... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1687,7 +1687,7 @@ checked program was:
 
 have_enum_value: checking for DistortImageMethod.DePolarDistortion... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1712,7 +1712,7 @@ checked program was:
 
 have_enum_value: checking for DistortImageMethod.PolarDistortion... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1737,7 +1737,7 @@ checked program was:
 
 have_enum_value: checking for DistortImageMethod.PolynomialDistortion... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1762,7 +1762,7 @@ checked program was:
 
 have_enum_value: checking for DistortImageMethod.ShepardsDistortion... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1787,7 +1787,7 @@ checked program was:
 
 have_enum_value: checking for DitherMethod.NoDitherMethod... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1812,7 +1812,7 @@ checked program was:
 
 have_enum_value: checking for FilterTypes.KaiserFilter... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1837,7 +1837,7 @@ checked program was:
 
 have_enum_value: checking for FilterTypes.WelshFilter... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1862,7 +1862,7 @@ checked program was:
 
 have_enum_value: checking for FilterTypes.ParzenFilter... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1887,7 +1887,7 @@ checked program was:
 
 have_enum_value: checking for FilterTypes.LagrangeFilter... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1912,7 +1912,7 @@ checked program was:
 
 have_enum_value: checking for FilterTypes.BohmanFilter... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1937,7 +1937,7 @@ checked program was:
 
 have_enum_value: checking for FilterTypes.BartlettFilter... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1962,7 +1962,7 @@ checked program was:
 
 have_enum_value: checking for FilterTypes.SentinelFilter... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1987,7 +1987,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.PowEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2012,7 +2012,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.LogEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2037,7 +2037,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.ThresholdEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2062,7 +2062,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.ThresholdBlackEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2087,7 +2087,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.ThresholdWhiteEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2112,7 +2112,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.GaussianNoiseEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2137,7 +2137,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.ImpulseNoiseEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2162,7 +2162,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.LaplacianNoiseEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2187,7 +2187,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.MultiplicativeNoiseEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2212,7 +2212,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.PoissonNoiseEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2237,7 +2237,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.UniformNoiseEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2262,7 +2262,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.CosineEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2287,7 +2287,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.SineEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2312,7 +2312,7 @@ checked program was:
 
 have_enum_value: checking for MagickEvaluateOperator.AddModulusEvaluateOperator... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2337,7 +2337,7 @@ checked program was:
 
 have_enum_value: checking for MagickFunction.ArcsinFunction... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2362,7 +2362,7 @@ checked program was:
 
 have_enum_value: checking for MagickFunction.ArctanFunction... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2387,7 +2387,7 @@ checked program was:
 
 have_enum_value: checking for MagickFunction.PolynomialFunction... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2412,7 +2412,7 @@ checked program was:
 
 have_enum_value: checking for MagickFunction.SinusoidFunction... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2437,7 +2437,7 @@ checked program was:
 
 have_enum_value: checking for ImageLayerMethod.FlattenLayer... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2462,7 +2462,7 @@ checked program was:
 
 have_enum_value: checking for ImageLayerMethod.MergeLayer... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2487,7 +2487,7 @@ checked program was:
 
 have_enum_value: checking for ImageLayerMethod.MosaicLayer... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2512,7 +2512,7 @@ checked program was:
 
 have_enum_value: checking for ImageLayerMethod.TrimBoundsLayer... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2537,7 +2537,7 @@ checked program was:
 
 have_enum_value: checking for VirtualPixelMethod.HorizontalTileVirtualPixelMethod... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2562,7 +2562,7 @@ checked program was:
 
 have_enum_value: checking for VirtualPixelMethod.VerticalTileVirtualPixelMethod... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2587,7 +2587,7 @@ checked program was:
 
 have_enum_value: checking for VirtualPixelMethod.HorizontalTileEdgeVirtualPixelMethod... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2612,7 +2612,7 @@ checked program was:
 
 have_enum_value: checking for VirtualPixelMethod.VerticalTileEdgeVirtualPixelMethod... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2637,7 +2637,7 @@ checked program was:
 
 have_enum_value: checking for VirtualPixelMethod.CheckerTileVirtualPixelMethod... -------------------- yes
 
-"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
+"gcc -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -2662,7 +2662,7 @@ checked program was:
 
 have_header: checking for ruby/io.h... -------------------- yes
 
-"gcc -E -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp  conftest.c -o conftest.i"
+"gcc -E -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -2674,7 +2674,7 @@ checked program was:
 
 have_func: checking for rb_frame_this_func() in ruby.h,ruby/io.h... -------------------- yes
 
-"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -L/home/ecate/.rvm/rubies/ruby-1.9.2-p290/lib -lruby-static -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-linux -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I.  -I/usr/include/ImageMagick  -I/usr/include/ImageMagick -fopenmp conftest.c  -L. -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -Wl,-R/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/usr/lib -Wl,-R/home/ecate/.rvm/usr/lib  -L/usr/lib -Wl,-Bsymbolic-functions -L/usr/lib/X11    -L/usr/lib -lMagickCore -llcms -ltiff -lfreetype -ljpeg -llqr-1 -lglib-2.0 -lfontconfig -lXext -lSM -lICE -lX11 -lXt -lbz2 -lz -lm -lgomp -lpthread -lltdl -lMagickCore  -Wl,-R -Wl,/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -L/home/ecate/.rvm/rubies/ruby-1.9.3-p0/lib -lruby -lMagickCore  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -2692,9 +2692,9 @@ checked program was:
 
 
 ======================================================================
-Sat 03Mar12 15:35:54
+Sat 03Mar12 16:49:48
 This installation of RMagick 2.13.1 is configured for
-Ruby 1.9.2 (x86_64-linux) and ImageMagick 6.6.0 Q16 
+Ruby 1.9.3 (x86_64-linux) and ImageMagick 6.6.0 Q16 
 ======================================================================
 
 

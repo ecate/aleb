@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://tagaholic.me/hirb/"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "A mini view framework for console/irb that's easy to use, even while under its influence."
 
   if s.respond_to? :specification_version then

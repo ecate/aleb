@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.files = ["readme.rd"]
   s.rdoc_options = ["--main", "readme.rd"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "Support programming by todonotes/todo commands."
 
   if s.respond_to? :specification_version then

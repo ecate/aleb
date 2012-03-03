@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/ryanb/cancan"
   s.require_paths = ["lib"]
   s.rubyforge_project = "cancan"
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "Simple authorization solution for Rails."
 
   if s.respond_to? :specification_version then

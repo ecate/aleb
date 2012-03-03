@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--main", "README", "--title", "ruby-ole documentation", "--tab-width", "2"]
   s.require_paths = ["lib"]
   s.rubyforge_project = "ruby-ole"
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "Ruby OLE library."
 
   if s.respond_to? :specification_version then

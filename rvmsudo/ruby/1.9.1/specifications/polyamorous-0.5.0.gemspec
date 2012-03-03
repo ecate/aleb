@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/ernie/polyamorous"
   s.require_paths = ["lib"]
   s.rubyforge_project = "polyamorous"
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "Loves/is loved by polymorphic belongs_to associations, Ransack, Squeel, MetaSearch..."
 
   if s.respond_to? :specification_version then

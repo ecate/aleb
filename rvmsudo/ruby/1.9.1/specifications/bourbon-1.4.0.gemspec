@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/thoughtbot/bourbon"
   s.require_paths = ["lib"]
   s.rubyforge_project = "bourbon"
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "Bourbon Sass Mixins using SCSS syntax."
 
   if s.respond_to? :specification_version then

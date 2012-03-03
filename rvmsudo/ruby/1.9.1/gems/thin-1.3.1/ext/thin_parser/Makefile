@@ -1,14 +1,22 @@
 
 SHELL = /bin/sh
 
+# V=0 quiet, V=1 verbose.  other values don't work.
+V = 0
+Q1 = $(V:1=)
+Q = $(Q1:0=@)
+n=$(NULLCMD)
+ECHO1 = $(V:1=@$n)
+ECHO = $(ECHO1:0=@echo)
+
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1
-hdrdir = /home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1
-arch_hdrdir = /home/ecate/.rvm/rubies/ruby-1.9.2-p290/include/ruby-1.9.1/$(arch)
+topdir = /home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1
+hdrdir = /home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1
+arch_hdrdir = /home/ecate/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/$(arch)
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/home/ecate/.rvm/rubies/ruby-1.9.2-p290
+prefix = $(DESTDIR)/home/ecate/.rvm/rubies/ruby-1.9.3-p0
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
 exec_prefix = $(prefix)
 vendorhdrdir = $(rubyhdrdir)/vendor_ruby
@@ -43,6 +51,8 @@ sitearchdir = $(sitelibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 
+NULLCMD = :
+
 CC = gcc
 CXX = g++
 LIBRUBY = $(LIBRUBY_SO)
@@ -56,7 +66,7 @@ RUBY_EXTCONF_H =
 cflags   =  $(optflags) $(debugflags) $(warnflags)
 optflags = -O3
 debugflags = -ggdb
-warnflags = -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long
+warnflags = -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration
 CFLAGS   = -fPIC $(cflags)  -fPIC 
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
@@ -77,11 +87,11 @@ RUBY_SO_NAME = ruby
 arch = x86_64-linux
 sitearch = $(arch)
 ruby_version = 1.9.1
-ruby = /home/ecate/.rvm/rubies/ruby-1.9.2-p290/bin/ruby
+ruby = /home/ecate/.rvm/rubies/ruby-1.9.3-p0/bin/ruby
 RUBY = $(ruby)
 RM = rm -f
 RM_RF = $(RUBY) -run -e rm -- -rf
-RMDIRS = $(RUBY) -run -e rmdir -- -p
+RMDIRS = rmdir --ignore-fail-on-non-empty -p
 MAKEDIRS = /bin/mkdir -p
 INSTALL = /usr/bin/install -c
 INSTALL_PROG = $(INSTALL) -m 0755
@@ -140,7 +150,7 @@ distclean-so::
 distclean: clean distclean-so distclean-rb-default distclean-rb
 		@-$(RM) Makefile $(RUBY_EXTCONF_H) conftest.* mkmf.log
 		@-$(RM) core ruby$(EXEEXT) *~ $(DISTCLEANFILES)
-		@-$(RMDIRS) $(DISTCLEANDIRS)
+		@-$(RMDIRS) $(DISTCLEANDIRS) 2> /dev/null || true
 
 realclean: distclean
 install: install-so install-rb
@@ -154,33 +164,49 @@ install-rb: pre-install-rb install-rb-default
 install-rb-default: pre-install-rb-default
 pre-install-rb: Makefile
 pre-install-rb-default: Makefile
+pre-install-rb-default:
+	$(ECHO) installing default thin_parser libraries
 $(RUBYARCHDIR):
-	$(MAKEDIRS) $@
+	$(Q) $(MAKEDIRS) $@
 
 site-install: site-install-so site-install-rb
 site-install-so: install-so
 site-install-rb: install-rb
 
-.SUFFIXES: .c .m .cc .cxx .cpp .C .o
+.SUFFIXES: .c .m .cc .mm .cxx .cpp .C .o
 
 .cc.o:
-	$(CXX) $(INCFLAGS) $(CPPFLAGS) $(CXXFLAGS) $(COUTFLAG)$@ -c $<
+	$(ECHO) compiling $(<)
+	$(Q) $(CXX) $(INCFLAGS) $(CPPFLAGS) $(CXXFLAGS) $(COUTFLAG)$@ -c $<
+
+.mm.o:
+	$(ECHO) compiling $(<)
+	$(Q) $(CXX) $(INCFLAGS) $(CPPFLAGS) $(CXXFLAGS) $(COUTFLAG)$@ -c $<
 
 .cxx.o:
-	$(CXX) $(INCFLAGS) $(CPPFLAGS) $(CXXFLAGS) $(COUTFLAG)$@ -c $<
+	$(ECHO) compiling $(<)
+	$(Q) $(CXX) $(INCFLAGS) $(CPPFLAGS) $(CXXFLAGS) $(COUTFLAG)$@ -c $<
 
 .cpp.o:
-	$(CXX) $(INCFLAGS) $(CPPFLAGS) $(CXXFLAGS) $(COUTFLAG)$@ -c $<
+	$(ECHO) compiling $(<)
+	$(Q) $(CXX) $(INCFLAGS) $(CPPFLAGS) $(CXXFLAGS) $(COUTFLAG)$@ -c $<
 
 .C.o:
-	$(CXX) $(INCFLAGS) $(CPPFLAGS) $(CXXFLAGS) $(COUTFLAG)$@ -c $<
+	$(ECHO) compiling $(<)
+	$(Q) $(CXX) $(INCFLAGS) $(CPPFLAGS) $(CXXFLAGS) $(COUTFLAG)$@ -c $<
 
 .c.o:
-	$(CC) $(INCFLAGS) $(CPPFLAGS) $(CFLAGS) $(COUTFLAG)$@ -c $<
+	$(ECHO) compiling $(<)
+	$(Q) $(CC) $(INCFLAGS) $(CPPFLAGS) $(CFLAGS) $(COUTFLAG)$@ -c $<
+
+.m.o:
+	$(ECHO) compiling $(<)
+	$(Q) $(CC) $(INCFLAGS) $(CPPFLAGS) $(CFLAGS) $(COUTFLAG)$@ -c $<
 
 $(DLLIB): $(OBJS) Makefile
+	$(ECHO) linking shared-object $(DLLIB)
 	@-$(RM) $(@)
-	$(LDSHARED) -o $@ $(OBJS) $(LIBPATH) $(DLDFLAGS) $(LOCAL_LIBS) $(LIBS)
+	$(Q) $(LDSHARED) -o $@ $(OBJS) $(LIBPATH) $(DLDFLAGS) $(LOCAL_LIBS) $(LIBS)
 
 
 

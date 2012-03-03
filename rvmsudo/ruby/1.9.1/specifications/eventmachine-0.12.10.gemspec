@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--title", "EventMachine", "--main", "README", "--line-numbers", "-x", "lib/em/version", "-x", "lib/emva", "-x", "lib/evma/", "-x", "lib/pr_eventmachine", "-x", "lib/jeventmachine"]
   s.require_paths = ["lib"]
   s.rubyforge_project = "eventmachine"
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "Ruby/EventMachine library"
 
   if s.respond_to? :specification_version then

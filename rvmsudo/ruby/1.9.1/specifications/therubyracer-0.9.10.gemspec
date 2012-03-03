@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/cowboyd/therubyracer"
   s.require_paths = ["lib", "ext"]
   s.rubyforge_project = "therubyracer"
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "Embed the V8 Javascript interpreter into Ruby"
 
   if s.respond_to? :specification_version then

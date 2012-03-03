@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/ctran/annotate_models"
   s.require_paths = ["lib"]
   s.rubyforge_project = "annotate"
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.16"
   s.summary = "Annotates Rails models, routes, fixtures, and others based on the database schema."
 
   if s.respond_to? :specification_version then
