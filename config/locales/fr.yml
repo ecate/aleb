@@ -207,7 +207,7 @@ fr:
       view: "Voir"
       edit: "Modifier"
       delete: "Supprimer"
-      delete_confirmation: "Êtes-vous certain de vouloir supprimer ceci ?"
+      delete_confirmation: " [Attention !] Êtes-vous certain de vouloir supprimer ceci ?"
       new_model: "Nouveau %{model}"
       create_model: "Nouveau %{model}"
       edit_model: "Modifier %{model}"
@@ -253,6 +253,9 @@ fr:
         title_content: "Commentaires (%{count})"
         errors:
           empty_text: "Le commentaire n'a pas été enregistré puisque le texte était vide."
+      scopes:
+        all: "Tous"
+        expires: "Expirés"
   errors:
     messages:
       carrierwave_processing_error: "Erreur de traitement de l'image"

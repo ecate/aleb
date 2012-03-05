@@ -3,7 +3,7 @@
 # Table name: organisateurs
 #
 #  id          :integer(4)      not null, primary key
-#  nom         :string(255)
+#  name        :string(255)
 #  description :text
 #  avatar      :string(255)
 #  created_at  :datetime        not null

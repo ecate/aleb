@@ -1,7 +1,7 @@
 class CreateOrganisateurs < ActiveRecord::Migration
   def change
     create_table :organisateurs do |t|
-      t.string :nom
+      t.string :name
       t.text :description
       t.string :avatar
 

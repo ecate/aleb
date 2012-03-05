@@ -1,7 +1,7 @@
 class CreateSyllabuses < ActiveRecord::Migration
   def change
     create_table :syllabuses do |t|
-      t.string :titre
+      t.string :name
       t.text :description
       t.string :logo
       t.references :organisateur

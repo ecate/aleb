@@ -1,15 +1,18 @@
+# -*- coding: utf-8 -*-
 ActiveAdmin::Dashboards.build do
 
-  section "Organisateurs recents", :priority => 1 do
+
+
+  section "Organisateurs récemment créés", :priority => 1 do
       table_for Organisateur.order('id desc').limit(5) do
-        column("Organisateur") { |organisateur| link_to(organisateur.nom, admin_organisateur_path(organisateur))}
+        column("Organisateur") { |organisateur| link_to(organisateur.name, admin_organisateur_path(organisateur))}
         column("Avatar") {|organisateur| link_to(image_tag(organisateur.avatar.thumb.url), admin_organisateur_path(organisateur)) }
       end
   end
 
-  section "Cours recents", :priority => 2 do
+  section "Cours récemment créés", :priority => 2 do
     table_for Syllabus.order('id desc').limit(5).each do
-      column("Cours") {|cours| link_to(cours.titre, admin_syllabus_path(cours))}
+      column("Cours") {|cours| link_to(cours.name, admin_syllabus_path(cours))}
       column("Logo") {|cours| link_to(image_tag(cours.logo.thumb.url), admin_syllabus_path(cours)) }
 
       end

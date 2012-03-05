@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 ActiveAdmin.register Organisateur do
 
  index :as => :grid, :columns => 4 do |organisateur|
-    h2 organisateur.nom
+    h2 organisateur.name
     div do
       a :href => admin_organisateur_path(organisateur) do
         image_tag(organisateur.avatar.url)
@@ -10,14 +11,14 @@ ActiveAdmin.register Organisateur do
     h6 truncate(organisateur.description, :length => 40)
  end
 
- filter :nom
- filter :created_at, :label => "cree le"
+ filter :name, :label => "Organisateur"
+ filter :created_at, :label => "créé le"
 
 
- show :title => :nom do |org|
+ show :title => :name do |org|
 
        attributes_table do
-         row :nom
+         row :name
          row :description
          row :avatar do
            image_tag(org.avatar.url)
@@ -29,10 +30,10 @@ ActiveAdmin.register Organisateur do
  #form pour edit et new
  form do |f|
    f.inputs "Organisateur", :multipart => true do
-     f.input :nom
+     f.input :name
      f.input :description
-     f.input :avatar, :label => "Avatar : telecharger un fichier ..."
-     f.input :remote_avatar_url, :label => "Ou recuperer une image en ligne URL:"
+     f.input :avatar, :label => "Avatar : télécharger un fichier ..."
+     f.input :remote_avatar_url, :label => "Ou récuperer une image en ligne URL:"
    end
 
    #Affichage de l'avatar en base si organisateur existe deja
