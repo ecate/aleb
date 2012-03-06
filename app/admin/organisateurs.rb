@@ -7,6 +7,7 @@ ActiveAdmin.register Organisateur do
       a :href => admin_organisateur_path(organisateur) do
         image_tag(organisateur.avatar.url)
       end
+      a link_to "voir les cours", cours_admin_organisateur_path(organisateur)
     end
     h6 truncate(organisateur.description, :length => 40)
  end
@@ -23,6 +24,9 @@ ActiveAdmin.register Organisateur do
          row :avatar do
            image_tag(org.avatar.url)
          end
+         row "Cours" do
+          link_to "Voir les cours", cours_admin_organisateur_path(org)
+           end
        end
      end
 
@@ -38,6 +42,7 @@ ActiveAdmin.register Organisateur do
 
    #Affichage de l'avatar en base si organisateur existe deja
    if !f.object.new_record?
+
      f.inputs "Avatar en base" do
        image_tag(Organisateur.find(params[:id]).avatar.thumb.url)
      end
@@ -45,5 +50,9 @@ ActiveAdmin.register Organisateur do
    f.buttons
  end
 
+ member_action :cours  do
+   @organisateur= Organisateur.find(params[:id])
+   render
+  end
 
 end

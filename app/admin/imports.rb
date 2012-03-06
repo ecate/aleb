@@ -52,7 +52,7 @@ ActiveAdmin.register Import do
       if cell.empty?
         return nil
       end
-      categorie= Categorie.find_by_name(cell.capitalize)
+      categorie= Categorie.find_by_name(cell)
       return categorie.id unless categorie.nil?
       nil
     end
@@ -61,7 +61,7 @@ ActiveAdmin.register Import do
       if cell.empty?
         return nil
       end
-      organisateur= Organisateur.find_by_name(cell.capitalize)
+      organisateur= Organisateur.find_by_name(cell)
       return organisateur.id unless organisateur.nil?
       nil
     end
@@ -70,7 +70,7 @@ ActiveAdmin.register Import do
       if cell.empty?
         return nil
       end
-      label= Label.find_by_name(cell.capitalize)
+      label= Label.find_by_name(cell)
       return label.id unless label.nil?
       nil
     end

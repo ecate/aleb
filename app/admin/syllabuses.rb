@@ -51,4 +51,6 @@ ActiveAdmin.register Syllabus do
         default_actions
   end
 
+
+
 end
