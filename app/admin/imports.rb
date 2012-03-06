@@ -15,8 +15,7 @@ ActiveAdmin.register Import do
 
   index do
 
-
-    if !session[:cours_created].nil?
+    if !(session[:cours_created].class == NilClass)
       h2 "Liste des cours du dernier fichier d'import"
       for id in session[:cours_created]
         cours=Syllabus.find_by_id(id)
@@ -248,7 +247,7 @@ ActiveAdmin.register Import do
       if !cours.nil?
 
         #reduction existante
-        cours.reduction= _reduc unless _reduc == 0 || _reduc=""
+        cours.reduction= _reduc unless _reduc == 0 || _reduc==""
         cours.save!
 
         #selon le label, il s'agit d'un cours interne ou externe
