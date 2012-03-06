@@ -19,9 +19,10 @@ ActiveAdmin.register Import do
       h2 "Liste des cours du dernier fichier d'import"
       for id in session[:cours_created]
         cours=Syllabus.find_by_id(id)
+        if !cours.nil?
         div
-        h4 link_to cours.name, admin_syllabus_path(cours)
-        a image_tag(cours.logo.thumb.url)
+        h4 link_to cours.name, admin_syllabus_path(cours) unless cours.name.class == NilClass
+        a image_tag(cours.logo.thumb.url) unless cours.logo.class == NilClass
         i cours.organisateur.class == NilClass ? "! Organisateur manquant !" : "Organisateur: "+ Organisateur.find_by_id(cours.organisateur_id).name
         div
         span truncate(cours.description, :length => 80)
@@ -37,7 +38,7 @@ ActiveAdmin.register Import do
         end
         hr
         br
-
+        end
       end
 
     end

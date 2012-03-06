@@ -15,7 +15,7 @@ ActiveAdmin.register Syllabus do
   index do
 
 
-    column "Organisateur", :sortable => :organisateur do |cours|
+    column :organisateur, :sortable => :organisateur do |cours|
       span
         a link_to(image_tag(cours.organisateur.avatar.thumb.url), admin_organisateur_path(cours.organisateur)) unless cours.organisateur.nil?
         i cours.organisateur.name unless cours.organisateur.nil?
@@ -45,9 +45,8 @@ ActiveAdmin.register Syllabus do
     end
 
     column "Label", :sortable => false do |cours|
-      if !cours.label.avatar.nil?
-        image_tag(cours.label.avatar.thumb.url) unless cours.categorie.nil?
-      end
+       image_tag(cours.label.avatar.thumb.url) unless cours.label.nil?
+
     end
         default_actions
   end

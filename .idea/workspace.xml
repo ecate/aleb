@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffe6712e-9b5d-4a57-b851-3fdc3a2f347f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/imports.rb" afterPath="$PROJECT_DIR$/app/admin/imports.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/syllabuses.rb" afterPath="$PROJECT_DIR$/app/admin/syllabuses.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="aleb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +29,7 @@
       <file leaf-file-name="imports.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/admin/imports.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="250" column="47" selection-start="7055" selection-end="7055" vertical-scroll-proportion="0.0">
+            <state line="47" column="20" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -38,7 +38,16 @@
       <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="34" selection-start="383" selection-end="383" vertical-scroll-proportion="0.10668563">
+            <state line="24" column="90" selection-start="6263" selection-end="6263" vertical-scroll-proportion="0.5301915">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20120229085327_devise_create_admin_users.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20120229085327_devise_create_admin_users.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="52" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -65,7 +74,7 @@
       <file leaf-file-name="syllabuses.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/admin/syllabuses.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="61" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
+            <state line="48" column="56" selection-start="1635" selection-end="1635" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,10 +132,10 @@
         <option value="$PROJECT_DIR$/app/helpers/imports_helper.rb" />
         <option value="$PROJECT_DIR$/app/helpers/import_helper.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120229085327_devise_create_admin_users.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/admin/syllabuses.rb" />
-        <option value="$PROJECT_DIR$/app/admin/imports.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/admin/imports.rb" />
+        <option value="$PROJECT_DIR$/app/admin/syllabuses.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -253,6 +262,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="label" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aleb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aleb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aleb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aleb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -630,13 +671,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="68" y="24" width="1620" height="893" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19354838" sideWeight="0.6818792" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19354838" sideWeight="0.6818792" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -730,11 +771,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20120229085327_devise_create_admin_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="4" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.9537572" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -745,11 +781,6 @@
         <state line="41" column="49" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/syllabuses.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="61" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/organisateur.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="11" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" />
@@ -758,13 +789,6 @@
     <entry file="file://$PROJECT_DIR$/app/admin/dashboards.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="23" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/imports.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="250" column="47" selection-start="7055" selection-end="7055" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
@@ -781,9 +805,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120229085327_devise_create_admin_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="52" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/imports.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="20" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/syllabuses.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="56" selection-start="1635" selection-end="1635" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="34" selection-start="383" selection-end="383" vertical-scroll-proportion="0.10668563">
+        <state line="24" column="90" selection-start="6263" selection-end="6263" vertical-scroll-proportion="0.5301915">
           <folding />
         </state>
       </provider>
