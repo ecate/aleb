@@ -274,3 +274,11 @@ fr:
     :cancel: 'Annuler'
     :reset: 'Remettre à zéro'
     :required: 'requis'
+
+  activerecord:
+    errors:
+      models:
+        organisateur:
+          attributes:
+            name:
+              blank: "Ce champ doit être renseigné"

@@ -15,35 +15,35 @@ ActiveAdmin.register Syllabus do
   index do
     column :organisateur, :sortable => :organisateur do |cours|
       span
-      a link_to(image_tag(cours.organisateur.avatar.thumb.url), admin_organisateur_path(cours.organisateur)) unless cours.organisateur.nil?
-      i cours.organisateur.name unless cours.organisateur.nil?
+      a link_to(image_tag(cours.organisateur.avatar.thumb.url), admin_organisateur_path(cours.organisateur)) unless cours.organisateur.class == NilClass
+      i cours.organisateur.name unless cours.organisateur.class == NilClass
     end
     column "Logo", :sortable => false do |cours|
-      image_tag(cours.logo.thumb.url) unless cours.logo.nil?
+      image_tag(cours.logo.thumb.url) unless cours.logo.class == NilClass
     end
     column "Titre", :sortable => :name do |cours|
-      b link_to cours.name, admin_syllabus_path(cours) unless cours.name.nil?
+      b link_to cours.name, admin_syllabus_path(cours) unless cours.name.class == NilClass
     end
     column :duree, :sortable => :duree do |cours|
-      humanize(cours.duree) unless cours.duree.nil?
+      humanize(cours.duree) unless cours.duree.class == NilClass
     end
 
     column "Prix", :sortable => :prixbase do |cours|
-      number_to_currency(cours.prixbase) unless cours.prixbase.nil?
+      number_to_currency(cours.prixbase) unless cours.prixbase.class == NilClass
     end
     column "Réduction", :sortable => :reduction do |cours|
-      number_to_percentage(cours.reduction, :precision => 1) unless cours.reduction.nil?
+      number_to_percentage(cours.reduction, :precision => 1) unless cours.reduction.class == NilClass
     end
     column "Description", :sortable => false do |cours|
-      truncate(cours.description, :length => 80) unless cours.description.nil?
+      truncate(cours.description, :length => 80) unless cours.description.class == NilClass
     end
 
     column "Catégorie", :sortable => false do |cours|
-      status_tag(cours.categorie.name, :ok) unless cours.label.nil?
+      status_tag(cours.categorie.name, :ok) unless cours.categorie.class == NilClass
     end
 
     column "Label", :sortable => false do |cours|
-      image_tag(cours.label.avatar.thumb.url) unless cours.label.nil?
+      image_tag(cours.label.avatar.thumb.url) unless cours.label.class == NilClass
 
     end
     default_actions
@@ -59,16 +59,21 @@ ActiveAdmin.register Syllabus do
     f.inputs "||     PAGE EN CONSTRUCTION     || ||     PAGE EN CONSTRUCTION     || ||     PAGE EN CONSTRUCTION    ||" do
     end
 
-      if !f.object.new_record?
+    if !f.object.new_record?
+      if !Syllabus.find(params[:id]).logo.class == NilClass
         f.inputs "Logo en base" do
           image_tag(Syllabus.find(params[:id]).logo.thumb.url)
         end
+      else
+        f.inputs "Logo manquant" do
+        end
       end
-    f.inputs "Cours", :multipart => true do
-
+    end
+    f.inputs "Cours", :multipart => true, :autocomplete => :on do
+      f.input :flag_actif, :as => :radio, :label => "Validité", :collection => [["Actif", true], ["Expiré", false]]
       f.input :organisateur
       f.input :name
-      f.input :description, :input_html => {:rows => 3}
+      f.input :description
       f.input :logo, :label => "logo : télécharger un fichier ..."
       f.input :remote_logo_url, :label => "Ou récuperer une image en ligne URL:"
       f.input :label
@@ -118,3 +123,5 @@ ActiveAdmin.register Syllabus do
 
 
 end
+
+

@@ -1,54 +1,52 @@
-
 h2 "Organisateur: " << @organisateur.name
 @cours= Syllabus.find_all_by_organisateur_id(@organisateur.id)
 
 if @cours.empty?
-div
-i b "Pas de cours en base pour cet organisateur"
+  div
+  i b "Pas de cours en base pour cet organisateur"
 else
 
 
-div
-          table_for @cours do
+  div
+  table_for @cours do
 
 
-                column "Logo", :sortable => false do |cours|
-                  image_tag(cours.logo.thumb.url) unless cours.logo.nil?
-                end
-                column "Titre", :sortable => :name do |cours|
-                    b link_to cours.name, admin_syllabus_path(cours) unless cours.name.nil?
-                end
-                column :duree, :sortable => :duree do |cours|
-                   humanize(cours.duree) unless cours.duree.nil?
-                end
+    column "Logo", :sortable => false do |cours|
+      image_tag(cours.logo.thumb.url) unless cours.logo.class == NilClass
+    end
+    column "Titre", :sortable => :name do |cours|
+      b link_to cours.name, admin_syllabus_path(cours) unless cours.name.class == NilClass
+    end
+    column :duree, :sortable => :duree do |cours|
+      humanize(cours.duree) unless cours.duree.class == NilClass
+    end
 
-                column "Prix", :sortable => :prixbase do |cours|
-                  number_to_currency(cours.prixbase) unless cours.prixbase.nil?
-                end
-                column "Réduction", :sortable => :reduction do |cours|
-                  number_to_percentage(cours.reduction, :precision => 1) unless cours.reduction.nil?
-                end
-                column "Description", :sortable => false do |cours|
-                  truncate(cours.description, :length => 80) unless cours.description.nil?
-                end
+    column "Prix", :sortable => :prixbase do |cours|
+      number_to_currency(cours.prixbase) unless cours.prixbase.class == NilClass
+    end
+    column "Réduction", :sortable => :reduction do |cours|
+      number_to_percentage(cours.reduction, :precision => 1) unless cours.reduction.class == NilClass
+    end
+    column "Description", :sortable => false do |cours|
+      truncate(cours.description, :length => 80) unless cours.description.class == NilClass
+    end
 
-                column "Catégorie", :sortable => false do |cours|
-                  status_tag(cours.categorie.name, :ok) unless cours.label.nil?
-                end
+    column "Catégorie", :sortable => false do |cours|
+      status_tag(cours.categorie.name, :ok) unless cours.categorie.class == NilClass
+    end
 
-                column "Label", :sortable => false do |cours|
-                   image_tag(cours.label.avatar.thumb.url) unless cours.label.nil?
+    column "Label", :sortable => false do |cours|
+      image_tag(cours.label.avatar.thumb.url) unless cours.label.class == NilClass
 
-                end
-                column "Actions" do |cours|
-                div
-                    span link_to "Voir", admin_syllabus_path(cours)
-                    span link_to "Modifier", edit_admin_syllabus_path(cours)
-                    span link_to "Supprimer", admin_syllabus_path(cours), :method => :delete, :confirm => "Etes-vous certain de vouloir supprimer ceci ?"
-                end
+    end
+    column "Actions" do |cours|
+      div
+      span link_to "Voir", admin_syllabus_path(cours)
+      span link_to "Modifier", edit_admin_syllabus_path(cours)
+      span link_to "Supprimer", admin_syllabus_path(cours), :method => :delete, :confirm => "Etes-vous certain de vouloir supprimer ceci ?"
+    end
 
 
-          end
+  end
 
 end
-
