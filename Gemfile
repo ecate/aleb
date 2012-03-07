@@ -33,6 +33,7 @@ gem 'kaminari'
 
 #formulaires simplifies
 gem 'formtastic'
+gem "nested_form", :git => 'https://github.com/ryanb/nested_form.git'
 
 #import de fichiers excel
 gem 'roo'
