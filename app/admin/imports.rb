@@ -27,7 +27,7 @@ ActiveAdmin.register Import do
           div
           span truncate(cours.description, :length => 80)
           div
-          span b cours.label.class == NilClass ? "! LABEL Manquant ! - " : Label.find_by_id(cours.label_id).name + " - "
+          span b cours.label.class == NilClass ? "- " : Label.find_by_id(cours.label_id).name + " - "
           span cours.categorie.class == NilClass ? "! Categorie Manquante ! - " : Categorie.find_by_id(cours.categorie.id).name + " - "
           span cours.prixbase.class == NilClass ? "PRIX manquant! - " : number_to_currency(cours.prixbase, :locale => :fr) + " - "
           span cours.reduction.to_s + "% - " unless cours.reduction.class == NilClass
@@ -225,7 +225,7 @@ ActiveAdmin.register Import do
                               :description => _description,
                               :prixbase => _prixbase,
                               :duree => r_duree(_duree),
-                              :flag_actif => true)
+                              :flag_actif => false)
 
       cours.remote_logo_url= _logourl unless _logourl.empty?
       cours.save!

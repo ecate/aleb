@@ -2,7 +2,7 @@
 ActiveAdmin.register Organisateur do
 
  index :as => :grid, :columns => 4 do |organisateur|
-    h2 organisateur.name
+    h2 link_to(organisateur.name,admin_organisateur_path(organisateur))
     div do
       a :href => admin_organisateur_path(organisateur) do
         image_tag(organisateur.avatar.url)
@@ -44,7 +44,7 @@ ActiveAdmin.register Organisateur do
    if !f.object.new_record?
 
      f.inputs "Avatar en base" do
-       image_tag(Organisateur.find(params[:id]).avatar.thumb.url)
+       image_tag(Organisateur.find(params[:id]).avatar.thumb.url) unless Organisateur.find(params[:id]).avatar.class == NilClass
      end
    end
    f.buttons
@@ -52,6 +52,7 @@ ActiveAdmin.register Organisateur do
 
  member_action :cours  do
    @organisateur= Organisateur.find(params[:id])
+   # dans /app/views/admin/organisateurs/cours.html.arb
    render
   end
 

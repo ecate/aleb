@@ -14,4 +14,6 @@ class Organisateur < ActiveRecord::Base
   mount_uploader :avatar, ImageUploader
   has_many :syllabuses, :dependent => :destroy
 
+  validates :name, :presence => true
+
 end
