@@ -264,3 +264,13 @@ fr:
       rmagick_processing_error: "Echec du traitement de rmagick, est-ce bien un fichier image ? Erreur remontée: %{e}"
       mime_types_processing_error: "Echec du traitement du fichier avec MIME::Types, peut être un contenu non valide ? Erreur remontée: %{e}"
       mini_magick_processing_error: "Echec du traitement de MiniMagick, est-ce bien un fichier image ? Erreur remontée: %{e}"
+
+  formtastic:
+    :yes: 'Oui'
+    :no: 'Non'
+    :create: 'Créer'
+    :update: 'Enregistrer'
+    :submit: 'Enregistrer'
+    :cancel: 'Annuler'
+    :reset: 'Remettre à zéro'
+    :required: 'requis'

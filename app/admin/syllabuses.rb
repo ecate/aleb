@@ -13,8 +13,6 @@ ActiveAdmin.register Syllabus do
 
 
   index do
-
-
     column :organisateur, :sortable => :organisateur do |cours|
       span
         a link_to(image_tag(cours.organisateur.avatar.thumb.url), admin_organisateur_path(cours.organisateur)) unless cours.organisateur.nil?
@@ -50,6 +48,72 @@ ActiveAdmin.register Syllabus do
     end
         default_actions
   end
+
+   before_create do |cours|
+
+
+
+   end
+  #form pour edit et new
+   form do |f|
+   h2 "Marine is working here. Please come back later... :)"
+
+     if !f.object.new_record?
+      f.inputs "Logo en base" do
+        image_tag(Syllabus.find(params[:id]).logo.thumb.url)
+      end
+     end
+     f.inputs "Cours", :multipart => true do
+
+       f.input :organisateur
+       f.input :name
+       f.input :description, :input_html => {:rows => 3}
+       f.input :logo, :label => "logo : télécharger un fichier ..."
+       f.input :remote_logo_url, :label => "Ou récuperer une image en ligne URL:"
+       f.input :label
+       f.input :categorie
+
+       f.input :prixbase
+
+       f.input :reduction
+       f.input :flag_pas_date, :as => :radio, :label => "Dates définies"
+
+     end
+
+     if true
+     f.inputs "Cours interne" do
+       f.input :nb_min_apprenants, :label => "Nombre minimum d'apprenants"
+       f.input :nb_max_apprenants, :label => "Nombre maximum d'apprenants"
+
+
+       f.input :flag_lieu_defini, :label => "Lieu défini ?", :as => :radio, :value => false
+
+       f.input :adresse_etablissement, :label => "Nom établissement"
+       f.input :adresse_num_voie, :label => "Numéro et voie"
+       f.input :adresse_complement, :label => "Complément d'adresse'"
+       f.input :adresse_codepostal, :label => "Code Postal"
+       f.input :adresse_ville, :label => "Ville"
+
+     end
+     else
+
+       f.inputs "Cours externe" do
+       f.input :lien
+       f.input :contact_reservation
+     end
+     end
+
+     #Affichage du logo en base si le cours existe deja
+     if !f.object.new_record?
+
+
+       f.inputs "Admin" do
+          f.input :created_at, :as => :string, :input_html => { :disabled => true }
+          f.input :updated_at, :as => :string, :input_html => { :disabled => true }
+        end
+     end
+     f.buttons
+   end
 
 
 

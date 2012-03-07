@@ -20,24 +20,24 @@ ActiveAdmin.register Import do
       for id in session[:cours_created]
         cours=Syllabus.find_by_id(id)
         if !cours.nil?
-        div
-        h4 link_to cours.name, admin_syllabus_path(cours) unless cours.name.class == NilClass
-        a image_tag(cours.logo.thumb.url) unless cours.logo.class == NilClass
-        i cours.organisateur.class == NilClass ? "! Organisateur manquant !" : "Organisateur: "+ Organisateur.find_by_id(cours.organisateur_id).name
-        div
-        span truncate(cours.description, :length => 80)
-        div
-        span b cours.label.class == NilClass ? "! LABEL Manquant ! - " : Label.find_by_id(cours.label_id).name + " - "
-        span cours.categorie.class == NilClass ? "! Categorie Manquante ! - " : Categorie.find_by_id(cours.categorie.id).name + " - "
-        span cours.prixbase.class == NilClass ? "PRIX manquant! - " : number_to_currency(cours.prixbase, :locale => :fr) + " - "
-        span cours.reduction.to_s + "% - " unless cours.reduction.class == NilClass
-        span humanize(cours.duree.to_i) unless cours.duree.class == NilClass
+          div
+          h4 link_to cours.name, admin_syllabus_path(cours) unless cours.name.class == NilClass
+          a image_tag(cours.logo.thumb.url) unless cours.logo.class == NilClass
+          i cours.organisateur.class == NilClass ? "! Organisateur manquant !" : "Organisateur: "+ Organisateur.find_by_id(cours.organisateur_id).name
+          div
+          span truncate(cours.description, :length => 80)
+          div
+          span b cours.label.class == NilClass ? "! LABEL Manquant ! - " : Label.find_by_id(cours.label_id).name + " - "
+          span cours.categorie.class == NilClass ? "! Categorie Manquante ! - " : Categorie.find_by_id(cours.categorie.id).name + " - "
+          span cours.prixbase.class == NilClass ? "PRIX manquant! - " : number_to_currency(cours.prixbase, :locale => :fr) + " - "
+          span cours.reduction.to_s + "% - " unless cours.reduction.class == NilClass
+          span humanize(cours.duree.to_i) unless cours.duree.class == NilClass
 
-        Lesson.find_all_by_syllabus_id(cours.id).each do |lesson|
-          li I18n.localize(lesson.horaire, :format => :long, :locale => :fr)
-        end
-        hr
-        br
+          Lesson.find_all_by_syllabus_id(cours.id).each do |lesson|
+            li I18n.localize(lesson.horaire, :format => :long, :locale => :fr)
+          end
+          hr
+          br
         end
       end
 
@@ -109,19 +109,6 @@ ActiveAdmin.register Import do
 
     # TODO a mettre à jour avec la liste des labels
 
-    def r_interne cell
-      if cell.empty?
-        return nil
-      end
-      case cell.downcase
-        when "coup de coeur" then
-          false
-        when "a l'école buissonnière" then
-          true
-        when "deal" then
-          false
-      end
-    end
 
     def r_pas_date cell
       if cell.empty?
@@ -252,32 +239,24 @@ ActiveAdmin.register Import do
         cours.save!
 
         #selon le label, il s'agit d'un cours interne ou externe
-
-        if !r_interne(_label).nil?
-
-          if r_interne(_label)
-            cours.flag_interne= true
+        if !cours.label.nil?
+          if cours.label.flag_interne
             cours.nb_min_apprenants= _minappr
             cours.nb_max_apprenants= _maxappr
+            #on s'occupe du lieu s'il s'agit d'un cours interne
+            if r_lieu(_lieu)
+              cours.flag_lieu_defini= true
+              cours.adresse_etablissement= _etab
+              cours.adresse_num_voie= _voie
+              cours.adresse_complement= _comp
+              cours.adresse_codepostal= _cp
+              cours.adresse_ville= _ville
+            else
+              cours.flag_lieu_defini= false
+            end
           else
-            cours.flag_interne= false
             cours.lien= _lien
             cours.contact_reservation= _contact
-          end
-          cours.save!
-        end
-
-        if !r_interne(_label).nil?
-          # lieu defini
-          if r_lieu(_lieu)
-            cours.flag_lieu_defini= true
-            cours.adresse_etablissement= _etab
-            cours.adresse_num_voie= _voie
-            cours.adresse_complement= _comp
-            cours.adresse_codepostal= _cp
-            cours.adresse_ville= _ville
-          else
-            cours.flag_lieu_defini= false
           end
           cours.save!
         end

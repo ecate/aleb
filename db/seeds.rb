@@ -1,7 +1,5 @@
 # encoding: utf-8
 
-
-
 Label.create!(:name => "Coup de coeur", :remote_avatar_url => "http://www.traitdemarc.com/traitdemarc_blog/wp-content/uploads/2008/11/coeur.png")
 Label.create!(:name => "Deal",:remote_avatar_url =>"http://www.savingadvice.com/images/blog/best-buy.png")
 Label.create!(:name => "A l'école buissonnière", :remote_avatar_url =>"http://wikitank.fr/FR/Images/home.png")

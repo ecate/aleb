@@ -73,8 +73,9 @@ ActiveRecord::Schema.define(:version => 20120229150933) do
   create_table "labels", :force => true do |t|
     t.string   "name"
     t.string   "avatar"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.boolean  "flag_interne"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "lessons", :force => true do |t|
@@ -107,7 +108,6 @@ ActiveRecord::Schema.define(:version => 20120229150933) do
     t.integer  "duree"
     t.boolean  "flag_actif"
     t.boolean  "flag_pas_date"
-    t.boolean  "flag_interne"
     t.integer  "nb_min_apprenants"
     t.integer  "nb_max_apprenants"
     t.string   "lien"

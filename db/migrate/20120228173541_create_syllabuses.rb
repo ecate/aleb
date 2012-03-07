@@ -12,7 +12,6 @@ class CreateSyllabuses < ActiveRecord::Migration
       t.integer :duree
       t.boolean :flag_actif
       t.boolean :flag_pas_date
-      t.boolean :flag_interne
       t.integer :nb_min_apprenants
       t.integer :nb_max_apprenants
       t.string :lien

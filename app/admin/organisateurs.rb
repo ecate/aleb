@@ -35,7 +35,7 @@ ActiveAdmin.register Organisateur do
  form do |f|
    f.inputs "Organisateur", :multipart => true do
      f.input :name
-     f.input :description
+     f.input :description,:input_html => {:rows => 3}
      f.input :avatar, :label => "Avatar : télécharger un fichier ..."
      f.input :remote_avatar_url, :label => "Ou récuperer une image en ligne URL:"
    end
