@@ -1,0 +1,21 @@
+e98e892da9c9219e6eba46b5dfe9ac0af6315d29		branch '0.3.x-stable' of git://github.com/gregbell/active_admin
+0173e9001e370467b1ba658cecc41dab24457a63		branch '0.4.x-stable' of git://github.com/gregbell/active_admin
+e53cb6e5f936ea040d4939074eebb1e187e8da98		branch 'add-namespace-class-to-body' of git://github.com/gregbell/active_admin
+b1dc4f2e63cc171458b9cb278fde392928836028		branch 'master' of git://github.com/gregbell/active_admin
+db0183d1afeac00a6469b2f2ab82a9c04c82133d		branch 'patch-1019' of git://github.com/gregbell/active_admin
+31a874ff17782fa33215b76bc65eb6a594d759f1		branch 'render-or-method-or-exec' of git://github.com/gregbell/active_admin
+32ad2209d55e65f0f22b42b0a0bf7b3c922b6157		branch 'site-title' of git://github.com/gregbell/active_admin
+9d9008c830abe1252a5498fdf207b7861384084b	not-for-merge	tag 'v0.1.0' of git://github.com/gregbell/active_admin
+b1edc43f9a52031418f9b9a6f8f7c58aedb064bb	not-for-merge	tag 'v0.1.1' of git://github.com/gregbell/active_admin
+51b06d27169ec0cd481d7e2377a4131460db3ef6	not-for-merge	tag 'v0.2.0' of git://github.com/gregbell/active_admin
+58b60016dcc40d9365dff0efebcbf03794af3b96	not-for-merge	tag 'v0.2.1' of git://github.com/gregbell/active_admin
+15f68a2b22302c14cfbe69a11a8da1d829e199ab	not-for-merge	tag 'v0.2.2' of git://github.com/gregbell/active_admin
+4dcbcfc6dae258b7b43738585dda27c1ec4819c8	not-for-merge	tag 'v0.3.0' of git://github.com/gregbell/active_admin
+5466fbabd85b898473c32e954ba4495c10030525	not-for-merge	tag 'v0.3.1' of git://github.com/gregbell/active_admin
+b16054e122bdf70db039498397b4d498454c5f61	not-for-merge	tag 'v0.3.2' of git://github.com/gregbell/active_admin
+c8fa4a642f2233ffbcfa3c0bcd37c9ea66be513f	not-for-merge	tag 'v0.3.3' of git://github.com/gregbell/active_admin
+e98e892da9c9219e6eba46b5dfe9ac0af6315d29	not-for-merge	tag 'v0.3.4' of git://github.com/gregbell/active_admin
+72bde881f1fadcbee210dcccfc2f2cd42e5e7843	not-for-merge	tag 'v0.4.0' of git://github.com/gregbell/active_admin
+a242184d94df603211fcbe819f2845c192074096	not-for-merge	tag 'v0.4.1' of git://github.com/gregbell/active_admin
+e290f1bd0f349409a7b9985d3a120776e607832c	not-for-merge	tag 'v0.4.2' of git://github.com/gregbell/active_admin
+0173e9001e370467b1ba658cecc41dab24457a63	not-for-merge	tag 'v0.4.3' of git://github.com/gregbell/active_admin

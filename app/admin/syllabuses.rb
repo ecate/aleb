@@ -10,6 +10,7 @@ ActiveAdmin.register Syllabus do
   scope :all
   scope :actifs, :default => true
   scope :expires
+  scope :orphelins
 
 
   index do
@@ -56,29 +57,35 @@ ActiveAdmin.register Syllabus do
   #form pour edit et new
   form do |f|
 
-    f.inputs "||     PAGE EN CONSTRUCTION     || ||     PAGE EN CONSTRUCTION     || ||     PAGE EN CONSTRUCTION    ||" do
+    if params[:id]
+      @duree= "En base : "+ humanize(Syllabus.find(params[:id]).duree)
+    else
+      @duree=""
     end
 
-    if !f.object.new_record?
+    f.inputs "Logo" do
+
+      unless f.object.new_record?
       if !Syllabus.find(params[:id]).logo.class == NilClass
-        f.inputs "Logo en base" do
-          image_tag(Syllabus.find(params[:id]).logo.thumb.url)
-        end
-      else
-        f.inputs "Logo manquant" do
-        end
+        f.template.image_tag(Syllabus.find(params[:id]).logo.url)
+
       end
-    end
-    f.inputs "Cours", :multipart => true, :autocomplete => :on do
-      f.input :flag_actif, :as => :radio, :label => "Validité", :collection => [["Actif", true], ["Expiré", false]]
+      end
+        f.input :logo, :label => "logo : télécharger un fichier ..."
+        f.input :remote_logo_url, :label => "Ou récuperer une image en ligne URL:"
+
+      end
+
+
+
+    f.inputs "Cours", :multipart => true do
+      f.input :flag_actif, :id => "flag_actif", :as => :radio, :label => "Validité", :collection => [["Actif", true], ["Expiré", false]]
       f.input :organisateur
       f.input :name
       f.input :description
-      f.input :logo, :label => "logo : télécharger un fichier ..."
-      f.input :remote_logo_url, :label => "Ou récuperer une image en ligne URL:"
       f.input :label
       f.input :categorie
-
+      f.input :duree, :as => :select, :hint => @duree, :collection => ["00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30"]
       f.input :prixbase
 
       f.input :reduction
@@ -87,12 +94,12 @@ ActiveAdmin.register Syllabus do
     end
 
     if true
-      f.inputs "Cours interne" do
+      f.inputs "Cours interne", :id => "panel_interne" do
         f.input :nb_min_apprenants, :label => "Nombre minimum d'apprenants"
         f.input :nb_max_apprenants, :label => "Nombre maximum d'apprenants"
 
 
-        f.input :flag_lieu_defini, :label => "Lieu défini ?", :as => :radio, :value => false
+        f.input :flag_lieu_defini, :id=> "flag_lieu_defini", :label => "Lieu défini ?", :as => :radio, :value => false
 
         f.input :adresse_etablissement, :label => "Nom établissement"
         f.input :adresse_num_voie, :label => "Numéro et voie"
@@ -120,6 +127,54 @@ ActiveAdmin.register Syllabus do
     end
     f.buttons
   end
+
+  controller do
+    def create
+      @syllabus = Syllabus.new(params[:syllabus])
+
+      @syllabus.duree= params[:syllabus][:duree].split(":").first.to_i.hours + params[:syllabus][:duree].split(":").second.to_i.minutes
+
+      @syllabus.save
+      redirect_to admin_syllabus_path(@syllabus)
+    end
+
+    def update
+      def semicolonize(s)
+        return "00:00" if s.class == NilClass
+        h = s / 3600
+        s -= h * 3600
+        m = s / 60
+        if m==0
+          return h.to_s << "h"
+        end
+        [h, m].join(":")
+      end
+
+      @syllabus = Syllabus.new(params[:syllabus])
+      #if params[:syllabus][:duree].empty?
+      #  params[:syllabus][:duree]= semicolonize(Syllabus.find_by_id(params[:syllabus][:id]).duree.to_i)
+      #else
+      #  params[:syllabus][:duree]= params[:syllabus][:duree].split(":").first.to_i.hours + params[:syllabus][:duree].split(":").second.to_i.minutes
+      #end
+
+      @syllabus.update_attributes(params[:syllabus])
+      redirect_to admin_syllabus_path(@syllabus)
+    end
+  end
+
+     #  duree                 :integer(4)
+     #  flag_actif            :boolean(1)
+     #  flag_pas_date         :boolean(1)
+     #  nb_min_apprenants     :integer(4)
+     #  nb_max_apprenants     :integer(4)
+     #  lien                  :string(255)
+     #  contact_reservation   :string(255)
+     #  adresse_etablissement :string(255)
+     #  adresse_num_voie      :string(255)
+     #  adresse_complement    :string(255)
+     #  adresse_codepostal    :integer(4)
+     #  adresse_ville         :string(255)
+     #  flag_lieu_defini      :boolean(1)
 
 
 end

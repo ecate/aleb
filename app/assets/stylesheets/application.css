@@ -11,3 +11,67 @@
  *= require_self
  *= require_tree .
 */
+
+#main
+{
+    width: 1000px;
+    margin: auto;
+}
+
+#header_global
+{
+    position: relative;
+    height: 150px;
+}
+
+#logo
+{
+    position: absolute;
+    top: -90px;
+    left: -10px;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
+
+.navigation_bar
+{
+  background: url('/images/nav_bg.png') no-repeat scroll left top transparent;
+  height: 64px !important;
+  position: absolute;
+  top: -15px;
+  left: 190px;
+}
+
+.navigation_bar ul
+{
+    margin: 0px;
+    padding: 0px 100px 0px 0px;
+}
+
+.navigation_bar li
+{
+    display: inline;
+    margin: 0px 50px 0px 0px;
+    padding: 0px 50px 0px 0px;
+    list-style: none outside none;
+    float: left;
+    position: relative;
+    left: 50px;
+    line-height: 64px;
+    background: url('/images/nav_marker.png') no-repeat scroll right center transparent;
+    font-size: 0.9em;
+    color: #000000;
+    font-weight: bolder;
+}
+
+#last
+{
+    background: none !important;
+}
+
+a, a:link, a:visited
+{
+    text-decoration: none !important;
+
+}

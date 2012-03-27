@@ -3,5 +3,6 @@ Aleb::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  root :to => "home#index"
+  root :to => "syllabuses#index"
+  resources :syllabuses
 end

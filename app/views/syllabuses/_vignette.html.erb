@@ -1,0 +1,21 @@
+<div class="vignette_box">
+  <div class="cours_box">
+    <img class="cours_image" src="/images/macarons.jpg"/>
+    <img class="cours_label" src="/images/label_coeur.jpeg"/>
+
+    <h1> <%= @cours.name %></h1>
+
+    <h3>PAR: <%= Organisateur.find(@cours.organisateur_id).name unless @cours.organisateur_id.nil? %></h3>
+
+    <p> <%= truncate(@cours.description, :length => 80) %></p>
+  </div>
+
+  <div class="cours_logistique">
+    <p class="cours_details"><img src="/images/date_small.png"/> Le 11 février à 20h30 </p>
+
+    <p class="cours_details"><img src="/images/places_small.png"/> 20 places restantes</p>
+
+    <p id="price_tag">20 €</p>
+  </div>
+  <br>
+</div>

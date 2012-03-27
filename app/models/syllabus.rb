@@ -14,7 +14,6 @@
 #  duree                 :integer(4)
 #  flag_actif            :boolean(1)
 #  flag_pas_date         :boolean(1)
-#  flag_interne          :boolean(1)
 #  nb_min_apprenants     :integer(4)
 #  nb_max_apprenants     :integer(4)
 #  lien                  :string(255)
@@ -40,6 +39,7 @@ class Syllabus < ActiveRecord::Base
   #scope pour admin/index
   scope :actifs, where(:flag_actif => true)
   scope :expires, where(:flag_actif => false)
+  scope :orphelins, where(:organisateur_id => nil)
 
 
 end
