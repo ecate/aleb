@@ -11,13 +11,26 @@
  
  
 /* The Nivo Slider styles */
+
+#slider-wrapper
+{
+    background: url("/images/slider/slide_bg.png") repeat-x scroll left bottom transparent;
+    margin-bottom: 50px;
+    width: 1000px !important;
+    overflow: hidden;
+
+}
 .nivoSlider {
 	position:relative;
+    width:1000px; /* Change this to your images width */
+    height:150px; /* Change this to your images height */
+    background: url("/images/slider/spacer.gif") no-repeat scroll 0% 0% transparent;
 }
 .nivoSlider img {
 	position:absolute;
 	top:0px;
 	left:0px;
+        display:none;
 }
 /* If an image is wrapped in a link */
 .nivoSlider a.nivo-imageLink {

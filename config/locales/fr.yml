@@ -197,6 +197,7 @@ fr:
       default: ! '%d %B %Y %H:%M:%S'
       long: ! '%A %d %B %Y %H:%M'
       short: ! '%d %b %H:%M'
+      pres: ! '%A %d %B - %Hh%M'
     pm: pm
 
   active_admin:

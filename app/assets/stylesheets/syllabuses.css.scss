@@ -1,10 +1,18 @@
+$grisfonce: #525252;
+$grisclair: #D3D3D3;
+/************************
+Vignette utilisées dans views/syllabuses/_vignette notamment action INDEX
+*************************/
+
+
+
 .cours_box {
   position: relative;
   width: 180px;
   border-width: 1px;
   border-radius: 5px 5px 0px 0px;
   border-style: solid;
-  border-color: #D3D3D3;
+  border-color: $grisclair;
   padding: 10px;
   height: 200px;
   vertical-align: top;
@@ -18,7 +26,7 @@
   width: 180px;
   border-width: 1px;
   border-style: solid;
-  border-color:#D3D3D3;
+  border-color: $grisclair;
 }
 
 .cours_label
@@ -34,7 +42,7 @@
 .cours_box h1
 {
 font-size: small;
-color: #525252;
+color: $grisfonce;
 font-weight: bolder;
 }
 
@@ -51,7 +59,7 @@ font-style: italic;
 
 .cours_box hr
 {
- color: #D3D3D3;
+ color: $grisclair;
 }
 
 .cours_logistique
@@ -62,7 +70,7 @@ font-style: italic;
   border-width: 1px;
   border-radius: 0px 0px 5px 5px;
   border-style: solid;
-  border-color: #D3D3D3;
+  border-color: $grisclair;
   padding: 10px;
   height: 40px;
   vertical-align: top;
@@ -78,7 +86,53 @@ font-size: 0.9em;
   bottom: 2px;
   right: 10px;
   color: #6e000d;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bolder;
 }
 
+/************************
+COURS détails dans SHOW
+*************************/
+$largeurcolonne: 210px;
+
+#cours_details_main hr
+{
+  height: 1.5px;
+  padding: 0;
+  color: $grisclair;
+  background-color: $grisclair;
+  border: 0;
+  width: $largeurcolonne;
+}
+
+#cours_details_main p
+{
+  width: 205px;
+  line-height: 12px;
+}
+
+.cours_details_box{
+  float: left;
+  height: auto;
+  width: $largeurcolonne;
+  font-size: 1em;
+  color:$grisfonce;
+  margin: auto;
+}
+
+.big
+{
+  font-size: 1.2em;
+  color: $grisfonce;
+  font-weight: bolder;
+}
+
+.tab_droite
+{
+  margin-left:36px;
+  margin-top: -15px;
+}
+.cours_details_organisateur
+{
+
+}

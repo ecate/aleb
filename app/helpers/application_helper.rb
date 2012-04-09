@@ -26,11 +26,12 @@ module ApplicationHelper
         end
 
         def duree (string, id)
-        if string.empty?
+         if string.empty?
           return Syllabus.find_by_id(id).duree
-        else
-
-        end
+         end
         end
 
+        def cnul?
+             return self.class==NilClass
+        end
 end

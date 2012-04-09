@@ -4,5 +4,5 @@ Aleb::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   root :to => "syllabuses#index"
-  resources :syllabuses
+  resources :syllabuses, :lessons
 end

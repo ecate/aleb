@@ -1,0 +1,20 @@
+<div class="vignette_box">
+  <div class="cours_box">
+    <img class="cours_image" src="<%= @cours.syllabus.logo.url %>"/>
+    <img class="cours_label" src="/images/label_coeur.jpeg"/>
+
+    <h1> <%= @cours.syllabus.name %></h1>
+
+    <h3>PAR: <%= @cours.syllabus.organisateur.name unless @cours.syllabus.organisateur_id.nil? %></h3>
+    <p> <%= truncate(@cours.syllabus.description, :length => 80) %></p>
+  </div>
+
+  <div class="cours_logistique">
+    <p class="cours_details"><img src="/images/date_small.png"/> <%=  I18n.localize(@cours.horaire, :format => :pres, :locale => :fr)%> </p>
+
+    <p class="cours_details"><img src="/images/places_small.png"/> xx places restantes</p>
+
+    <p id="price_tag"><%= @cours.syllabus.prixbase %> €</p>
+  </div>
+  <br>
+</div>
