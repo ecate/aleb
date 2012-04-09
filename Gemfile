@@ -5,9 +5,10 @@ gem 'rails', '3.2.1'
 
 
 #interface
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 1.0.12'
 gem 'execjs'
 gem 'therubyracer'
+gem 'twitter-bootstrap-rails'
 
 # mise en forme des donnees dans la console ruby
 gem 'hirb'
@@ -19,7 +20,7 @@ gem 'devise'
 gem 'cancan'
 
 #interfaces d'administration
-gem 'activeadmin'
+gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
 
 #syntaxe simplifiee pour les vues html
 gem 'haml'

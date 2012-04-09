@@ -7,9 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
 
+
+<div id="main">
+  <%=  render :partial => 'layouts/header' %>
+  <%=  render :partial => 'layouts/slider' %>
+
+
+  <!--<p class="notice"><%= notice %></p>-->
+  <!--<p class="alert"><%= alert %></p>-->
+  <%= yield %>
+  
+
+</div>
 </body>
 </html>

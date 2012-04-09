@@ -9,7 +9,7 @@ ActiveAdmin.register Organisateur do
       end
       a link_to "voir les cours", cours_admin_organisateur_path(organisateur)
     end
-    h6 truncate(organisateur.description, :length => 40)
+    para truncate(organisateur.description, :length => 40)
  end
 
  filter :name, :label => "Organisateur"

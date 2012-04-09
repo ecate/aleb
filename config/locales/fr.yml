@@ -197,6 +197,7 @@ fr:
       default: ! '%d %B %Y %H:%M:%S'
       long: ! '%A %d %B %Y %H:%M'
       short: ! '%d %b %H:%M'
+      pres: ! '%A %d %B - %Hh%M'
     pm: pm
 
   active_admin:
@@ -256,6 +257,14 @@ fr:
       scopes:
         all: "Tous"
         expires: "Expirés"
+      batch_actions:
+        button_label: "Actions groupées"
+        delete_confirmation: "Êtes-vous sur de vouloir supprimer ces %{plural_model}? Cette action est irréversible."
+        succesfully_destroyed:
+          one: "1 %{model} supprimé"
+          other: "%{count} %{plural_model} supprimés"
+        selection_toggle_explanation: "(Inverser la sélection)"
+        link: "Créer un"
   errors:
     messages:
       carrierwave_processing_error: "Erreur de traitement de l'image"

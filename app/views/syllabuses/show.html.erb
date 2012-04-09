@@ -1,0 +1,31 @@
+
+
+<div id="cours_details_main">
+  <div class="cours_details_box">
+    <p><a><img src="/images/retour_liste.png" alt=""/> Revenir à la liste des cours  </a></p>
+    <p><img src="<%= @syllabus.logo.url %>" alt="photo cours" /></p>
+    <p> <%= link_to image_tag("/images/bouton_inscription.png"), @syllabus %> </p>
+    <hr>
+    <p class="big"> <img src="/images/date_details.png"/> Mercredi 11 décembre</p>
+    <p class="tab_droite">20h30 - 22h30</p>
+    <hr>
+    <p class="big"><img src="/images/places_details.png"/> 20 places restantes </p>
+    <p class="italic"> Encore 3 participants nécessiares pour valider le cours</p>
+    <hr>
+    <p class="big"><img src="/images/pin_details.png"/> 39 rue Lecourbe </p>
+    <p class="tab_droite big"> 75015 Paris </p>
+    <hr>
+    <p class="big"><img src="/images/prix_details.png"/> 20 €</p>
+    <hr>
+  </div>
+
+  <div class="cours_details_organisateur">
+  <p class= "big"><img src="<%= @syllabus.organisateur.avatar.url unless @syllabus.organisateur_id.nil? %>" alt=""/> L'organisateur </p>
+  <p class="tab_droite"><%= @syllabus.organisateur.name unless @syllabus.organisateur_id.nil? %> </p>
+  <hr>
+  <p class="big">Profil</p>
+    <p><%= truncate(@syllabus.organisateur.description,  :length => 250) unless @syllabus.organisateur_id.nil? %></p>
+    <hr>
+  </div>
+
+</div>
