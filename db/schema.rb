@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120229150933) do
+ActiveRecord::Schema.define(:version => 20120410095509) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -73,9 +73,8 @@ ActiveRecord::Schema.define(:version => 20120229150933) do
   create_table "labels", :force => true do |t|
     t.string   "name"
     t.string   "avatar"
-    t.boolean  "flag_interne"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "lessons", :force => true do |t|
@@ -107,7 +106,7 @@ ActiveRecord::Schema.define(:version => 20120229150933) do
     t.float    "reduction"
     t.integer  "duree"
     t.boolean  "flag_actif"
-    t.boolean  "flag_pas_date"
+    t.boolean  "flag_date"
     t.integer  "nb_min_apprenants"
     t.integer  "nb_max_apprenants"
     t.string   "lien"
@@ -120,6 +119,7 @@ ActiveRecord::Schema.define(:version => 20120229150933) do
     t.boolean  "flag_lieu_defini"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
+    t.boolean  "flag_interne"
   end
 
   add_index "syllabuses", ["categorie_id"], :name => "index_syllabuses_on_categorie_id"

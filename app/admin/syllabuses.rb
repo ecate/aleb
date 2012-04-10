@@ -14,10 +14,23 @@ ActiveAdmin.register Syllabus do
 
 
   index do
+
+
     column :organisateur, :sortable => :organisateur do |cours|
       span
       a link_to(image_tag(cours.organisateur.avatar.thumb.url), admin_organisateur_path(cours.organisateur)) unless cours.organisateur.class == NilClass
       i cours.organisateur.name unless cours.organisateur.class == NilClass
+    end
+    column "Interne", :sortable => :flag_interne do |cours|
+      if !cours.flag_interne.class == NilClass
+        if cours.flag_interne
+          para "Interne"
+        else
+          para "Externe"
+        end
+      else
+        i "non défini"
+      end
     end
     column "Logo", :sortable => false do |cours|
       image_tag(cours.logo.thumb.url) unless cours.logo.class == NilClass
@@ -81,6 +94,7 @@ ActiveAdmin.register Syllabus do
     f.inputs "Cours", :multipart => true do
       f.input :flag_actif, :id => "flag_actif", :as => :radio, :label => "Validité", :collection => [["Actif", true], ["Expiré", false]]
       f.input :organisateur
+      f.input :flag_interne, :label => "Cours interne ?", :as => :radio
       f.input :name
       f.input :description
       f.input :label
@@ -89,17 +103,17 @@ ActiveAdmin.register Syllabus do
       f.input :prixbase
 
       f.input :reduction
-      f.input :flag_pas_date, :as => :radio, :label => "Dates définies"
+      f.input :flag_date, :as => :radio, :label => "Dates plannifiées ?"
 
     end
 
-    if true
+
       f.inputs "Cours interne", :id => "panel_interne" do
         f.input :nb_min_apprenants, :label => "Nombre minimum d'apprenants"
         f.input :nb_max_apprenants, :label => "Nombre maximum d'apprenants"
 
 
-        f.input :flag_lieu_defini, :id=> "flag_lieu_defini", :label => "Lieu défini ?", :as => :radio, :value => false
+        f.input :flag_lieu_defini, :id => "flag_lieu_defini", :label => "Lieu défini ?", :as => :radio, :value => false
 
         f.input :adresse_etablissement, :label => "Nom établissement"
         f.input :adresse_num_voie, :label => "Numéro et voie"
@@ -108,12 +122,14 @@ ActiveAdmin.register Syllabus do
         f.input :adresse_ville, :label => "Ville"
 
       end
-    else
 
-      f.inputs "Cours externe" do
+
+      f.inputs "Cours externe", :id => "panel_externe" do
         f.input :lien
         f.input :contact_reservation
       end
+    f.inputs "Lessons plannifiées", :id => "panel_dates" do
+
     end
 
     #Affichage du logo en base si le cours existe deja
@@ -150,12 +166,12 @@ ActiveAdmin.register Syllabus do
         [h, m].join(":")
       end
 
-      @syllabus = Syllabus.new(params[:syllabus])
-      #if params[:syllabus][:duree].empty?
-      #  params[:syllabus][:duree]= semicolonize(Syllabus.find_by_id(params[:syllabus][:id]).duree.to_i)
-      #else
-      #  params[:syllabus][:duree]= params[:syllabus][:duree].split(":").first.to_i.hours + params[:syllabus][:duree].split(":").second.to_i.minutes
-      #end
+      @syllabus = Syllabus.find(params[:id])
+      if params[:syllabus][:duree].empty?
+        params[:syllabus][:duree]= @syllabus.duree
+      else
+        params[:syllabus][:duree]= params[:syllabus][:duree].split(":").first.to_i.hours + params[:syllabus][:duree].split(":").second.to_i.minutes
+      end
 
       @syllabus.update_attributes(params[:syllabus])
       redirect_to admin_syllabus_path(@syllabus)
@@ -164,7 +180,7 @@ ActiveAdmin.register Syllabus do
 
      #  duree                 :integer(4)
      #  flag_actif            :boolean(1)
-     #  flag_pas_date         :boolean(1)
+     #  flag_date         :boolean(1)
      #  nb_min_apprenants     :integer(4)
      #  nb_max_apprenants     :integer(4)
      #  lien                  :string(255)

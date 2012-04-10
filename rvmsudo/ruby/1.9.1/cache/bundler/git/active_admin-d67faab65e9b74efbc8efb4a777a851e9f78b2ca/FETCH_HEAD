@@ -1,7 +1,7 @@
 e98e892da9c9219e6eba46b5dfe9ac0af6315d29		branch '0.3.x-stable' of git://github.com/gregbell/active_admin
 0173e9001e370467b1ba658cecc41dab24457a63		branch '0.4.x-stable' of git://github.com/gregbell/active_admin
 e53cb6e5f936ea040d4939074eebb1e187e8da98		branch 'add-namespace-class-to-body' of git://github.com/gregbell/active_admin
-b1dc4f2e63cc171458b9cb278fde392928836028		branch 'master' of git://github.com/gregbell/active_admin
+302501c32301bac79514f19aca844dce37086448		branch 'master' of git://github.com/gregbell/active_admin
 db0183d1afeac00a6469b2f2ab82a9c04c82133d		branch 'patch-1019' of git://github.com/gregbell/active_admin
 31a874ff17782fa33215b76bc65eb6a594d759f1		branch 'render-or-method-or-exec' of git://github.com/gregbell/active_admin
 32ad2209d55e65f0f22b42b0a0bf7b3c922b6157		branch 'site-title' of git://github.com/gregbell/active_admin

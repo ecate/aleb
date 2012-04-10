@@ -1,24 +1,7 @@
 $(document).ready ->
 
-
-
-  actif = $("input[name=syllabus[flag_actif]]:checked").val()
-  lieudefini = $("input[name=syllabus[flag_lieu_defini]]:checked").val()
-
-
-  $("#syllabus_flag_actif_true").click ->
-    $("#syllabus_name_input").toggle()
-    $("#syllabus_description_input").toggle()
-    show_lieu()
-
-
-  affichage_adresse = (flag) ->
-    if flag
-      show_lieu()
-    else
-      hide_lieu()
-
-  show_lieu= () ->
+  #Fonctions
+  show_lieu = () ->
     $("#syllabus_adresse_etablissement_input").show()
     $("#syllabus_adresse_num_voie_input").show()
     $("#syllabus_adresse_complement_input").show()
@@ -26,7 +9,7 @@ $(document).ready ->
     $("#syllabus_adresse_codepostal_input").show()
     $("#syllabus_adresse_ville_input").show()
 
-  hide_lieu= () ->
+  hide_lieu = () ->
     $("#syllabus_adresse_etablissement_input").hide()
     $("#syllabus_adresse_num_voie_input").hide()
     $("#syllabus_adresse_complement_input").hide()
@@ -34,10 +17,44 @@ $(document).ready ->
     $("#syllabus_adresse_codepostal_input").hide()
     $("#syllabus_adresse_ville_input").hide()
 
+
+  #Initialisation
+  actif = false
+  lieudefini = false
+  interne = false
+  dates = false
+  if $("#syllabus_flag_actif_true").prop('checked')
+    actif = true
+  if $("#syllabus_flag_lieu_defini_true").prop('checked')
+    lieudefini = true
+  if $("#syllabus_flag_interne_true").prop('checked')
+    interne = true
+  if $("#syllabus_flag_date_true").prop('checked')
+    dates = true
+
+  #Affichage initial
+  if lieudefini
+    show_lieu()
+  else
+    hide_lieu()
+  if !interne
+    $("#panel_interne").hide()
+    $("#panel_externe").show()
+  if !dates
+    $("#panel_dates").hide()
+
+  #changement en cours
   $("#syllabus_flag_lieu_defini_true").click ->
-    $("#syllabus_adresse_num_voie_input").toggle()
-    $("#syllabus_adresse_etablissement_input").toggle()
-    $("#syllabus_adresse_complement_input").toggle()
-    $("#syllabus_adresse_etablissement_input").toggle()
-    $("#syllabus_adresse_codepostal_input").toggle()
-    $("#syllabus_adresse_ville_input").toggle()
+    show_lieu()
+  $("#syllabus_flag_lieu_defini_false").click ->
+    hide_lieu()
+  $("#syllabus_flag_interne_true").click ->
+    $("#panel_interne").show()
+    $("#panel_externe").hide()
+  $("#syllabus_flag_interne_false").click ->
+    $("#panel_interne").hide()
+    $("#panel_externe").show()
+  $("#syllabus_flag_date_true").click ->
+    $("#panel_dates").show()
+  $("#syllabus_flag_date_false").click ->
+    $("#panel_dates").hide()
