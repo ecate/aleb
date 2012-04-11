@@ -14,8 +14,6 @@ ActiveAdmin.register Syllabus do
 
 
   index do
-
-
     column :organisateur, :sortable => :organisateur do |cours|
       span
       a link_to(image_tag(cours.organisateur.avatar.thumb.url), admin_organisateur_path(cours.organisateur)) unless cours.organisateur.class == NilClass
@@ -76,18 +74,14 @@ ActiveAdmin.register Syllabus do
       @duree=""
     end
 
+
     f.inputs "Logo" do
-
-      unless f.object.new_record?
-      if !Syllabus.find(params[:id]).logo.class == NilClass
-        f.template.image_tag(Syllabus.find(params[:id]).logo.url)
-
+      f.inputs "En base" do
+        image_tag(Syllabus.find(params[:id]).logo.url) unless Syllabus.find(params[:id]).logo.class == NilClass
       end
-      end
-        f.input :logo, :label => "logo : télécharger un fichier ..."
-        f.input :remote_logo_url, :label => "Ou récuperer une image en ligne URL:"
-
-      end
+      f.input :logo, :label => "logo : télécharger un fichier ..."
+      f.input :remote_logo_url, :label => "Ou récuperer une image en ligne URL:"
+    end
 
 
 
@@ -129,6 +123,10 @@ ActiveAdmin.register Syllabus do
         f.input :contact_reservation
       end
     f.inputs "Lessons plannifiées", :id => "panel_dates" do
+      f.has_many :lessons do |lesson|
+       lesson.input :horaire
+      end
+
 
     end
 
@@ -142,6 +140,85 @@ ActiveAdmin.register Syllabus do
       end
     end
     f.buttons
+  end
+
+  show do |cours|
+    attributes_table do
+      row :name
+      row :image do
+        image_tag(cours.logo.url)
+      end
+      row :description
+      row :organisateur do |cours|
+        link_to cours.organisateur.name, admin_organisateur_path(cours.organisateur)
+      end
+      row :label do |cours|
+        image_tag(cours.label.avatar.thumb.url) unless cours.label.class == NilClass
+      end
+      row :categorie do |cours|
+        status_tag(cours.categorie.name, :ok)
+      end
+      row :prix do |cours|
+        number_to_currency(cours.prixbase)
+      end
+      row :reduction do |cours|
+        number_to_percentage(cours.reduction, :precision => 1)
+      end
+      row :duree do |cours|
+        humanize(cours.duree) unless cours.duree.class == NilClass
+      end
+      row :cours_interne_externe do |cours|
+       if !(cours.flag_interne.class == NilClass)
+         if cours.flag_interne
+            para "Interne"
+         else
+            para "Externe"
+         end
+       else
+         i "non défini"
+       end
+      end
+      row :en_cours do |cours|
+        if cours.flag_actif
+          para "Cours actif"
+        else
+          para "Cours expiré"
+        end
+      end
+      row :lessons_plannifiees do |cours|
+        if !(cours.flag_date.class == NilClass)
+          if cours.flag_date
+            cours.lessons.each do |l|
+              para l.horaire
+            end
+          end
+        else
+          para "Pas de dates"
+        end
+      end
+
+      row :lieu_defini do |cours|
+        if !(cours.flag_lieu_defini.class == NilClass)
+                 if cours.flag_lieu_defini
+                    para "Oui"
+                 else
+                    para "Non"
+                 end
+               else
+                 i "non défini"
+               end
+      end
+      row :nb_min_apprenants
+      row :nb_max_apprenants
+      row :lien
+      row :contact_reservation
+      row :adresse_etablissement
+      row :adresse_num_voie
+      row :adresse_complement
+      row :adresse_codepostal
+      row :adresse_ville
+
+    end
   end
 
   controller do

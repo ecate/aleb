@@ -33,6 +33,8 @@ class Syllabus < ActiveRecord::Base
   has_many :lessons, :dependent => :destroy
   belongs_to :categorie
   belongs_to :label
+  accepts_nested_attributes_for :lessons, :allow_destroy => true
+
   #carrierwave import du logo
   mount_uploader :logo, ImageUploader
 

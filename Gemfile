@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 
-
-
 #interface
 gem 'jquery-rails', '>= 1.0.12'
 gem 'execjs'
@@ -12,7 +10,6 @@ gem 'twitter-bootstrap-rails'
 
 # mise en forme des donnees dans la console ruby
 gem 'hirb'
-
 
 # authentification
 gem 'devise'
