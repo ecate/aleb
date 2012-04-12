@@ -1,21 +1,40 @@
 $grisfonce: #525252;
 $grisclair: #D3D3D3;
+$texte_gros: smaller;
+$texte_normal: x-small;
+$texte_petit: xx-small;
 /************************
 Vignette utilisées dans views/syllabuses/_vignette notamment action INDEX
 *************************/
 
+nav.pagination
+{
+  float: none;
+}
+
+.row
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.vignette_box
+{
+  width: 160px;
+  line-height: 12px;
+}
 
 
 .cours_box {
   position: relative;
-  width: 180px;
   border-width: 1px;
   border-radius: 5px 5px 0px 0px;
   border-style: solid;
   border-color: $grisclair;
   padding: 10px;
-  height: 200px;
+  height: 180px;
   vertical-align: top;
+  line-height: 12px;
 }
 
 .cours_image
@@ -23,7 +42,7 @@ Vignette utilisées dans views/syllabuses/_vignette notamment action INDEX
   left:10px;
   top:10px;
   height: 100px;
-  width: 180px;
+  width: 140px;
   border-width: 1px;
   border-style: solid;
   border-color: $grisclair;
@@ -41,20 +60,23 @@ Vignette utilisées dans views/syllabuses/_vignette notamment action INDEX
 
 .cours_box h1
 {
-font-size: small;
+font-size: $texte_gros;
 color: $grisfonce;
 font-weight: bolder;
+line-height: 25px;
 }
 
 .cours_box h3
 {
-font-size: small;
+font-size: $texte_normal;
 color: #888888;
 }
 
 .cours_box p
 {
 font-style: italic;
+font-size: $texte_normal;
+line-height: 10px;
 }
 
 .cours_box hr
@@ -66,7 +88,6 @@ font-style: italic;
 {
   background: url('/images/body.gif') repeat left top;
   position: relative;
-  width: 180px;
   border-width: 1px;
   border-radius: 0px 0px 5px 5px;
   border-style: solid;
@@ -77,7 +98,7 @@ font-style: italic;
 }
 .cours_details
 {
-font-size: 0.9em;
+font-size: $texte_petit;
 }
 
 .cours_logistique #price_tag
@@ -86,7 +107,7 @@ font-size: 0.9em;
   bottom: 2px;
   right: 10px;
   color: #6e000d;
-  font-size: 1.2em;
+  font-size: $texte_normal;
   font-weight: bolder;
 }
 
@@ -115,14 +136,14 @@ $largeurcolonne: 210px;
   float: left;
   height: auto;
   width: $largeurcolonne;
-  font-size: 1em;
+  font-size: $texte_petit;
   color:$grisfonce;
   margin: auto;
 }
 
 .big
 {
-  font-size: 1.2em;
+  font-size: $texte_normal;
   color: $grisfonce;
   font-weight: bolder;
 }

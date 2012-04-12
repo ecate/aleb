@@ -12,12 +12,28 @@
  *= require_tree .
 */
 
+/* ******************************** */
+/*GLOBAL*/
+
+body
+{
+    width : 100%;
+    background-color:#efefef !important;
+
+}
 #main
 {
-    width: 1000px;
+    width: 940px;
     margin: auto;
 }
 
+#content
+{
+    background-color: white !important;
+
+}
+/* ******************************** */
+/*HEADER*/
 #header_global
 {
     position: relative;
@@ -27,11 +43,11 @@
 #logo
 {
     position: absolute;
-    top: -90px;
-    left: -10px;
+    top: -30px;
+    left: 0px;
     width: 200px;
     height: 200px;
-    z-index: -1;
+    z-index: 2;
 }
 
 .navigation_bar
@@ -39,7 +55,7 @@
   background: url('/images/nav_bg.png') no-repeat scroll left top transparent;
   height: 64px !important;
   position: absolute;
-  top: -15px;
+  top: 45px;
   left: 190px;
 }
 
@@ -76,3 +92,76 @@ a, a:link, a:visited
 
 }
 
+/* ******************************** */
+/* Slider  */
+
+#slider-wrapper
+{
+    padding-top: 50px;
+}
+
+
+/* ******************************** */
+/* Footer  */
+.footer-info
+{
+    background: url('/images/slide_bg.png') repeat-x scroll left top transparent;
+    padding:29px 0 24px 0;
+    font-size: 12px;
+    color: #505050;
+    position:relative;
+    text-align:center;
+}
+/* ******************************** */
+/* Footer  */
+.footer {
+	display:block;
+}
+div.footer ul {
+	padding:0;
+	margin:0;
+}
+div.footer ul li {
+	list-style-type:none;
+	display:inline;
+	padding:0 23px 0 0;
+	margin:0 15px 0 0;
+	background:url('/images/nav_marker.png') no-repeat right center;
+}
+div.footer ul li:last-child {
+	background:none !important;
+	padding:0 !important;
+	margin:0 !important;
+}
+div.footer ul li a {
+	color:#404040;
+	text-decoration:none;
+	font-size:13px;
+}
+div.footer ul li a:hover, div.footer ul li.current-menu-item a {color:#af2330;
+}
+.footer-info p {
+	padding: 8px 0 0 0;
+	margin:0;
+	font-size: 13px;
+	color: #696868;
+	line-height:21px;
+}
+.footer-info p a {
+	font-size: 13px;
+	color: #696868;
+	text-decoration:none;
+}
+
+a.top_btn {
+	position:absolute;
+	right:20px;
+	top:34px;
+	width:32px;
+	height:32px;
+	background:url('/images/top_btn.png') no-repeat left top;
+	background-position:0 0;
+	display:block;
+}
+a.top_btn:hover {background-position:0 -32px;
+}

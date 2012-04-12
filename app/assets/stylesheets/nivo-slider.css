@@ -16,13 +16,13 @@
 {
     background: url("/images/slider/slide_bg.png") repeat-x scroll left bottom transparent;
     margin-bottom: 50px;
-    width: 1000px !important;
+    width: 940px !important;
     overflow: hidden;
 
 }
 .nivoSlider {
 	position:relative;
-    width:1000px; /* Change this to your images width */
+    width:940px; /* Change this to your images width */
     height:150px; /* Change this to your images height */
     background: url("/images/slider/spacer.gif") no-repeat scroll 0% 0% transparent;
 }
@@ -64,7 +64,7 @@
     padding: 8px;
     right: 0px;
     top: 0px;
-    width: 1000px;
+    width: 940px;
     height: 200px;
     z-index: 8;
     position:absolute;

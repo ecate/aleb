@@ -1,13 +1,20 @@
+
+<%= paginate @lessons %>
 <div id="lessons_coupdecoeur">
   <img src="" alt="">
 
 </div>
 <div id="lessons_liste">
   <div id="lessons_recherche"></div>
-  <div id="lessons_vignettes">
+
+
+  <div id="lessons_vignettes" class="row">
+
     <% @lessons.each do |s| %>
         <% @cours = s %>
-        <%= render 'vignette' %>
+        <div class="span2">
+            <%= render 'vignette' %>
+        </div>
     <% end %>
   </div>
 </div>

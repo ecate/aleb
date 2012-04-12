@@ -1,7 +1,7 @@
 class LessonsController < ApplicationController
 
   def index
-        @lessons = Lesson.all
+  @lessons = Lesson.order("horaire").page(params[:page]).per(12)
 
         respond_to do |format|
           format.html # index.html.erb

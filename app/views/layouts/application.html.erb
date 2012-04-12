@@ -12,13 +12,13 @@
 <div id="main">
   <%=  render :partial => 'layouts/header' %>
   <%=  render :partial => 'layouts/slider' %>
-
-
+  <div id="content">
   <!--<p class="notice"><%= notice %></p>-->
   <!--<p class="alert"><%= alert %></p>-->
   <%= yield %>
-  
+  </div>
+<%=  render :partial => 'layouts/footer' %>
 
-</div>
+  </div>
 </body>
 </html>
