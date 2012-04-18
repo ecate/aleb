@@ -11,8 +11,8 @@ else
   table_for @cours do
 
 
-    column "Logo", :sortable => false do |cours|
-      image_tag(cours.logo.thumb.url) unless cours.logo.class == NilClass
+    column "avatar", :sortable => false do |cours|
+      image_tag(cours.avatar.thumb.url) unless cours.avatar.class == NilClass
     end
     column "Titre", :sortable => :name do |cours|
       b link_to cours.name, admin_syllabus_path(cours) unless cours.name.class == NilClass

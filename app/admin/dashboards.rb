@@ -13,7 +13,7 @@ ActiveAdmin::Dashboards.build do
   section "Cours récemment créés", :priority => 2 do
     table_for Syllabus.order('updated_at DESC').limit(5).each do
       column("Cours") {|cours| link_to(cours.name, admin_syllabus_path(cours))}
-      column("Logo") {|cours| link_to(image_tag(cours.logo.thumb.url), admin_syllabus_path(cours)) }
+      column("avatar") {|cours| link_to(image_tag(cours.avatar.thumb.url), admin_syllabus_path(cours)) }
 
       end
     end

@@ -14,7 +14,7 @@
 
 #slider-wrapper
 {
-    background: url("/images/slider/slide_bg.png") repeat-x scroll left bottom transparent;
+    background: url("/images/slide_bg.png") repeat-x scroll left bottom transparent;
     margin-bottom: 50px;
     width: 940px !important;
     overflow: hidden;
@@ -117,7 +117,7 @@
 
 .nivo-controlNav a {
 
-    display:inline-block;
+     display:inline-block;
      z-index:160;
      cursor:pointer;
      text-indent:-9999px;
@@ -127,7 +127,7 @@
      height:22px;
      background:url("images/bullet.png") no-repeat left top;
      background-position:0 0;
-    z-index: 151;
+
 }
 .nivo-controlNav a.active {
     background-position: 0pt -22px;

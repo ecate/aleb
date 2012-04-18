@@ -53,9 +53,14 @@ class ImageUploader < CarrierWave::Uploader::Base
   # end
   def filename
     if original_filename
+      if model && model.read_attribute(:avatar).present? #or whatever you call your column
+        model.read_attribute(:avatar)
+      else
+      # create new filename however you're doing it
         @name ||= Digest::MD5.hexdigest(File.dirname(current_path))
         "#{@name}.#{file.extension}"
       end
+    end
   end
 
 

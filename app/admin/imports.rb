@@ -22,7 +22,7 @@ ActiveAdmin.register Import do
         if !cours.nil?
           div
           h4 link_to cours.name, admin_syllabus_path(cours) unless cours.name.class == NilClass
-          a image_tag(cours.logo.thumb.url) unless cours.logo.class == NilClass
+          a image_tag(cours.avatar.thumb.url) unless cours.avatar.class == NilClass
           i cours.organisateur.class == NilClass ? "! Organisateur manquant !" : "Organisateur: "+ Organisateur.find_by_id(cours.organisateur_id).name
           div
           span truncate(cours.description, :length => 80)
@@ -186,7 +186,7 @@ ActiveAdmin.register Import do
       _description= f.cell(line, 'F').to_s
       _prixbase= f.cell(line, 'G').to_s.to_f
       _duree= f.cell(line, 'I').to_s
-      _logourl= f.cell(line, 'C').to_s
+      _avatarurl= f.cell(line, 'C').to_s
       _reduc= f.cell(line, 'H').to_s.to_f
       _minappr= f.cell(line, 'J').to_s.to_i
       _maxappr= f.cell(line, 'K').to_s.to_i
@@ -227,7 +227,7 @@ ActiveAdmin.register Import do
                               :duree => r_duree(_duree),
                               :flag_actif => false)
 
-      cours.remote_logo_url= _logourl unless _logourl.empty?
+      cours.remote_avatar_url= _avatarurl unless _avatarurl.empty?
       cours.save!
 
       #remplissage et sauvegarde de l'object au fur et à mesure

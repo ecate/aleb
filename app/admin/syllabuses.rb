@@ -30,8 +30,8 @@ ActiveAdmin.register Syllabus do
         i "non défini"
       end
     end
-    column "Logo", :sortable => false do |cours|
-      image_tag(cours.logo.thumb.url) unless cours.logo.class == NilClass
+    column "avatar", :sortable => false do |cours|
+      image_tag(cours.avatar.thumb.url) unless cours.avatar.class == NilClass
     end
     column "Titre", :sortable => :name do |cours|
       b link_to cours.name, admin_syllabus_path(cours) unless cours.name.class == NilClass
@@ -75,17 +75,19 @@ ActiveAdmin.register Syllabus do
     end
 
 
-    f.inputs "Logo" do
+    f.inputs "avatar" do
+      if !f.object.new_record?
       f.inputs "En base" do
-        image_tag(Syllabus.find(params[:id]).logo.url) unless Syllabus.find(params[:id]).logo.class == NilClass
+        image_tag(Syllabus.find(params[:id]).avatar.url) unless Syllabus.find(params[:id]).avatar.class == NilClass
       end
-      f.input :logo, :label => "logo : télécharger un fichier ..."
-      f.input :remote_logo_url, :label => "Ou récuperer une image en ligne URL:"
+      end
+      f.input :avatar, :label => "avatar : télécharger un fichier ..."
+      f.input :remote_avatar_url, :label => "Ou récuperer une image en ligne URL:"
     end
 
 
 
-    f.inputs "Cours", :multipart => true do
+    f.inputs "Cours" do
       f.input :flag_actif, :id => "flag_actif", :as => :radio, :label => "Validité", :collection => [["Actif", true], ["Expiré", false]]
       f.input :organisateur
       f.input :flag_interne, :label => "Cours interne ?", :as => :radio
@@ -94,8 +96,7 @@ ActiveAdmin.register Syllabus do
       f.input :label
       f.input :categorie
       f.input :duree, :as => :select, :hint => @duree, :collection => ["00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30"]
-      f.input :prixbase
-
+      f.input :prixbase, :as => :range, :min => 3, :max => 15, :step => 0.5
       f.input :reduction
       f.input :flag_date, :as => :radio, :label => "Dates plannifiées ?"
 
@@ -130,7 +131,7 @@ ActiveAdmin.register Syllabus do
 
     end
 
-    #Affichage du logo en base si le cours existe deja
+    #Affichage du avatar en base si le cours existe deja
     if !f.object.new_record?
 
 
@@ -146,7 +147,7 @@ ActiveAdmin.register Syllabus do
     attributes_table do
       row :name
       row :image do
-        image_tag(cours.logo.url)
+        image_tag(cours.avatar.url)
       end
       row :description
       row :organisateur do |cours|

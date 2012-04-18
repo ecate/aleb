@@ -43,7 +43,7 @@ body
 #logo
 {
     position: absolute;
-    top: -30px;
+    top: 0px;
     left: 0px;
     width: 200px;
     height: 200px;
@@ -52,28 +52,28 @@ body
 
 .navigation_bar
 {
-  background: url('/images/nav_bg.png') no-repeat scroll left top transparent;
+  background: url('/images/menu.png') no-repeat scroll left top transparent;
   height: 64px !important;
   position: absolute;
   top: 45px;
-  left: 190px;
+
 }
 
 .navigation_bar ul
 {
     margin: 0px;
-    padding: 0px 100px 0px 0px;
+    padding: 0px 400px 0px 0px;
 }
 
 .navigation_bar li
 {
     display: inline;
-    margin: 0px 50px 0px 0px;
-    padding: 0px 50px 0px 0px;
+    margin: 0px 40px 0px 0px;
+    padding: 0px 40px 0px 0px;
     list-style: none outside none;
     float: left;
     position: relative;
-    left: 50px;
+    left: 250px;
     line-height: 64px;
     background: url('/images/nav_marker.png') no-repeat scroll right center transparent;
     font-size: 0.9em;
@@ -95,9 +95,51 @@ a, a:link, a:visited
 /* ******************************** */
 /* Slider  */
 
-#slider-wrapper
+#myCarousel
 {
-    padding-top: 50px;
+    margin-bottom: 50px;
+    width: 940px !important;
+    height: 180px;
+    overflow: hidden;
+    background-color: rgb(52,52,56);
+
+}
+
+.item
+{
+    padding: 50px 15px 15px 15px;
+    text-align: center;
+}
+.item p
+{
+    color: #3f7f7f;
+    font-size: 2em;
+}
+
+.zone-carousel-control > .carousel-control{
+    position: absolute;
+    top: 43%;
+    width: 25px;
+    height: 25px;
+    margin-top: 70px;
+    font-size: 30px;
+    line-height: 20px;
+    color: rgb(255,255,255);
+    text-align: center;
+    background: none repeat scroll 0% 0% rgb(34, 34, 34);
+    border: 2px solid rgb(255,255,255);
+    border-radius: 23px 23px 23px 23px;
+    opacity: 0.5;
+
+}
+.zone-carousel-control > .carousel-control.left
+{
+    left: 870px;
+}
+.zone-carousel-control > .carousel-control.right
+{
+    left: auto;
+    right: 10px;
 }
 
 

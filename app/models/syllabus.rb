@@ -36,7 +36,7 @@ class Syllabus < ActiveRecord::Base
   accepts_nested_attributes_for :lessons, :allow_destroy => true
 
   #carrierwave import du logo
-  mount_uploader :logo, ImageUploader
+  mount_uploader :avatar, ImageUploader
 
   #scope pour admin/index
   scope :actifs, where(:flag_actif => true)

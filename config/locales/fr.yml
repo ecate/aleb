@@ -198,6 +198,8 @@ fr:
       long: ! '%A %d %B %Y %H:%M'
       short: ! '%d %b %H:%M'
       pres: ! '%A %d %B - %Hh%M'
+      jourmois: ! '%A %d %B'
+      heure: ! '%Hh%M'
     pm: pm
 
   active_admin:
