@@ -100,6 +100,10 @@ line-height: 10px;
 {
 font-size: $texte_petit;
 }
+.heure p
+{
+font-size: 0.2em;
+}
 
 .cours_logistique #price_tag
 {
@@ -110,6 +114,43 @@ font-size: $texte_petit;
   font-size: $texte_normal;
   font-weight: bolder;
 }
+
+/************************
+cours détails dans INDEX
+*************************/
+#lessons_coupdecoeur
+{
+ background-color: #f8f8ff;
+ height: 390px;
+  border-width: 1px;
+
+  border-style: solid;
+  border-color: $grisclair;
+}
+
+#lessons_coupdecoeur_titre
+{
+  color: #980905;
+  font-size: 1.5em;
+  font-weight: bolder;
+  padding-left: 25px;
+  margin: 0pt 0pt 0px;
+}
+
+
+
+#lessons_separateur
+{
+  width:940px;
+  height: 30px;
+  background-color: rgb(239, 239, 239);
+}
+
+#lessons_liste
+{
+  margin-top: 10px;
+}
+
 
 /************************
 cours détails dans SHOW
@@ -180,3 +221,5 @@ $largeurcolonne: 210px;
   font-size: 1.5em;
   padding-left: 5px;
 }
+
+

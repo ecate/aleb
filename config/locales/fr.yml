@@ -202,6 +202,15 @@ fr:
       heure: ! '%Hh%M'
     pm: pm
 
+  views:
+    pagination:
+      first: "&laquo; Première"
+      last: "Dernière &raquo;"
+      previous: "&lsaquo; Précédent"
+      next: "Suivant &rsaquo;"
+      truncate: "..."
+
+
   active_admin:
       dashboard: "Tableau de Bord"
       dashboard_welcome:

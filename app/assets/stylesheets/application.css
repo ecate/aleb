@@ -97,7 +97,7 @@ a, a:link, a:visited
 
 #myCarousel
 {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     width: 940px !important;
     height: 180px;
     overflow: hidden;
