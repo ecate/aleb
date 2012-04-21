@@ -23,7 +23,7 @@ body
 }
 #main
 {
-    width: 940px;
+    width: 960px;
     margin: auto;
 }
 
@@ -98,7 +98,7 @@ a, a:link, a:visited
 #myCarousel
 {
     margin-bottom: 25px;
-    width: 940px !important;
+    width: 960px !important;
     height: 180px;
     overflow: hidden;
     background-color: rgb(52,52,56);

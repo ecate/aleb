@@ -18,4 +18,12 @@ development:
   password: oracle
   socket: /var/run/mysqld/mysqld.sock
 
+production:
+  adapter: sqlite3
+  encoding: utf8
+  reconnect: false
+  database: alebprod
+  pool: 5
+  timeout: 5000
+
 

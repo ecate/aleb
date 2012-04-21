@@ -20,3 +20,5 @@ Organisateur.create!(:name=>"Cedric Villani", :description => "Cedric Villani (n
 
 Import.create!
 #AdminUser.create!(:email => "admin@example.com", :password => "password", :password_confirmation => "password")
+
+

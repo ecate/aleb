@@ -1,0 +1,6 @@
+
+<%= search_form_for @q, :url => search_lessons_path,:html => {:method => :post} do |f| %>
+    <%= f.label :syllabus_name_cont %>
+   <%= f.text_field :syllabus_name_cont  %>
+  <%= f.submit "Chercher" %>
+<% end %>

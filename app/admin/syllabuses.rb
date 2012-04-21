@@ -96,7 +96,7 @@ ActiveAdmin.register Syllabus do
       f.input :label
       f.input :categorie
       f.input :duree, :as => :select, :hint => @duree, :collection => ["00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30"]
-      f.input :prixbase, :as => :range, :min => 3, :max => 15, :step => 0.5
+      f.input :prixbase
       f.input :reduction
       f.input :flag_date, :as => :radio, :label => "Dates plannifiées ?"
 

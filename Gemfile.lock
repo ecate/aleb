@@ -1,4 +1,22 @@
 GIT
+  remote: git://github.com/ernie/ransack.git
+  revision: e69031b78a370a4b9b07f1ab1805a145c73d241b
+  specs:
+    ransack (0.6.0)
+      actionpack (~> 3.0)
+      activerecord (~> 3.0)
+      polyamorous (~> 0.5.0)
+
+GIT
+  remote: git://github.com/ernie/squeel.git
+  revision: 730181aef0e648e165fdc0890e1f87d8de9e5c38
+  specs:
+    squeel (0.9.5)
+      activerecord (~> 3.0)
+      activesupport (~> 3.0)
+      polyamorous (~> 0.5.0)
+
+GIT
   remote: git://github.com/gregbell/active_admin.git
   revision: 302501c32301bac79514f19aca844dce37086448
   specs:
@@ -236,10 +254,12 @@ DEPENDENCIES
   nested_form!
   pg
   rails (= 3.2.1)
+  ransack!
   rmagick
   roo
   sass-rails (~> 3.2.3)
   sqlite3-ruby
+  squeel!
   therubyracer
   thin
   twitter-bootstrap-rails

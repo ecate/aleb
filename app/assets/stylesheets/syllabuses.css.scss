@@ -22,6 +22,9 @@ nav.pagination
 {
   width: 160px;
   line-height: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
 }
 
 
@@ -120,12 +123,13 @@ cours détails dans INDEX
 *************************/
 #lessons_coupdecoeur
 {
- background-color: #f8f8ff;
- height: 390px;
+  background-color: #f8f8ff;
+  height: 390px;
   border-width: 1px;
-
   border-style: solid;
   border-color: $grisclair;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
 #lessons_coupdecoeur_titre
@@ -141,7 +145,7 @@ cours détails dans INDEX
 
 #lessons_separateur
 {
-  width:940px;
+  width:960px;
   height: 30px;
   background-color: rgb(239, 239, 239);
 }
@@ -149,6 +153,8 @@ cours détails dans INDEX
 #lessons_liste
 {
   margin-top: 10px;
+  margin-right: 35px;
+  margin-left: 35px;
 }
 
 

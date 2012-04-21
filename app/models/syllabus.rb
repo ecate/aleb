@@ -43,5 +43,20 @@ class Syllabus < ActiveRecord::Base
   scope :expires, where(:flag_actif => false)
   scope :orphelins, where(:organisateur_id => nil)
 
+  #filtre pour recherche
+  cattr_writer :filter
+
+  def self.filtered(params)
+      filter.restrict(params)
+  end
+  protected
+
+    def self.filter
+      if defined?(@@filter) && @@filter
+        @@filter
+      else
+        @@filter = SyllabusFilter.new(self.scoped)
+      end
+    end
 
 end
