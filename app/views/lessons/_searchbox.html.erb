@@ -1,6 +1,19 @@
-
 <%= search_form_for @q, :url => search_lessons_path,:html => {:method => :post} do |f| %>
-    <%= f.label :syllabus_name_cont %>
-   <%= f.text_field :syllabus_name_cont  %>
+   <%=f.label "Ville :" %>
+	<%= f.collection_select :syllabus_adresse_ville_cont, Syllabus.uniq.pluck(:adresse_ville), :to_s, :to_s, :include_blank => true, :prompt => "Choisir une ville"  %> 
+   
+	<%= f.label "Catégorie :" %>
+   <%= f.collection_select :syllabus_categorie_name_cont, Categorie.all, :name, :name,:include_blank => true, :prompt => "Choisir une catégorie"  %> 
+   
+   <%= f.label "Prix. Entre : " %>
+   <%= f.text_field :syllabus_prixbase_gteq %>
+   <%= f.label "et : "%>
+   <%= f.text_field :syllabus_prixbase_lteq %>
+   
+    <%= f.label "Date :" %>
+    <%= f.date_select :horaire_gteq%>
+	<%= f.date_select :horaire_lteq%>
+   
+   <%= %>
   <%= f.submit "Chercher" %>
 <% end %>
