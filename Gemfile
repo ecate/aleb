@@ -4,6 +4,7 @@ gem 'rails', '3.2.1'
 
 #interface
 gem 'jquery-rails', '>= 1.0.12'
+gem 'jquery-ui-rails'
 gem 'execjs'
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'

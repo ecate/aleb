@@ -8,17 +8,28 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+
+ *= require syllabuses
+ *= require jquery.ui.all
+ *= require bootstrap_and_overrides
+ *= require active_admin
  *= require_self
- *= require_tree .
 */
 
 /* ******************************** */
 /*GLOBAL*/
+@font-face {
+  font-family: 'BirchStd';
+  src: url('/fonts/BirchStd.otf');
+}
+
 
 body
 {
     width : 100%;
     background-color:#efefef !important;
+    font-family: BirchStd;
+
 
 }
 #main
@@ -62,14 +73,14 @@ body
 .navigation_bar ul
 {
     margin: 0px;
-    padding: 0px 400px 0px 0px;
+    padding: 0px 450px 0px 0px;
 }
 
 .navigation_bar li
 {
     display: inline;
     margin: 0px 40px 0px 0px;
-    padding: 0px 40px 0px 0px;
+    padding: 0px 45px 0px 0px;
     list-style: none outside none;
     float: left;
     position: relative;

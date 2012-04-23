@@ -101,7 +101,8 @@ line-height: 10px;
 }
 .cours_details
 {
-font-size: $texte_petit;
+  font-size: $texte_petit;
+  margin: 0pt;
 }
 .heure p
 {
@@ -111,8 +112,8 @@ font-size: 0.2em;
 .cours_logistique #price_tag
 {
   position: absolute;
-  bottom: 2px;
-  right: 10px;
+  bottom: -12px;
+  right: 5px;
   color: #6e000d;
   font-size: $texte_normal;
   font-weight: bolder;
@@ -156,8 +157,52 @@ cours détails dans INDEX
   margin-right: 35px;
   margin-left: 35px;
 }
+/************************
+search box
+*************************/
+#lessons_recherche
+{
+  width: 150px;
+  background: url('/images/body.gif') repeat left top;
+  position: relative;
+  border-width: 1px;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: $grisclair;
+  vertical-align: top;
+  display: inline-block;
+  padding: 2px;
+}
+
+.vignette_box
+{
+  width: 160px;
+  line-height: 12px;
+
+}
+
+#lessons_recherche label
+{
+  width: auto;
+  color: #6e000d !important;
+  font-weight: bolder;
+}
+
+#lessons_recherche input
+{
+  width: auto;
+}
+
+#lessons_recherche select
+{
+  width: auto;
+}
 
 
+#lessons_recherche p
+{
+  padding: 5px;
+}
 /************************
 cours détails dans SHOW
 *************************/
@@ -215,7 +260,7 @@ $largeurcolonne: 210px;
 #cours_details_banniere
 {
   width: auto;
-  height: 45px;
+  height: 50px;
   background-color: rgb(52,52,56);
   border-radius: 5px 5px 5px 5px;
 }
@@ -226,6 +271,7 @@ $largeurcolonne: 210px;
   font-weight: bolder;
   font-size: 1.5em;
   padding-left: 5px;
+
 }
 
 

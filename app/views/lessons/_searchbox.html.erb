@@ -1,6 +1,28 @@
+<%= search_form_for @q, :url => search_lessons_path, :html => {:method => :post} do |f| %>
 
-<%= search_form_for @q, :url => search_lessons_path,:html => {:method => :post} do |f| %>
-    <%= f.label :syllabus_name_cont %>
-   <%= f.text_field :syllabus_name_cont  %>
-  <%= f.submit "Chercher" %>
+    <p>
+        <%= f.label "Dans quelle ville ?" %>
+        <%= f.collection_select :syllabus_adresse_ville_cont, Syllabus.uniq.pluck(:adresse_ville).compact.reject { |s| s.nil? or s.empty? }, :to_s, :to_s, :include_blank => true, :prompt => "Choisir une ville" %>
+    </p>
+    <p>
+        <%= f.label "Dans quelle catégorie ?" %>
+        <%= f.collection_select :syllabus_categorie_name_cont, Categorie.all, :name, :name, :include_blank => true, :prompt => "Choisir une catégorie" %>
+    </p>
+    <p>
+      <%= f.hidden_field :syllabus_prixbase_gteq %>
+      <%= f.hidden_field :syllabus_prixbase_lteq %>
+      <label for="amount">Pour quel prix ?</label>
+      <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold; padding: 1pt;width: 40%;"/>
+    <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"></div>
+
+    </p>
+    <p>
+
+      <%= f.hidden_field :horaire_gteq %>
+      <%= f.hidden_field :horaire_lteq %>
+
+      <label for="lessons_box_horaire"> A quelle date ? </label>
+      <input type="datepicker" id="lessons_box_horaire" style="width: 60%;"/>
+    </p>
+    <%= f.submit "Chercher" %>
 <% end %>

@@ -12,12 +12,35 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.all
 //= require twitter/bootstrap
 //= require jquery_nested_form
 //= require_tree .
 
-$(window).load(function() {
+$(window).load(function () {
 
-    $('#myCarousel').carousel()
+    $('#myCarousel').carousel();
+
+    $("#slider-range").slider({
+        range:true,
+        min:1,
+        max:100,
+        values:[10, 50],
+        slide:function (event, ui) {
+            $("#amount").val("€" + ui.values[ 0 ] + " - €" + ui.values[ 1 ]);
+            $("#q_syllabus_prixbase_gteq").val(parseInt($("#slider-range").slider("values", 0)));
+            $("#q_syllabus_prixbase_lteq").val(parseInt($("#slider-range").slider("values", 1)));
+        }
+    });
+    $("#amount").val("€" + $("#slider-range").slider("values", 0) +
+        " - €" + $("#slider-range").slider("values", 1));
+
+    $("#lessons_box_horaire").datepicker({
+        dateFormat: 'dd-mm-yy',
+        onSelect: function(dateText, inst) {
+              $("#q_horaire_gteq").val(dateText);
+           }
+
+    });
 
 });
