@@ -19,6 +19,6 @@ Organisateur.create!(:name=>"In sevilla", :description => "Suspendisse lorem era
 Organisateur.create!(:name=>"Cedric Villani", :description => "Cedric Villani (ne le 5 octobre 1973 a Brive-la-Gaillarde) est un mathematicien francais, directeur de l'Institut Henri-Poincare et professeur a l'universite Claude Bernard Lyon 1. Il a recu la medaille Fields en 2010. Specialiste de l'analyse, il s'interesse a la resolution mathematique de problemes physiques par etat de relaxation spontane, en particulier la theorie cinetique des gaz et la theorie du transport. Avec son confrere Clement Mouhot, Cedric Villani a contribue a eclairer une controverse de physiciens sur le plasma en expliquant comment son champ electrique revient a l'equilibre dans certaines conditions", :remote_avatar_url=>"http://upload.wikimedia.org/wikipedia/commons/1/1e/C%C3%A9dric_Villani.jpeg")
 
 Import.create!
-#AdminUser.create!(:email => "admin@example.com", :password => "password", :password_confirmation => "password")
+AdminUser.create!(:email => "admin@example.com", :password => "password", :password_confirmation => "password")
 
 
