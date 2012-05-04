@@ -204,10 +204,10 @@ fr:
 
   views:
     pagination:
-      first: "&laquo; Première"
-      last: "Dernière &raquo;"
-      previous: "&lsaquo; Précédent"
-      next: "Suivant &rsaquo;"
+      first: "&laquo;"
+      last: "&raquo;"
+      previous: "&lsaquo;"
+      next: "&rsaquo;"
       truncate: "..."
 
 
