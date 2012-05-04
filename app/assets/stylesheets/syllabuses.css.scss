@@ -157,6 +157,28 @@ cours détails dans INDEX
   margin-right: 35px;
   margin-left: 35px;
 }
+
+/************************
+éléments de navigation pour pagination
+overcome active_admin css
+*************************/
+
+.pagination a, .pagination span.page.current
+{
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  color: grey !important;
+
+}
+.pagination span.page.current
+{
+  font-weight: bolder !important;
+  text-decoration: underline !important;
+}
+
+
 /************************
 search box
 *************************/
