@@ -62,9 +62,6 @@ class ImageUploader < CarrierWave::Uploader::Base
       end
     end
   end
-
-
-
     # store! nil's the cache_id after it finishes so we need to remember it for deletion
     def remember_cache_id(new_file)
       @cache_id_was = cache_id

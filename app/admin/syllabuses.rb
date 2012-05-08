@@ -12,6 +12,20 @@ ActiveAdmin.register Syllabus do
   scope :expires
   scope :orphelins
 
+  member_action :duplicate, :method => :post do
+    @existing_syllab= Syllabus.find(params[:id])
+    #create new object with attributes of existing record
+    #clone image object and recreate versions for avatar
+    ##save in between to refresh parameter @original_filename (thumb version must have the same base name)
+    @duplicate= Syllabus.create(@existing_syllab.attributes)
+    @duplicate.avatar= @existing_syllab.avatar.clone
+    @duplicate.save!
+    @duplicate.avatar.cache_stored_file!
+    @duplicate.avatar.recreate_versions!
+    @duplicate.save!
+    redirect_to edit_admin_syllabus_path(@duplicate), :notice => "Cours dupliqué"
+  end
+
 
   index do
     column :organisateur, :sortable => :organisateur do |cours|
@@ -56,8 +70,11 @@ ActiveAdmin.register Syllabus do
 
     column "Label", :sortable => false do |cours|
       image_tag(cours.label.avatar.thumb.url) unless cours.label.class == NilClass
-
     end
+    column "Dupliquer", :sortable => false do |cours|
+      link_to "dupliquer", duplicate_admin_syllabus_path(cours.id), :method => :post
+    end
+
     default_actions
   end
 
@@ -68,11 +85,14 @@ ActiveAdmin.register Syllabus do
   #form pour edit et new
   form do |f|
 
+
+
     if params[:id]
       @duree= "En base : "+ humanize(Syllabus.find(params[:id]).duree)
     else
       @duree=""
     end
+
 
 
     f.inputs "avatar" do
@@ -144,6 +164,8 @@ ActiveAdmin.register Syllabus do
   end
 
   show do |cours|
+    para button_to "dupliquer", duplicate_admin_syllabus_path(Syllabus.find(params[:id])), :method => :post
+
     attributes_table do
       row :name
       row :image do
