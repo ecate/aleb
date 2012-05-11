@@ -122,6 +122,16 @@ ActiveAdmin.register Import do
       end
     end
 
+    def r_interne cell
+      if !(cell.empty?)
+        case cell.capitalize
+          when "Interne" then return true
+          when "Externe" then return false
+        end
+      end
+      return false
+    end
+
     def r_lieu cell
       if cell.empty?
         return nil
@@ -183,38 +193,39 @@ ActiveAdmin.register Import do
       _categorie= f.cell(line, 'D').to_s
       _organisateur= f.cell(line, 'A').to_s
       _label= f.cell(line, 'E').to_s
-      _description= f.cell(line, 'F').to_s
-      _prixbase= f.cell(line, 'G').to_s.to_f
-      _duree= f.cell(line, 'I').to_s
+      _interne= f.cell(line, 'F').to_s
+      _description= f.cell(line, 'G').to_s
+      _prixbase= f.cell(line, 'I').to_s.to_f
+      _duree= f.cell(line, 'J').to_s
       _avatarurl= f.cell(line, 'C').to_s
-      _reduc= f.cell(line, 'H').to_s.to_f
-      _minappr= f.cell(line, 'J').to_s.to_i
-      _maxappr= f.cell(line, 'K').to_s.to_i
-      _lien= f.cell(line, 'L').to_s
-      _contact= f.cell(line, 'M').to_s
-      _lieu= f.cell(line, 'N').to_s
-      _etab= f.cell(line, 'O').to_s
-      _voie= f.cell(line, 'P').to_s
-      _comp= f.cell(line, 'Q').to_s
-      _cp= f.cell(line, 'R').to_s.to_i
-      _ville= f.cell(line, 'S').to_s
-      _date= f.cell(line, 'T').to_s
-      _jd1= f.cell(line, 'U').to_s
-      _hd1= f.cell(line, 'V').to_s
-      _jd2= f.cell(line, 'W').to_s
-      _hd2= f.cell(line, 'X').to_s
-      _jd3= f.cell(line, 'Y').to_s
-      _hd3= f.cell(line, 'Z').to_s
-      _jd4= f.cell(line, 'AA').to_s
-      _hd4= f.cell(line, 'AB').to_s
-      _jd5= f.cell(line, 'AC').to_s
-      _hd5= f.cell(line, 'AD').to_s
-      _rec= f.cell(line, 'AE').to_s
-      _sem= f.cell(line, 'AF').to_s.to_i
-      _jr1= f.cell(line, 'AG').to_s
-      _hr1= f.cell(line, 'AH').to_s
-      _jr2= f.cell(line, 'AI').to_s
-      _hr2= f.cell(line, 'AJ').to_s
+      _reduc= f.cell(line, 'I').to_s.to_f
+      _minappr= f.cell(line, 'K').to_s.to_i
+      _maxappr= f.cell(line, 'L').to_s.to_i
+      _lien= f.cell(line, 'M').to_s
+      _contact= f.cell(line, 'N').to_s
+      _lieu= f.cell(line, 'O').to_s
+      _etab= f.cell(line, 'P').to_s
+      _voie= f.cell(line, 'Q').to_s
+      _comp= f.cell(line, 'R').to_s
+      _cp= f.cell(line, 'S').to_s.to_i
+      _ville= f.cell(line, 'T').to_s
+      _date= f.cell(line, 'U').to_s
+      _jd1= f.cell(line, 'V').to_s
+      _hd1= f.cell(line, 'W').to_s
+      _jd2= f.cell(line, 'X').to_s
+      _hd2= f.cell(line, 'Y').to_s
+      _jd3= f.cell(line, 'Z').to_s
+      _hd3= f.cell(line, 'AA').to_s
+      _jd4= f.cell(line, 'AB').to_s
+      _hd4= f.cell(line, 'AC').to_s
+      _jd5= f.cell(line, 'AD').to_s
+      _hd5= f.cell(line, 'AE').to_s
+      _rec= f.cell(line, 'AF').to_s
+      _sem= f.cell(line, 'AG').to_s.to_i
+      _jr1= f.cell(line, 'AH').to_s
+      _hr1= f.cell(line, 'AI').to_s
+      _jr2= f.cell(line, 'AJ').to_s
+      _hr2= f.cell(line, 'AK').to_s
 
 
       #on va crée le cours et les lessons de manière incrémentale selon les infos présentes dans le fichier excel
@@ -238,9 +249,10 @@ ActiveAdmin.register Import do
         cours.reduction= _reduc unless _reduc == 0 || _reduc==""
         cours.save!
 
-        #selon le label, il s'agit d'un cours interne ou externe
-        if !cours.label.nil?
-          if cours.label.flag_interne
+        cours.flag_interne= r_interne(_interne)
+
+        #cours interne ou externe
+          if cours.flag_interne
             cours.nb_min_apprenants= _minappr
             cours.nb_max_apprenants= _maxappr
             #on s'occupe du lieu s'il s'agit d'un cours interne
@@ -259,14 +271,13 @@ ActiveAdmin.register Import do
             cours.contact_reservation= _contact
           end
           cours.save!
-        end
 
         if !r_pas_date(_date).nil?
           #dates définies
           if r_pas_date(_date)
-            cours.flag_pas_date= true
+            cours.flag_date= false
           else
-            cours.flag_pas_date= false
+            cours.flag_date= true
             #dates récurrentes
             if r_recurrent(_rec)
 

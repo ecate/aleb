@@ -267,7 +267,7 @@ fr:
           empty_text: "Le commentaire n'a pas été enregistré puisque le texte était vide."
       scopes:
         all: "Tous"
-        expires: "Expirés"
+        desactives: "Désactivés"
       batch_actions:
         button_label: "Actions groupées"
         delete_confirmation: "Êtes-vous sur de vouloir supprimer ces %{plural_model}? Cette action est irréversible."

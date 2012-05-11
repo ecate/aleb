@@ -3,15 +3,17 @@ class CreateSyllabuses < ActiveRecord::Migration
     create_table :syllabuses do |t|
       t.string :name
       t.text :description
-      t.string :logo
+      t.string :avatar
       t.references :organisateur
       t.references :label
       t.references :categorie
       t.float :prixbase
       t.float :reduction
       t.integer :duree
-      t.boolean :flag_actif
-      t.boolean :flag_pas_date
+      t.boolean :flag_actif, :default => false
+      t.boolean :flag_date, :default => false
+      t.boolean :flag_interne, :default => false
+      t.boolean :flag_lieu_defini, :default => false
       t.integer :nb_min_apprenants
       t.integer :nb_max_apprenants
       t.string :lien
@@ -21,7 +23,7 @@ class CreateSyllabuses < ActiveRecord::Migration
       t.string :adresse_complement
       t.integer :adresse_codepostal
       t.string :adresse_ville
-      t.boolean :flag_lieu_defini
+
       t.timestamps
     end
     add_index :syllabuses, :categorie_id

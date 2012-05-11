@@ -40,7 +40,7 @@ class Syllabus < ActiveRecord::Base
 
   #scope pour admin/index
   scope :actifs, where(:flag_actif => true)
-  scope :expires, where(:flag_actif => false)
+  scope :desactives, where(:flag_actif => false)
   scope :orphelins, where(:organisateur_id => nil)
 
   #filtre pour recherche
