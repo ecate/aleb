@@ -45,9 +45,9 @@ ActiveAdmin.register Syllabus do
     column "Etat" do |cours|
       if !(cours.flag_actif.class == NilClass)
               if cours.flag_actif
-                  button_to "désactiver", expirer_admin_syllabus_path(Syllabus.find(cours.id)), :method => :post, :id => cours.id
+                  link_to "désactiver", expirer_admin_syllabus_path(Syllabus.find(cours.id)), :method => :post, :id => cours.id
               else
-                button_to "activer", activer_admin_syllabus_path(Syllabus.find(cours.id)), :method => :post, :id => cours.id
+                link_to "activer", activer_admin_syllabus_path(Syllabus.find(cours.id)), :method => :post, :id => cours.id
               end
       else
         cours.flag_actif= false
