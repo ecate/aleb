@@ -140,21 +140,25 @@ ActiveAdmin.register Syllabus do
       f.input :flag_date, :as => :radio, :label => "Dates plannifiées ?"
     end
 
-      f.inputs "Cours interne", :id => "panel_interne" do
-        f.input :nb_min_apprenants, :label => "Nombre minimum d'apprenants"
-        f.input :nb_max_apprenants, :label => "Nombre maximum d'apprenants"
-        f.input :flag_lieu_defini, :id => "flag_lieu_defini", :label => "Lieu défini ?", :as => :radio, :value => false
-        f.input :adresse_etablissement, :label => "Nom établissement"
-        f.input :adresse_num_voie, :label => "Numéro et voie"
-        f.input :adresse_complement, :label => "Complément d'adresse'"
-        f.input :adresse_codepostal, :label => "Code Postal"
-        f.input :adresse_ville, :label => "Ville"
-      end
+    f.inputs "Adresse" do
+      f.input :flag_lieu_defini, :id => "flag_lieu_defini", :label => "Lieu défini ?", :as => :radio, :value => false
+      f.input :adresse_etablissement, :label => "Nom établissement"
+      f.input :adresse_num_voie, :label => "Numéro et voie"
+      f.input :adresse_complement, :label => "Complément d'adresse'"
+      f.input :adresse_codepostal, :label => "Code Postal"
+      f.input :adresse_ville, :label => "Ville"
+    end
 
-      f.inputs "Cours externe", :id => "panel_externe" do
-        f.input :lien
-        f.input :contact_reservation
-      end
+    f.inputs "Cours interne", :id => "panel_interne" do
+      f.input :nb_min_apprenants, :label => "Nombre minimum d'apprenants"
+      f.input :nb_max_apprenants, :label => "Nombre maximum d'apprenants"
+    end
+
+    f.inputs "Cours externe", :id => "panel_externe" do
+      f.input :lien
+      f.input :contact_reservation
+    end
+
     f.inputs "Lessons plannifiées", :id => "panel_dates" do
       f.has_many :lessons do |lesson|
        lesson.input :horaire
