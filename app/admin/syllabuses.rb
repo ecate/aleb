@@ -140,6 +140,15 @@ ActiveAdmin.register Syllabus do
       f.input :flag_date, :as => :radio, :label => "Dates plannifiées ?"
     end
 
+    f.inputs "Lessons plannifiées", :id => "panel_dates" do
+         f.has_many :lessons do |lesson|
+            lesson.input :horaire
+            lesson.inputs "cocher pour supprimer" do
+              lesson.check_box '_destroy'
+            end
+         end
+    end
+
     f.inputs "Adresse" do
       f.input :flag_lieu_defini, :id => "flag_lieu_defini", :label => "Lieu défini ?", :as => :radio, :value => false
       f.input :adresse_etablissement, :label => "Nom établissement"
@@ -159,11 +168,7 @@ ActiveAdmin.register Syllabus do
       f.input :contact_reservation
     end
 
-    f.inputs "Lessons plannifiées", :id => "panel_dates" do
-      f.has_many :lessons do |lesson|
-       lesson.input :horaire
-      end
-    end
+
 
     #Affichage du avatar en base si le cours existe deja
     if !f.object.new_record?
@@ -229,7 +234,7 @@ ActiveAdmin.register Syllabus do
         if !(cours.flag_date.class == NilClass)
           if cours.flag_date
             cours.lessons.each do |l|
-              para l.horaire
+              para l.horaire unless l.horaire.nil?
             end
           end
         else

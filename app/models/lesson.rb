@@ -12,6 +12,5 @@
 
 class Lesson < ActiveRecord::Base
   belongs_to :syllabus
-
-
+  validates :syllabus_id, :horaire, :presence => true, :allow_blank => false
 end

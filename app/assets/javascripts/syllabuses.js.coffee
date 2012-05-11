@@ -33,7 +33,6 @@ $(document).ready ->
     dates = true
 
   #Affichage initial
-  show_lieu()
   if !interne
     $("#panel_interne").hide()
     $("#panel_externe").show()
