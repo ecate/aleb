@@ -20,7 +20,7 @@
 /*GLOBAL*/
 @font-face {
   font-family: 'BirchStd';
-  src: url('/fonts/BirchStd.otf');
+  src: url('<%= asset_path('BirchStd.otf') %>');
 }
 
 
