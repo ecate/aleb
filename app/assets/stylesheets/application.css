@@ -27,7 +27,7 @@
 body
 {
     width : 100%;
-    background-color:#efefef !important;
+    background: url('/images/body.gif') repeat left top;
     font-family: BirchStd;
 
 

@@ -20,32 +20,25 @@ nav.pagination
 }
 .vignette_box
 {
-  width: 160px;
-  line-height: 12px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 10px;
+  width: 220px;
 }
 
 
 .cours_box {
-  position: relative;
+  padding: 10px;
   border-width: 1px;
   border-radius: 5px 5px 0px 0px;
   border-style: solid;
   border-color: $grisclair;
-  padding: 10px;
-  height: 180px;
+  height: 250px;
   vertical-align: top;
   line-height: 12px;
 }
 
 .cours_image
 {
-  left:10px;
-  top:10px;
-  height: 100px;
-  width: 140px;
+  height: 120px;
+  width: 200px;
   border-width: 1px;
   border-style: solid;
   border-color: $grisclair;
@@ -91,12 +84,13 @@ line-height: 10px;
 {
   background: url('/images/body.gif') repeat left top;
   position: relative;
+  padding: 10px;
+  height: 55px;
+
   border-width: 1px;
   border-radius: 0px 0px 5px 5px;
   border-style: solid;
   border-color: $grisclair;
-  padding: 10px;
-  height: 40px;
   vertical-align: top;
 }
 .cours_details
@@ -109,13 +103,12 @@ line-height: 10px;
 font-size: 0.2em;
 }
 
-.cours_logistique #price_tag
+.cours_logistique p#price_tag
 {
-  position: absolute;
-  bottom: -12px;
-  right: 5px;
+  position: relative;
+  right: 1Opx !important;
+  bottom: 10px !important;
   color: #6e000d;
-  font-size: $texte_normal;
   font-weight: bolder;
 }
 
@@ -196,12 +189,6 @@ search box
   padding: 2px;
 }
 
-.vignette_box
-{
-  width: 160px;
-  line-height: 12px;
-
-}
 
 #lessons_recherche label
 {
