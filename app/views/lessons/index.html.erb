@@ -1,5 +1,3 @@
-
-
 <div id="lessons_coupdecoeur">
   <p id="lessons_coupdecoeur_titre"><img src="<%= Label.find_by_name("Coup de coeur").avatar.url %>"/> Les coups de coeur de l'école buissonière</p>
 
@@ -19,10 +17,7 @@
   <div id="lessons_recherche" class="span2">
     <%=  render 'searchbox'%>
   </div>
-
-
   <div id="lessons_vignettes" class="row">
-
     <% @lessons.each do |s| %>
         <% @cours = s %>
         <div class="span3">

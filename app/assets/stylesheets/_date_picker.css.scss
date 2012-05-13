@@ -1,0 +1,123 @@
+// -------------------------------------- Date Picker 
+.ui-datepicker {
+  background: #fff !important;
+  -webkit-background-clip: padding-box !important;
+  -moz-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  color: #fff !important;
+  display: none !important;
+  margin-top: 2px !important;
+  padding: 0 !important;
+  text-align: center !important;
+  width: 160px !important;
+  
+  background: url(active_admin_image_path('datepicker/datepicker-nipple.png')) no-repeat 0 -40px !important;
+  
+  a { 
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  .ui-datepicker-header {
+    background: url(active_admin_image_path('datepicker/datepicker-header-bg.png')) no-repeat 0px 0px ;
+    height: 12px ;
+    padding: 16px 7px 8px ;
+    position: relative ;
+    z-index: 2000 ;
+    
+    .ui-datepicker-title {
+      @include text-shadow(#000);
+      color: #fff !important;
+      display: block !important;
+      font-size: 1.1em !important;
+      font-weight: bold !important;
+      line-height: 0.8em !important;
+      text-align: center !important;
+    }
+    
+    a { 
+      color: #fff !important;
+      display: block !important;
+      height: 19px !important;
+      margin-top: -4px !important;
+      width: 20px !important;
+      
+      &.ui-datepicker-prev { 
+        float: left !important;
+        background: url(active_admin_image_path('datepicker/datepicker-prev-link-icon.png')) no-repeat 2px 5px !important;
+      }
+      &.ui-datepicker-next {
+        float: right !important;  
+        background: url(active_admin_image_path('datepicker/datepicker-next-link-icon.png')) no-repeat 12px 5px !important;
+      }
+      &:active {
+        margin-top: -3px !important;
+        height: 18px !important;
+      }
+      
+      span {
+        display: none !important;
+      }
+    }
+  }
+  
+  table.ui-datepicker-calendar {
+    @include rounded-bottom;
+    @include shadow(0,1px,6px,rgba(0,0,0,0.26));
+    background-color: #f4f4f4 !important;
+    border: solid 1px #63686e !important;
+    left: 2px !important;
+    margin-bottom: 0px !important;
+    position: relative !important;
+    top: -2px !important;
+    width: 156px !important;
+    
+    td, th {
+      padding: 0px !important;
+      text-align: center !important;
+    }
+    
+    thead th {
+      background-color: #dbdddf !important;
+      color: #333333 !important;
+      font-weight: normal !important;
+      font-size: 0.8em !important;
+      padding-top: 1px !important;
+    }
+    
+    tbody {
+      color: #666666 !important;
+      
+      td {
+        border: none !important;
+        height: 24px !important;
+        width: 22px !important;
+        
+        a {
+          @include rounded;
+          color: #666666 !important;
+          font-weight: bold !important;
+          font-size: 0.85em !important;
+          padding: 4px !important;
+          
+          &.ui-state-active {
+            background-color: #5a5f64 !important;
+            color: #fff !important;
+            &.ui-state-hover {
+              background-color: #5a5f64 !important;
+              color: #fff !important;
+            }
+          }
+          &.ui-state-hover {
+            background-color: #eceef0 !important;
+          }
+          &.ui-state-highlight {
+            background-color: #dbdddf !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -12,15 +12,15 @@ nav.pagination
   float: none;
 }
 
-.row
+#lessons_vignettes
 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto
+  margin-left: 0px; /*overide row class of twitter bootstrap margin-left -30px*/
 }
-.vignette_box
+#lessons_vignettes .span3
 {
   width: 220px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
@@ -30,9 +30,9 @@ nav.pagination
   border-radius: 5px 5px 0px 0px;
   border-style: solid;
   border-color: $grisclair;
-  height: 250px;
+  height: 228px;
+  width: 198px; /*220 - 20 (padding) - 2 (box border)*/
   vertical-align: top;
-  line-height: 12px;
 }
 
 .cours_image
@@ -60,7 +60,7 @@ nav.pagination
 	color: $grisfonce;
 	font-weight: bolder;
 	padding-top: 10px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 
 .cours_box h3
@@ -85,37 +85,40 @@ nav.pagination
 {
   position: relative;
   background: url('/images/body.gif') repeat left top;
-  padding: 10px;
-  height: 55px;
+  padding: 5px 10px 10px 10px;
+  width: 198px;
+  height: 38px;
   border-width: 1px;
   border-radius: 0px 0px 5px 5px;
   border-style: solid;
   border-color: $grisclair;
+  color: $grisfonce;
+}
+
+.cours_logistique img
+{
+  position: relative;
+  top: 3px;
 }
 
 .cours_details
 {
-	font-size: $texte_petit;
-	margin: 0pt;
-	padding-bottom: 10px;
+  margin-bottom: 0px;
 }
-.heure p
-{
-	font-size: 0.2em;
-}
+
 
 .cours_logistique p#price_tag
 {
   position: absolute;
   color: #6e000d;
   font-weight: bolder;
-  top: 45px; 
+  font-size: 1.3em;
   margin-bottom: 0px; 
   right: 0px; 
   bottom: 0px; 
   margin-right: 0px; 
   padding-right: 10px; 
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 /************************
@@ -125,11 +128,17 @@ cours détails dans INDEX
 {
   background-color: #f8f8ff;
   height: 390px;
+  width: 960px;
   border-width: 1px;
   border-style: solid;
   border-color: $grisclair;
-  padding-right: 35px;
-  padding-left: 35px;
+}
+
+#lessons_coupdecoeur .span2
+{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
 }
 
 #lessons_coupdecoeur_titre
@@ -147,14 +156,13 @@ cours détails dans INDEX
 {
   width:960px;
   height: 30px;
-  background-color: rgb(239, 239, 239);
+  background: url('/images/body.gif') repeat left top;
 }
 
 #lessons_liste
 {
   margin-top: 10px;
-  margin-right: 35px;
-  margin-left: 35px;
+
 }
 
 /************************
@@ -184,6 +192,9 @@ search box
 #lessons_recherche
 {
   width: 220px;
+  height: 303px;
+  margin-left: 9px; /*overide span class of twitter bootstrap*/
+  margin-right: 9px;
   background: url('/images/body.gif') repeat left top;
   position: relative;
   border-width: 1px;
@@ -191,8 +202,6 @@ search box
   border-style: solid;
   border-color: $grisclair;
   vertical-align: top;
-  display: inline-block;
-  padding: 2px;
 }
 
 
@@ -211,6 +220,7 @@ search box
 #lessons_recherche select
 {
   width: auto;
+  height: 20px;
 }
 
 
@@ -235,7 +245,6 @@ $largeurcolonne: 210px;
 #cours_details_main p
 {
 
-  line-height: 12px;
 }
 
 .cours_details_box{
@@ -269,7 +278,6 @@ $largeurcolonne: 210px;
   color:#00a4e4;
   padding-top: 20px;
   padding-bottom: 20px;
-  line-height: 36px;
 }
 
 #cours_details_banniere
