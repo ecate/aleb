@@ -6,13 +6,13 @@
     <h1> <%= link_to(@cours.syllabus.name,lesson_path(@cours)) %></h1>
 
     <h3>PAR: <%= @cours.syllabus.organisateur.name unless @cours.syllabus.organisateur.class == NilClass %></h3>
-    <p> <%= truncate(@cours.syllabus.description, :length => 80) %></p>
+    <p> <%= truncate(@cours.syllabus.description, :length => 60) %></p>
   </div>
 
   <div class="cours_logistique">
-    <p class="cours_details heure"><img src="/images/date_small.png"/> <%=  I18n.localize(@cours.horaire, :format => :pres, :locale => :fr)%> </p>
+    <p class="cours_details heure"><img src="/images/date_vignettes.png"/> <%=  I18n.localize(@cours.horaire, :format => :pres, :locale => :fr)%> </p>
 
-    <p class="cours_details"><img src="/images/places_small.png"/> xx places restantes</p>
+    <p class="cours_details"><img src="/images/places_vignettes.png"/> xx places restantes</p>
 
     <p id="price_tag"><%= @cours.syllabus.prixbase %> €</p>
   </div>

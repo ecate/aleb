@@ -1,7 +1,7 @@
 $grisfonce: #525252;
 $grisclair: #D3D3D3;
-$texte_gros: smaller;
-$texte_normal: x-small;
+$texte_gros: 1.2em;
+$texte_normal: 1em;
 $texte_petit: xx-small;
 /************************
 Vignette utilisées dans views/lessons/_vignette notamment action INDEX
@@ -56,23 +56,24 @@ nav.pagination
 
 .cours_box h1
 {
-font-size: $texte_gros;
-color: $grisfonce;
-font-weight: bolder;
-line-height: 25px;
+	font-size: $texte_gros;
+	color: $grisfonce;
+	font-weight: bolder;
+	padding-top: 10px;
+	padding-bottom: 40px;
 }
 
 .cours_box h3
 {
-font-size: $texte_normal;
-color: #888888;
+	font-size: $texte_normal;
+	color: #888888;
+	margin-bottom: 0px;
 }
 
 .cours_box p
 {
-font-style: italic;
-font-size: $texte_normal;
-line-height: 10px;
+	font-style: italic;
+	font-size: $texte_normal;
 }
 
 .cours_box hr
@@ -82,34 +83,39 @@ line-height: 10px;
 
 .cours_logistique
 {
-  background: url('/images/body.gif') repeat left top;
   position: relative;
+  background: url('/images/body.gif') repeat left top;
   padding: 10px;
   height: 55px;
-
   border-width: 1px;
   border-radius: 0px 0px 5px 5px;
   border-style: solid;
   border-color: $grisclair;
-  vertical-align: top;
 }
+
 .cours_details
 {
-  font-size: $texte_petit;
-  margin: 0pt;
+	font-size: $texte_petit;
+	margin: 0pt;
+	padding-bottom: 10px;
 }
 .heure p
 {
-font-size: 0.2em;
+	font-size: 0.2em;
 }
 
 .cours_logistique p#price_tag
 {
-  position: relative;
-  right: 1Opx !important;
-  bottom: 10px !important;
+  position: absolute;
   color: #6e000d;
   font-weight: bolder;
+  top: 45px; 
+  margin-bottom: 0px; 
+  right: 0px; 
+  bottom: 0px; 
+  margin-right: 0px; 
+  padding-right: 10px; 
+  padding-bottom: 10px;
 }
 
 /************************
@@ -177,7 +183,7 @@ search box
 *************************/
 #lessons_recherche
 {
-  width: 150px;
+  width: 220px;
   background: url('/images/body.gif') repeat left top;
   position: relative;
   border-width: 1px;
