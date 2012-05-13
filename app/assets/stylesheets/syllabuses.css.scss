@@ -46,12 +46,12 @@ nav.pagination
 
 .cours_label
 {
+  height: 50px;
+  width: 50px;
   position: absolute;
   right: 0px;
   top: 0px;
-  height: 50px;
-  width: 50px;
-  z-index: 1;
+  z-index: 5;
 }
 
 .cours_box h1
@@ -126,12 +126,12 @@ cours détails dans INDEX
 *************************/
 #lessons_coupdecoeur
 {
-  background-color: #f8f8ff;
-  height: 390px;
+  height: 425px;
   width: 960px;
   border-width: 1px;
   border-style: solid;
   border-color: $grisclair;
+  border-radius: 3px 3px 3px 3px;
 }
 
 #lessons_coupdecoeur .span2
@@ -141,15 +141,20 @@ cours détails dans INDEX
   width: 220px;
 }
 
-#lessons_coupdecoeur_titre
+.coupdecoeur_titre
 {
   color: #980905;
   font-size: 1.5em;
   font-weight: bolder;
   padding-left: 25px;
-  margin: 0pt 0pt 0px;
-}
+  margin-bottom: 15px;
 
+}
+.coupdecoeur_titre img
+{
+  vertical-align: middle;
+  margin-right: 15px;
+}
 
 
 #lessons_separateur
@@ -162,6 +167,7 @@ cours détails dans INDEX
 #lessons_liste
 {
   margin-top: 10px;
+  border-radius: 3px 3px 3px 3px;
 
 }
 
@@ -222,7 +228,6 @@ search box
   width: auto;
   height: 20px;
 }
-
 
 #lessons_recherche p
 {
