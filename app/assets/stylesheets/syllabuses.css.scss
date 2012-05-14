@@ -121,6 +121,12 @@ nav.pagination
   padding-bottom: 5px;
 }
 
+.shadow
+{
+
+  z-index: 2;
+}
+
 /************************
 cours détails dans INDEX
 *************************/
@@ -233,6 +239,13 @@ search box
 {
   padding: 5px;
 }
+
+input[type="image"]
+{
+  padding-left: 10px;
+
+}
+
 /************************
 cours détails dans SHOW
 *************************/

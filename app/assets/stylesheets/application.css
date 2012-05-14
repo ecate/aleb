@@ -65,6 +65,7 @@ body
 {
   background: url('/images/menu.png') no-repeat scroll left top transparent;
   height: 64px !important;
+  width: 960px;
   position: absolute;
   top: 45px;
 
@@ -80,7 +81,7 @@ body
 {
     display: inline;
     margin: 0px 40px 0px 0px;
-    padding: 0px 45px 0px 0px;
+    padding: 0px 40px 0px 0px;
     list-style: none outside none;
     float: left;
     position: relative;
