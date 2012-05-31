@@ -23,7 +23,7 @@
         <% if @lesson.syllabus.flag_interne && @lesson.syllabus.flag_lieu_defini %>
             <p class="big"><img src="/images/pin_details.png"/> <%= @lesson.syllabus.adresse_num_voie %> </p>
 
-            <p class="tab_droite big"> <%= @lesson.syllabus.adresse_codepostal.to_s + " " + @lesson.syllabus.adresse_ville %> </p>
+            <p class="tab_adresse big"> <%= @lesson.syllabus.adresse_codepostal.to_s + " " + @lesson.syllabus.adresse_ville %> </p>
             <hr>
         <% end %>
         <p class="big bottom_small"><img src="/images/prix_details.png"/> <%= @lesson.syllabus.prixbase %> €</p>
@@ -41,7 +41,7 @@
         </p>
 
         <p class="tab_orga"> <%= @lesson.syllabus.organisateur.name unless @lesson.syllabus.organisateur.class == NilClass %> </p>
-
+        <br>
         <hr>
         <p class="big bottom_small profil">Profil</p>
 

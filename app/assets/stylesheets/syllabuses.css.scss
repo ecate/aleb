@@ -60,7 +60,7 @@ nav.pagination
 	color: $grisfonce;
 	font-weight: bolder;
 	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 8px;
 }
 
 .cours_box h3
@@ -97,8 +97,7 @@ nav.pagination
 
 .cours_logistique img
 {
-  position: relative;
-  top: 3px;
+  vertical-align: top;
 }
 
 .cours_details
@@ -234,18 +233,23 @@ search box
 #lessons_recherche select
 {
   width: auto;
-  height: 20px;
+  height: 25px;
 }
 
 #lessons_recherche p
 {
-  padding: 5px;
+  padding: 5px 5px 0px 5px;
+  margin-bottom: 0px;
 }
 
 input[type="image"]
 {
   padding-left: 10px;
 
+}
+#bouton_chercher
+{
+  padding-left: 25px;
 }
 
 /************************
@@ -343,9 +347,13 @@ cours_details_content hr
 
 .tab_droite
 {
-  margin-left: 38px;
-  margin-top: -30px;
+  margin-left: 35px;
+  margin-top: -20px;
   font-size: 13px;
+}
+
+.tab_adresse {
+  margin-top: -5px;
 }
 .cours_details_organisateur
 {
@@ -365,7 +373,7 @@ cours_details_content hr
 .tab_orga
 {
   margin-left: 80px;
-  margin-top: -55px;
+  margin-top: -40px;
   font-size: 13px;
 }
 

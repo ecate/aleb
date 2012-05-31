@@ -18,9 +18,7 @@
 //= require_tree .
 
 $(window).load(function () {
-
     $('#myCarousel').carousel();
-
     $("#slider-range").slider({
         range:true,
         min:1,

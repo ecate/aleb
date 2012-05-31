@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.1'
 
 #interface
-gem 'jquery-rails', '>= 1.0.12'
+gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'execjs'
 gem 'therubyracer'
@@ -21,7 +21,7 @@ gem 'cancan'
 gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
 
 #syntaxe simplifiee pour les vues html
-gem 'haml'
+gem 'haml', '>= 3.1.4'
 
 #upload / gestion des fichiers
 gem "rmagick"
@@ -44,9 +44,11 @@ gem 'thin'
 gem "ransack", :git => "git://github.com/ernie/ransack.git"
 gem "squeel", :git => "git://github.com/ernie/squeel.git"
 
+
+
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',   '>= 3.2.3'
+  gem 'coffee-rails', '>= 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
 
