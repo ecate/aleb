@@ -29,6 +29,7 @@ body
     width : 100%;
     background: url('/images/body.gif') repeat left top;
     font-family: BirchStd;
+    font-size: 15px;
 
 
 }
@@ -80,8 +81,8 @@ body
 .navigation_bar li
 {
     display: inline;
-    margin: 0px 40px 0px 0px;
-    padding: 0px 40px 0px 0px;
+    margin: 0px 20px 0px 0px;
+    padding: 0px 35px 0px 0px;
     list-style: none outside none;
     float: left;
     position: relative;

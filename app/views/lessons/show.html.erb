@@ -1,13 +1,14 @@
 <br>
 <div id="cours_details_main" class="container">
   <div class="row">
-    <div class='span2 well'>
+    <div class='span2'>
+
       <div class="cours_details_box">
         <p><a href="<%= lessons_path%>"><img src="/images/retour_liste.png"/> Revenir à la liste des cours </a></p>
 
         <p><img src="<%= @lesson.syllabus.avatar.url %>" alt="photo cours"/></p>
 
-        <p> <%= link_to image_tag("/images/bouton_inscription.png"), @lesson %> </p>
+        <p id="bouton_inscription"> <%= link_to image_tag("/images/bouton_inscription.png"), @lesson %> </p>
         <hr>
         <p class="big">
           <img src="/images/date_details.png"/> <%= I18n.localize(@lesson.horaire, :format => :jourmois, :locale => :fr) %>
@@ -15,9 +16,9 @@
 
         <p class="tab_droite"><%= I18n.localize(@lesson.horaire, :format => :heure, :locale => :fr) + " - " + I18n.localize(@lesson.horaire + @lesson.syllabus.duree.seconds, :format => :heure, :locale => :fr) %></p>
         <hr>
-        <p class="big"><img src="/images/places_details.png"/> xx places restantes </p>
+        <p class="big bottom_small"><img src="/images/places_details.png"/> xx places restantes </p>
 
-        <p class="italic"> Encore xx participants pour valider le cours</p>
+        <p class="italic indent"> Encore xx participants pour valider le cours</p>
         <hr>
         <% if @lesson.syllabus.flag_interne && @lesson.syllabus.flag_lieu_defini %>
             <p class="big"><img src="/images/pin_details.png"/> <%= @lesson.syllabus.adresse_num_voie %> </p>
@@ -25,37 +26,54 @@
             <p class="tab_droite big"> <%= @lesson.syllabus.adresse_codepostal.to_s + " " + @lesson.syllabus.adresse_ville %> </p>
             <hr>
         <% end %>
-        <p class="big"><img src="/images/prix_details.png"/> <%= @lesson.syllabus.prixbase %> €</p>
-        <hr>
+        <p class="big bottom_small"><img src="/images/prix_details.png"/> <%= @lesson.syllabus.prixbase %> €</p>
+        <p class="bottom_shadow">
+          <img src="/images/vignettes_bottom.png"/>
+        </p>
       </div>
       <br><br>
 
       <div class="cours_details_organisateur">
-        <h4> L'organisateur</h4>
-        <img src="<%= @lesson.syllabus.organisateur.avatar.url unless @lesson.syllabus.organisateur.class == NilClass %>" alt=""/>
-        <p class="big"> <%= @lesson.syllabus.organisateur.name unless @lesson.syllabus.organisateur.class == NilClass %> </p>
+
+        <p class="big">
+          <img src="<%= @lesson.syllabus.organisateur.avatar.thumb.url unless @lesson.syllabus.organisateur.class == NilClass %>" alt=""/>
+          L'organisateur
+        </p>
+
+        <p class="tab_orga"> <%= @lesson.syllabus.organisateur.name unless @lesson.syllabus.organisateur.class == NilClass %> </p>
 
         <hr>
-        <p class="big">Profil</p>
+        <p class="big bottom_small profil">Profil</p>
 
-        <p class="big"><%= truncate(@lesson.syllabus.organisateur.description, :length => 250) unless @lesson.syllabus.organisateur.class == NilClass %></p>
-
+        <p class="italic profil"><%= truncate(@lesson.syllabus.organisateur.description, :length => 250) unless @lesson.syllabus.organisateur.class == NilClass %></p>
+        <p class="bottom_shadow">
+          <img src="/images/vignettes_bottom.png"/>
+        </p>
       </div>
     </div>
+
     <div class='span7'>
       <h1><%= @lesson.syllabus.name %> </h1>
-      <% if !(@lesson.syllabus.organisateur.class == NilClass) %>
-      <br>
-      <div id="cours_details_banniere">
+      <% if @lesson.syllabus.label.name == "Coup de coeur" %>
+
+      <div id="cours_details_label">
         <p id="cours_label_name">
-        <img src="<%= @lesson.syllabus.label.avatar.thumb.url %>"/>
+        <img src="/images/coupdecoeur_detail.png"/>
           <%= @lesson.syllabus.label.name %>
         </p>
       </div>
       <% end  %>
-      <h3>Description</h3>
-      <p><%= @lesson.syllabus.description.html_safe %></p>
-      <h3> Commentaires</h3>
+
+      <div id="cours_details_decouverte">
+         <p> Faites découvrir ce cours à vos amis !</p>
+      </div>
+
+      <div id="cours_details_content">
+        <h3>Description</h3>
+            <p><%= @lesson.syllabus.description.html_safe %></p>
+        <hr>
+        <h3> Commentaires</h3>
+      </div>
     </div>
   </div>
 
