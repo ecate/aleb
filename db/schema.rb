@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120416143329) do
+ActiveRecord::Schema.define(:version => 20120229150933) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -104,8 +105,10 @@ ActiveRecord::Schema.define(:version => 20120416143329) do
     t.float    "prixbase"
     t.float    "reduction"
     t.integer  "duree"
-    t.boolean  "flag_actif"
-    t.boolean  "flag_date"
+    t.boolean  "flag_actif",            :default => false
+    t.boolean  "flag_date",             :default => false
+    t.boolean  "flag_interne",          :default => false
+    t.boolean  "flag_lieu_defini",      :default => false
     t.integer  "nb_min_apprenants"
     t.integer  "nb_max_apprenants"
     t.string   "lien"
@@ -115,10 +118,8 @@ ActiveRecord::Schema.define(:version => 20120416143329) do
     t.string   "adresse_complement"
     t.integer  "adresse_codepostal"
     t.string   "adresse_ville"
-    t.boolean  "flag_lieu_defini"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
-    t.boolean  "flag_interne"
+    t.datetime "created_at",                               :null => false
+    t.datetime "updated_at",                               :null => false
   end
 
   add_index "syllabuses", ["categorie_id"], :name => "index_syllabuses_on_categorie_id"

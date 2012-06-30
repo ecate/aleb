@@ -18,7 +18,19 @@
 //= require_tree .
 
 $(window).load(function () {
-    $('#myCarousel').carousel();
+
+    /*SLIDER BOOTSTRAP ********************************************************************************/
+    /*$('#myCarousel').carousel();*/
+
+    /*SLIDER NIVO *************************************************************************************/
+    $("#slider").nivoSlider({
+        directionNavHide: true,
+        captionOpacity: 1,
+        prevText: '<',
+        nextText: '>',
+       });
+
+    /*BOX RECHERCHE - RANGE SLIDER*********************************************************************/
     $("#slider-range").slider({
         range:true,
         min:1,
@@ -30,9 +42,11 @@ $(window).load(function () {
             $("#q_syllabus_prixbase_lteq").val(parseInt($("#slider-range").slider("values", 1)));
         }
     });
+
     $("#amount").val("€" + $("#slider-range").slider("values", 0) +
         " - €" + $("#slider-range").slider("values", 1));
 
+    /*BOX RECHERCHE - DATE PICKER **********************************************************************/
     $("#lessons_box_horaire").datepicker({
         dateFormat: 'dd-mm-yy',
         onSelect: function(dateText, inst) {

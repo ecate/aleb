@@ -26,7 +26,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   # Process files as they are uploaded:
-  process :resize_and_pad => [200, 120]
+  process :resize_and_pad => [210, 120]
   process :convert => :png
 
   #

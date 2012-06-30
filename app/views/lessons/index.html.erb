@@ -19,7 +19,8 @@
     <%=  render 'searchbox'%>
   </div>
   <div id="lessons_vignettes" class="row">
-    <% @lessons.each do |s| %>
+    <% @lessons.where('horaire > ?', DateTime.now.beginning_of_day).each do |s| %>
+
         <% @cours = s %>
         <div class="span3">
             <%= render 'vignette' %>

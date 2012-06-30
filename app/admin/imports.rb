@@ -195,7 +195,7 @@ ActiveAdmin.register Import do
       _label= f.cell(line, 'E').to_s
       _interne= f.cell(line, 'F').to_s
       _description= f.cell(line, 'G').to_s
-      _prixbase= f.cell(line, 'I').to_s.to_f
+      _prixbase= f.cell(line, 'H').to_s.to_f
       _duree= f.cell(line, 'J').to_s
       _avatarurl= f.cell(line, 'C').to_s
       _reduc= f.cell(line, 'I').to_s.to_f

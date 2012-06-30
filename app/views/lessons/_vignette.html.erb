@@ -12,10 +12,13 @@
   <div class="cours_logistique">
     <p class="cours_details heure"><img src="/images/date_vignettes.png"/> <%=  I18n.localize(@cours.horaire, :format => :pres, :locale => :fr)%> </p>
 
-    <p class="cours_details"><img src="/images/places_vignettes.png"/> xx places restantes</p>
+    <p class="cours_details"><img src="/images/places_vignettes.png"/> <%= @cours.syllabus.nb_max_apprenants %> participants max.</p>
 
     <p id="price_tag"><%= @cours.syllabus.prixbase %> €</p>
   </div>
 
   <br>
+  <p class="bottom_shadow_vignettes">
+    <img src="/images/vignettes_bottom.png"/>
+  </p>
 </div>

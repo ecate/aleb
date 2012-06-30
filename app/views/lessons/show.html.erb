@@ -1,12 +1,12 @@
 <br>
 <div id="cours_details_main" class="container">
   <div class="row">
-    <div class='span2'>
-
+    <div class='span2' style="margin-left: 45px;">
+      <p><a href="<%= lessons_path%>"><img src="/images/retour_liste.png"/> Revenir à la liste des cours </a></p>
       <div class="cours_details_box">
-        <p><a href="<%= lessons_path%>"><img src="/images/retour_liste.png"/> Revenir à la liste des cours </a></p>
 
-        <p><img src="<%= @lesson.syllabus.avatar.url %>" alt="photo cours"/></p>
+
+        <p id="cours_details_box_photo"><img src="<%= @lesson.syllabus.avatar.url %>" alt="photo cours"/></p>
 
         <p id="bouton_inscription"> <%= link_to image_tag("/images/bouton_inscription.png"), @lesson %> </p>
         <hr>
@@ -16,7 +16,7 @@
 
         <p class="tab_droite"><%= I18n.localize(@lesson.horaire, :format => :heure, :locale => :fr) + " - " + I18n.localize(@lesson.horaire + @lesson.syllabus.duree.seconds, :format => :heure, :locale => :fr) %></p>
         <hr>
-        <p class="big bottom_small"><img src="/images/places_details.png"/> xx places restantes </p>
+        <p class="big bottom_small"><img src="/images/places_details.png"/> <%= @lesson.syllabus.nb_max_apprenants %> participants max. </p>
 
         <p class="italic indent"> Encore xx participants pour valider le cours</p>
         <hr>
@@ -59,7 +59,7 @@
       <div id="cours_details_label">
         <p id="cours_label_name">
         <img src="/images/coupdecoeur_detail.png"/>
-          <%= @lesson.syllabus.label.name %>
+          Coup de coeur A l'école Buissonnière
         </p>
       </div>
       <% end  %>

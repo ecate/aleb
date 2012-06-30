@@ -6,7 +6,7 @@ module LessonsHelper
     @cours= Syllabus.find_all_by_label_id(Label.find_by_name("Coup de coeur").id)
 
     @cours.each do |cours|
-      cours.lessons.each do |less|
+      cours.lessons.where('horaire > ?', DateTime.now.beginning_of_day).each do |less|
         @lessons_cdc << less
         break if @lessons_cdc.count > 3
       end

@@ -3,9 +3,9 @@ $grisclair: #D3D3D3;
 $texte_gros: 1.2em;
 $texte_normal: 1em;
 $texte_petit: xx-small;
-/************************
+/*******************************************************************************************************
 Vignette utilisées dans views/lessons/_vignette notamment action INDEX
-*************************/
+********************************************************************************************************/
 
 nav.pagination
 {
@@ -121,16 +121,20 @@ nav.pagination
   padding-bottom: 5px;
   line-height: normal;
 }
-
 .shadow
 {
 
   z-index: 2;
 }
+.bottom_shadow_vignettes
+{
+  position: relative;
+  bottom: 30px;
+}
 
-/************************
+/**************************************************************************************************************
 cours détails dans INDEX
-*************************/
+***************************************************************************************************************/
 #lessons_coupdecoeur
 {
   height: 425px;
@@ -178,10 +182,10 @@ cours détails dans INDEX
 
 }
 
-/************************
+/*******************************************************************************************************
 éléments de navigation pour pagination
 overcome active_admin css
-*************************/
+********************************************************************************************************/
 
 .pagination a, .pagination span.page.current
 {
@@ -199,9 +203,9 @@ overcome active_admin css
 }
 
 
-/************************
+/*******************************************************************************************************
 search box
-*************************/
+********************************************************************************************************/
 #lessons_recherche
 {
   width: 220px;
@@ -252,9 +256,11 @@ input[type="image"]
   padding-left: 25px;
 }
 
-/************************
+
+
+/*******************************************************************************************************
 cours détails dans SHOW
-*************************/
+********************************************************************************************************/
 $largeurcolonne: 220px;
 
 #cours_details_main .span2
@@ -269,12 +275,18 @@ $largeurcolonne: 220px;
   font-size: $texte_petit;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 5px;
+  background-color: #F6F6F6;
+  margin-bottom: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 
 .cours_details_box img
 {
   vertical-align: middle;
+
 }
 
 img.big
@@ -294,7 +306,6 @@ img.big
   color: $grisclair;
   background-color: $grisclair;
   margin: 10px 0pt;
-  width: $largeurcolonne;
   font-size: 15px;
 }
 
@@ -357,12 +368,17 @@ cours_details_content hr
 }
 .cours_details_organisateur
 {
-  padding-top: 10px;
+  clear: both;
   height: auto;
+  margin-top: 30px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
   width: 200px;
   font-size: $texte_petit;
+  background-color: #F6F6F6;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .cours_details_organisateur img
@@ -385,7 +401,7 @@ cours_details_content hr
 {
   width: auto;
   height: 50px;
-  background-color: rgb(52,52,56);
+  background-color: #dfdfdf;
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -395,9 +411,10 @@ cours_details_content hr
 }
 #cours_label_name
 {
-  color: white;
+  color: #af2330;
+  font-family: BirchStd;
   font-weight: bolder;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding-left: 5px;
 }
 
@@ -413,18 +430,24 @@ cours_details_content hr
   width: auto;
   height: 50px;
   background: url('/images/body.gif') repeat left top;
-  border-radius: 5px 5px 5px 5px;
-  color: #6e000d !important;
+  color: #e2e2e2;
+  border-top-style: solid;
+  border-bottom-style: solid;
 }
 
 #cours_details_decouverte p
 {
   padding-top: 15px;
   padding-left: 5px;
+  color: #af2330;
   font-weight: bolder;
 }
 
 .bottom_shadow
 {
+  position: relative;
+  left: -10px;
   width: 220px;
+  margin-bottom: 0px;
 }
+

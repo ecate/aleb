@@ -645,7 +645,7 @@
     
     //Default settings
     $.fn.nivoSlider.defaults = {
-        effect: 'random',
+        effect: 'fade',
         slices: 15,
         boxCols: 8,
         boxRows: 4,

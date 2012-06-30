@@ -10,7 +10,8 @@ Aleb::Application.routes.draw do
       end
   end
 
-
+  get "static/donnercours"
+  get "static/help"
 
   root :to => "lessons#index"
 
