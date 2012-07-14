@@ -18,4 +18,11 @@ class LessonsController < ApplicationController
     render :index
   end
 
+  def register
+    #lesson.flag_interne = false
+    @lesson = Lesson.find(params[:id])
+    #redirect to external link
+    redirect_to @lesson.syllabus.lien
+  end
+
 end

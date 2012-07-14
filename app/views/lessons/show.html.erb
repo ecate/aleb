@@ -8,7 +8,14 @@
 
         <p id="cours_details_box_photo"><img src="<%= @lesson.syllabus.avatar.url %>" alt="photo cours"/></p>
 
-        <p id="bouton_inscription"> <%= link_to image_tag("/images/bouton_inscription.png"), @lesson %> </p>
+        <p id="bouton_inscription">
+          <% if @lesson.syllabus.flag_interne %>
+            <%= link_to image_tag("/images/bouton_inscription.png"), :href => "#dialog", :remote => true, :name => "modal"%>
+          <% else %>
+              <%= link_to image_tag("/images/bouton_inscription.png"), register_lesson_path(@lesson) %>
+          <% end %>
+        </p>
+
         <hr>
         <p class="big">
           <img src="/images/date_details.png"/> <%= I18n.localize(@lesson.horaire, :format => :jourmois, :locale => :fr) %>

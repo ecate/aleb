@@ -1,0 +1,19 @@
+<div id="boxes">
+  <!-- #customize your modal window here -->
+
+  <div id="dialog" class="window">
+    <h2><%= @lesson.syllabus.name %></h2>
+    <p>
+      Pour participer à ce cours, merci de prendre contact directement avec l'organisateur :
+      <br><br>
+      <%= @lesson.syllabus.contact_reservation %>
+    </p>
+
+    <!-- close button is defined as close class -->
+    <a href="#" class="close">Fermer</a>
+
+  </div>
+
+  <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->
+  <div id="mask"></div>
+</div>

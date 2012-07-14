@@ -227,6 +227,7 @@ search box
   width: auto;
   color: #6e000d !important;
   font-weight: bolder;
+  margin-bottom: 0px;
 }
 
 #lessons_recherche input
@@ -237,7 +238,7 @@ search box
 #lessons_recherche select
 {
   width: auto;
-  height: 25px;
+  line-height: 12px;
 }
 
 #lessons_recherche p
@@ -312,7 +313,6 @@ img.big
 #cours_details_main h1
 {
   font-family: Arial;
-
 }
 
 #cours_details_main h3
@@ -322,8 +322,6 @@ img.big
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-
 
 cours_details_content hr
 {

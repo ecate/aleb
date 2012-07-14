@@ -44,6 +44,8 @@ gem 'thin'
 gem "ransack", :git => "git://github.com/ernie/ransack.git"
 gem "squeel", :git => "git://github.com/ernie/squeel.git"
 
+#fenetre modale
+gem 'lazybox'
 
 
 group :assets do
