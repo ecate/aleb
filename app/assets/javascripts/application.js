@@ -10,8 +10,6 @@
 //= require_tree .
 
 $(window).load(function () {
-    /*SLIDER BOOTSTRAP ********************************************************************************/
-    /*$('#myCarousel').carousel();*/
 
     /*SLIDER NIVO *************************************************************************************/
     $("#slider").nivoSlider({
@@ -39,17 +37,10 @@ $(window).load(function () {
     $("#lessons_box_horaire").datepicker({
         dateFormat: 'dd-mm-yy',
         onSelect: function(dateText, inst) {
-              $("#q_horaire_gteq").val(dateText);
+              $("#q_horaire_dateequals").val(dateText);
            }
     });
 
     /* */
-    launchWindow(boxes);
 
-    $(document).keyup(function(e) {
-        if(e.keyCode == 13) {
-            $('#mask').hide();
-            $('.window').hide();
-        }
-    });
 });

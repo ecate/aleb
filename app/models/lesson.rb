@@ -13,4 +13,9 @@
 class Lesson < ActiveRecord::Base
   belongs_to :syllabus
   validates :syllabus_id, :horaire, :presence => true, :allow_blank => false
+
+  ransacker :horaire_casted do |parent|
+    Arel::Nodes::SqlLiteral.new("date(lessons.horaire)")
+  end
+
 end

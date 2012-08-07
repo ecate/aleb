@@ -18,7 +18,7 @@ gem 'devise'
 gem 'cancan'
 
 #interfaces d'administration
-gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
+gem 'activeadmin', :git => 'https://github.com/gregbell/active_admin.git'
 
 #syntaxe simplifiee pour les vues html
 gem 'haml', '>= 3.1.4'
@@ -41,8 +41,8 @@ gem 'roo'
 gem 'thin'
 
 #search
-gem "ransack", :git => "git://github.com/ernie/ransack.git"
-gem "squeel", :git => "git://github.com/ernie/squeel.git"
+gem "ransack", :git => "https://github.com/ernie/ransack.git"
+gem "squeel", :git => "https://github.com/ernie/squeel.git"
 
 #fenetre modale
 gem 'lazybox'
