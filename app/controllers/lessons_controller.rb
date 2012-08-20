@@ -22,8 +22,14 @@ class LessonsController < ApplicationController
   def register
     #lesson.flag_interne = false
     @lesson = Lesson.find(params[:id])
+
     #redirect to external link
     redirect_to @lesson.syllabus.lien
+  end
+
+  def register_interne
+    @lesson = Lesson.find(params[:id])
+    render :partial => 'lessons/register_interne'
   end
 
 end

@@ -7,6 +7,7 @@ Aleb::Application.routes.draw do
   resources :lessons do
     member do
         get 'register'
+        get 'register_interne'
     end
 
     collection do

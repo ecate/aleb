@@ -4,7 +4,7 @@ gem 'rails', '3.2.1'
 
 #interface
 gem 'jquery-rails'
-gem 'jquery-ui-rails'
+
 gem 'execjs'
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
@@ -45,13 +45,14 @@ gem "ransack", :git => "https://github.com/ernie/ransack.git"
 gem "squeel", :git => "https://github.com/ernie/squeel.git"
 
 #fenetre modale
-gem 'lazybox'
+gem 'lazybox', :git => "https://github.com/alex-galushka/lazybox.git"
 
 
 group :assets do
   gem 'sass-rails',   '>= 3.2.3'
   gem 'coffee-rails', '>= 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'jquery-ui-rails'
 end
 
 group :development do

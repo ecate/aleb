@@ -17,11 +17,19 @@
 
     </p>
     <p>
+
       <%= f.hidden_field :horaire_dateequals %>
-       <label for="lessons_box_horaire"> A quelle date ? </label>
-      <input type="datepicker" id="lessons_box_horaire" style="width: 60%;"/>
+      <label for="lessons_box_horaire"> A quelle date ? </label>
+      <input id="lessons_box_horaire"  style="width: 60%;"/>
+
     </p>
     <div id="bouton_chercher">
     <%= image_submit_tag('/images/bouton_chercher.png') %>
     </div>
+
+    <p>
+      <input type="text" id="datepicker2" value="03/08/2012">
+    </p>
+
+
 <% end %>

@@ -9,9 +9,14 @@
         <p id="cours_details_box_photo"><img src="<%= @lesson.syllabus.avatar.url %>" alt="photo cours"/></p>
 
         <p id="bouton_inscription">
+
+
+        </div>
           <% if @lesson.syllabus.flag_interne %>
-            <%= link_to image_tag("/images/bouton_inscription.png"), :href => "#dialog", :remote => true, :name => "modal"%>
-          <% else %>
+              <%= link_to image_tag("/images/bouton_inscription.png"), register_interne_lesson_path(@lesson) %>
+
+
+        <% else %>
               <%= link_to image_tag("/images/bouton_inscription.png"), register_lesson_path(@lesson) %>
           <% end %>
         </p>
@@ -77,6 +82,7 @@
       </div>
 
       <div id="cours_details_content">
+
         <h3>Description</h3>
             <p><%= @lesson.syllabus.description.html_safe %></p>
         <hr>

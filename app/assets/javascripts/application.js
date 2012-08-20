@@ -9,6 +9,7 @@
 //= require lazybox
 //= require_tree .
 
+
 $(window).load(function () {
 
     /*SLIDER NIVO *************************************************************************************/
@@ -33,14 +34,12 @@ $(window).load(function () {
     $("#amount").val("€" + $("#slider-range").slider("values", 0) +
         " - €" + $("#slider-range").slider("values", 1));
 
-    /*BOX RECHERCHE - DATE PICKER **********************************************************************/
-    $("#lessons_box_horaire").datepicker({
-        dateFormat: 'dd-mm-yy',
-        onSelect: function(dateText, inst) {
-              $("#q_horaire_dateequals").val(dateText);
-           }
-    });
 
-    /* */
+    /*BOX RECHERCHE - DATE PICKER **********************************************************************/
+
+    $("#lessons_box_horaire").datepicker(
+        {dateFormat: 'dd-mm-yy'}
+    );
 
 });
+

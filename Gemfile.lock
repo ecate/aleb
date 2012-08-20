@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/alex-galushka/lazybox.git
+  revision: a5618b6d70727e768bf1edbedbce7a66c834ebc0
+  specs:
+    lazybox (0.2.1)
+
+GIT
   remote: https://github.com/ernie/ransack.git
   revision: 2a6f9cc50bf80e761124cc08382dce0ba05f264d
   specs:
@@ -136,7 +142,6 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
       railties (>= 3.0.0)
-    lazybox (0.2.1)
     less (2.2.1)
       commonjs (~> 0.2.6)
     less-rails (2.2.3)
@@ -264,7 +269,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   kaminari
-  lazybox
+  lazybox!
   mysql2
   nested_form!
   pg
