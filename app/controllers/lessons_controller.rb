@@ -14,7 +14,6 @@ class LessonsController < ApplicationController
   end
 
   def search
-    pourafficher le bug
     index
     render :index
   end
@@ -25,6 +24,7 @@ class LessonsController < ApplicationController
 
     #redirect to external link
     redirect_to @lesson.syllabus.lien
+
   end
 
   def register_interne

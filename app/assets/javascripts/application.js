@@ -4,6 +4,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.ui.all
+//= require jquery.ui.datepicker-fr
 //= require twitter/bootstrap
 //= require jquery_nested_form
 //= require lazybox
@@ -37,9 +38,16 @@ $(window).load(function () {
 
     /*BOX RECHERCHE - DATE PICKER **********************************************************************/
 
-    $("#lessons_box_horaire").datepicker(
-        {dateFormat: 'dd-mm-yy'}
-    );
+    $("#lessons_box_horaire").datepicker({
+        onSelect: function(dateText, inst) {
+            alert(dateText);
+            $("#q_horaire_dateequals").val(dateText);
+        }
+
+    });
+
+
+
 
 });
 
