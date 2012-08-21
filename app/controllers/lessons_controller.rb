@@ -29,7 +29,6 @@ class LessonsController < ApplicationController
 
   def register_interne
     @lesson = Lesson.find(params[:id])
-    render :partial => 'lessons/register_interne'
   end
 
 end

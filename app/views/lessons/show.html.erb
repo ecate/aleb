@@ -13,7 +13,7 @@
 
         </div>
           <% if @lesson.syllabus.flag_interne %>
-              <%= link_to image_tag("/images/bouton_inscription.png"), register_interne_lesson_path(@lesson) %>
+              <%= link_to image_tag("/images/bouton_inscription.png"), register_interne_lesson_path(@lesson), :remote => true %>
 
 
         <% else %>
