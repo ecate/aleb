@@ -40,7 +40,6 @@ $(window).load(function () {
 
     $("#lessons_box_horaire").datepicker({
         onSelect: function(dateText, inst) {
-            alert(dateText);
             $("#q_horaire_dateequals").val(dateText);
         }
 

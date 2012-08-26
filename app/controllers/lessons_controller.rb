@@ -1,7 +1,15 @@
 class LessonsController < ApplicationController
 
   def index
-    @q = Lesson.search(params[:q])
+
+    if ! @requested_date.nil?
+      @lessons_date = Lesson.where('horaire > ? AND horaire < ?',@requested_date, @requested_date + 1.day)
+      @q = @lessons_date.search(params[:q])
+    else
+      @q = Lesson.search(params[:q])
+    end
+
+
     @lessons = @q.result(:distinct => true).order("horaire").page(params[:page]).per(11)
   end
 
@@ -14,6 +22,11 @@ class LessonsController < ApplicationController
   end
 
   def search
+    #bug_volontaire_pour_voir_le_contenu_de_q
+
+    Rails.logger.info("PARAMS: #{params.inspect}")
+    @requested_date= Date.parse(params[:q]['horaire_dateequals'])
+    Rails.logger.info("VARIABLE @requested_date: #{@requested_date}")
     index
     render :index
   end
