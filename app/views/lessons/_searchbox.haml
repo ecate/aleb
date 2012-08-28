@@ -1,0 +1,19 @@
+= search_form_for @q, :url => search_lessons_path, :html => {:method => :post} do |f|
+  %p
+    = f.label "Dans quelle ville ?"
+    = f.collection_select :syllabus_adresse_ville_cont, Syllabus.uniq.pluck(:adresse_ville).compact.reject { |s| s.nil? or s.empty? }, :to_s, :to_s, :include_blank => true, :prompt => "Choisir une ville"
+  %p
+    = f.label "Dans quelle catégorie ?"
+    = f.collection_select :syllabus_categorie_name_cont, Categorie.all, :name, :name, :include_blank => true, :prompt => "Choisir une catégorie"
+  %p
+    = f.hidden_field :syllabus_prixbase_gteq
+    = f.hidden_field :syllabus_prixbase_lteq
+    %label{:for => "amount"} Pour quel prix ?
+    %input#amount{:style => "background-color: transparent; border:0; font-weight:bold; padding: 1pt;width: 35%;", :type => "text"}/
+    #slider-range.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all
+  %p
+    = hidden_field_tag "horaire_dateequals"
+    %label{:for => "lessons_box_horaire"} A quelle date ?
+    %input#lessons_box_horaire{:style => "width: 60%;"}/
+  #bouton_chercher
+    = image_submit_tag('/images/bouton_chercher.png')

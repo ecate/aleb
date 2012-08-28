@@ -21,7 +21,9 @@ gem 'cancan'
 gem 'activeadmin', :git => 'https://github.com/gregbell/active_admin.git'
 
 #syntaxe simplifiee pour les vues html
-gem 'haml', '>= 3.1.4'
+gem 'haml'
+gem 'hpricot'
+gem 'ruby_parser'
 
 #upload / gestion des fichiers
 gem "rmagick"

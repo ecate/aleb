@@ -5,9 +5,9 @@
 
   <% lessonscoupdecoeur.each do |s| %>
       <% @cours = s %>
-          <div class="span2">
-              <%= render 'vignette' %>
-          </div>
+      <div class="span2">
+        <%= render 'vignette' %>
+      </div>
   <% end %>
 
 </div>
@@ -16,14 +16,14 @@
 
 <div id="lessons_liste">
   <div id="lessons_recherche" class="span2">
-    <%=  render 'searchbox'%>
+    <%= render 'searchbox' %>
   </div>
   <div id="lessons_vignettes" class="row">
     <% @lessons.where('horaire > ?', DateTime.now.beginning_of_day).each do |s| %>
 
         <% @cours = s %>
         <div class="span3">
-            <%= render 'vignette' %>
+          <%= render 'vignette' %>
         </div>
     <% end %>
   </div>

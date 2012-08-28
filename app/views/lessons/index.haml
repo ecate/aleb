@@ -1,0 +1,20 @@
+#lessons_coupdecoeur
+  %p.coupdecoeur_titre
+    %img{:src => "/images/home_selection_heart.png"}/
+    Les coups de coeur de l'école buissonière
+  - lessonscoupdecoeur.each do |s|
+    - @cours = s
+    .span2
+      = render 'vignette'
+
+#lessons_separateur
+
+#lessons_liste
+  #lessons_recherche.span2
+    = render 'searchbox'
+  #lessons_vignettes.row
+    - @lessons.where('horaire > ?', DateTime.now.beginning_of_day).each do |s|
+      - @cours = s
+      .span3
+        = render 'vignette'
+  = paginate @lessons, :window => 2

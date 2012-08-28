@@ -8,8 +8,6 @@ class LessonsController < ApplicationController
     else
       @q = Lesson.search(params[:q])
     end
-
-
     @lessons = @q.result(:distinct => true).order("horaire").page(params[:page]).per(11)
   end
 
@@ -23,10 +21,10 @@ class LessonsController < ApplicationController
 
   def search
     #bug_volontaire_pour_voir_le_contenu_de_q
+    #on recupere la date demandee si elle a ete remplie
+    # date en dehors de "q" car ransack ne gere pas les date range
+    @requested_date= Date.parse(params['horaire_dateequals']) unless params['horaire_dateequals'].empty?
 
-    Rails.logger.info("PARAMS: #{params.inspect}")
-    @requested_date= Date.parse(params[:q]['horaire_dateequals'])
-    Rails.logger.info("VARIABLE @requested_date: #{@requested_date}")
     index
     render :index
   end
