@@ -1,0 +1,78 @@
+%br/
+#cours_details_main.container
+  .row
+    .span2{:style => "margin-left: 45px;"}
+      %p
+        %a{:href => lessons_path}
+          %img{:src => "/images/retour_liste.png"}/
+          Revenir à la liste des cours
+      .cours_details_box
+        %p#cours_details_box_photo
+          %img{:alt => "photo cours", :src => @lesson.syllabus.avatar.url}/
+        %p#bouton_inscription
+        - if @lesson.syllabus.flag_interne
+          = link_to image_tag("/images/bouton_inscription.png"), register_interne_lesson_path(@lesson), :remote => true
+        - else
+          = link_to image_tag("/images/bouton_inscription.png"), register_lesson_path(@lesson)
+        %hr/
+        %p.big
+          %img{:src => "/images/date_details.png"}/
+          = I18n.localize(@lesson.horaire, :format => :jourmois, :locale => :fr)
+        %p.tab_droite= I18n.localize(@lesson.horaire, :format => :heure, :locale => :fr) + " - " + I18n.localize(@lesson.horaire + @lesson.syllabus.duree.seconds, :format => :heure, :locale => :fr)
+        %hr/
+        %p.big.bottom_small
+          %img{:src => "/images/places_details.png"}/
+          = @lesson.syllabus.nb_max_apprenants
+          participants max.
+        %p.italic.indent Encore xx participants pour valider le cours
+        %hr/
+        - if @lesson.syllabus.flag_interne && @lesson.syllabus.flag_lieu_defini
+          %p.big
+            %img{:src => "/images/pin_details.png"}/
+            = @lesson.syllabus.adresse_num_voie
+          %p.tab_adresse.big
+            = @lesson.syllabus.adresse_codepostal.to_s + " " + @lesson.syllabus.adresse_ville
+          %hr/
+        %p.big.bottom_small
+          %img{:src => "/images/prix_details.png"}/
+          = @lesson.syllabus.prixbase
+          €
+        %p.bottom_shadow
+          %img{:src => "/images/vignettes_bottom.png"}/
+
+
+      .cours_details_organisateur
+        %p.big
+          - if !(@lesson.syllabus.organisateur.class == NilClass)
+            %img{:alt => "", :src => @lesson.syllabus.organisateur.avatar.thumb.url }/
+            L'organisateur
+        %p.tab_orga
+          = @lesson.syllabus.organisateur.name unless @lesson.syllabus.organisateur.class == NilClass
+        %br/
+        %hr/
+        %p.big.bottom_small.profil Profil
+        %p.italic.profil= truncate(@lesson.syllabus.organisateur.description, :length => 250) unless @lesson.syllabus.organisateur.class == NilClass
+        %p.bottom_shadow
+          %img{:src => "/images/vignettes_bottom.png"}/
+
+    .span7
+      %h1
+        = @lesson.syllabus.name
+      - if !(@lesson.syllabus.label.nil?)
+        - if @lesson.syllabus.label.name == "Coup de coeur"
+          #cours_details_label
+            %p#cours_label_name
+              %img{:src => "/images/coupdecoeur_detail.png"}/
+              Coup de coeur A l'école Buissonnière
+      /
+        #cours_details_decouverte
+        %p Faites découvrir ce cours à vos amis !
+
+      #cours_details_content
+        %h3 Description
+        %p= @lesson.syllabus.description.html_safe
+        %hr/
+        %h3 Commentaires
+
+
+
