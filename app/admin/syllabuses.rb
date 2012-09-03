@@ -164,7 +164,7 @@ ActiveAdmin.register Syllabus do
     end
 
     f.inputs "Cours externe", :id => "panel_externe" do
-      f.input :lien
+      f.input :lien, :label => "Lien internet (inclure http:// dans l'adresse)"
       f.input :contact_reservation
     end
 
