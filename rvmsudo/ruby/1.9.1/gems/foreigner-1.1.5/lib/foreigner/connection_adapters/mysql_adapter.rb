@@ -1,1 +1,0 @@
-p "WARNING: Please upgrade to mysql2. The old mysql adapter is not supported by foreigner."
