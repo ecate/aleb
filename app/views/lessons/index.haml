@@ -13,7 +13,7 @@
   #lessons_recherche.span2
     = render 'searchbox'
   #lessons_vignettes.row
-    - @lessons.where('horaire > ?', DateTime.now.beginning_of_day).each do |s|
+    - lessonsactives.each do |s|
       - @cours = s
       .span3
         = render 'vignette'
