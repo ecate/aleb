@@ -58,28 +58,36 @@ nav.pagination
   z-index: 5;
 }
 
+#cours_images_div
+/* fixed height for images combo to fix issues with lessons with and without label thumb */
+{
+  height: 197px;
+  margin-bottom: -75px;
+
+}
 .cours_box h1
 {
 	font-size: $texte_gros;
 	color: $grisfonce;
 	font-weight: bolder;
-    margin-top: -40px;
-    line-height: 10px;
+    margin-top: 10px;
+    line-height: 15px;
 
 }
 
 .cours_box h3
 {
-	font-size: $texte_normal;
-	color: #888888;
-  line-height: 10px;
-
+  font-size: $texte_normal;
+  color: #888888;
+  line-height: 15px;
+  padding-top: 5px;
 }
 
 .cours_box p
 {
 	font-style: italic;
 	font-size: 12px;
+  padding-top: 5px;
 }
 
 .cours_box hr

@@ -1,8 +1,9 @@
 <div class="vignette_box">
   <div class="cours_box">
-    <img class="cours_image" src="<%= @cours.syllabus.avatar.url %>"/>
-    <img class="cours_label" src="<%= @cours.syllabus.label.avatar.url unless @cours.syllabus.label.class == NilClass %>"/>
-
+    <div id="cours_images_div">
+        <img class="cours_image" src="<%= @cours.syllabus.avatar.url %>"/>
+        <img class="cours_label" src="<%= @cours.syllabus.label.avatar.url unless @cours.syllabus.label.class == NilClass %>"/>
+    </div>
     <h1> <%= link_to(@cours.syllabus.name,lesson_path(@cours)) %></h1>
 
     <h3>PAR: <%= @cours.syllabus.organisateur.name unless @cours.syllabus.organisateur.class == NilClass %></h3>
